@@ -64,9 +64,21 @@
 
         <h3>Rendered element</h3>
         <a class="button-submit" href="">Submit Button</a>
-
-
       </section>
+
+      <section>
+        <h2>Alternative Submit Button </h2>
+
+        <h3>CSS Selector</h3>
+        <p>.button-submit-alt</p>
+
+        <h3>Sample code</h3>
+        <<code>&lt;a href="#" class="button-submit-alt"&gt;Submit Button&lt;/a&gt;</code>
+
+        <h3>Rendered element</h3>
+        <a class="button-submit-alt" href="">Alternative Submit Button</a>
+      </section>
+
 
       <section>
         <h2>Text Input Fields</h2>
@@ -84,11 +96,10 @@
         <code>&lt;label for="name" class="form-label-field-basic"&gt;Name&lt;/label&gt;</code>
 
         <h3>Rendered element</h3>
-        <form> 
           <label for="name" class="form-label-field-basic">Name</label>
           <input type="text" id="name" class="form-input-field-basic" placeholder="Name">
 
-        </form>
+
       </section>
 
       <section>
@@ -98,20 +109,17 @@
         <p>.form-input-field-extended, .textarea</p>
 
         <h3>Sample code</h3>
-        <code>&lt;textarea id="message" class="form-input-field-extended"&gt;Message&lt;/textarea&gt;</code>
+        <code>&lt;textarea id="message" class="form-input-field-extended placeholder="Message"&gt;&lt;/textarea&gt;</code>
 
         <h3>CSS Selector</h3>
         <p>.form-label-field-basic</p>
 
         <h3>Sample code</h3>
-        <code>&lt;label for="message class="form-label-field-basic"&gt;Message&lt;/label&gt;</code>
+        <code>&lt;label for="message" class="form-label-field-basic"&gt;Message&lt;/label&gt;</code>
 
         <h3>Rendered element</h3>
-        <form> 
           <label for="message" class="form-label-field-basic">Message</label>
-          <textarea id="message" class="form-input-field-extended">Message</textarea>
-
-        </form>
+          <textarea id="message" class="form-input-field-extended" placeholder="Message"></textarea>
       </section>
 
     </section>
@@ -174,12 +182,28 @@
         <h2>Form</h2>
 
         <h3>CSS selector:</h3>
-        <p>.</p>
+        <p>.form-contact-button, .form-contact, .form-label-field-basic, .form-input-field-basic, .form-input-field-extended, .textarea, .button-submit-alt</p>
 
         <h3>Sample code</h3>
-        <code></code>
+        <code>&lt;form class="form-contact"&gt;
+        &lt;label for="input_type_1" class="form-label-field-basic"&gt;Label&lt;/label&gt;
+        &lt;input type="text" id="input_type_1" class="form-input-field-basic" placeholder="Paceholder text"&gt;
+        &lt;label for="Inout_type_2" class="form-label-field-basic"&gt;Label&lt;/label&gt;
+        &lt;input type="text" id="inout_type_2" class="form-input-field-extended" placeholder="Placeholder text"&gt;
+        &lt;input type="submit" class="button-submit-alt form-contact-button" value="Submit"&gt;
+        &lt;/form&gt;
+        </code>
 
         <h3>Rendered element</h3>
+        <form class="form-contact">  
+          <label for="name" class="form-label-field-basic">Name</label>
+          <input type="text" id="name" class="form-input-field-basic" placeholder="Name"> 
+          <label for="email" class="form-label-field-basic">E-mail</label>
+          <input type="email" id="email" class="form-input-field-basic" placeholder="E-mail"> 
+          <label for="message" class="form-label-field-basic">Message</label>
+          <textarea id="message" class="form-input-field-extended" placeholder="Message"></textarea>
+          <input type="submit" class="button-submit-alt form-contact-button" value="Submit">                       
+        </form>
       </section>
 
     </section>
