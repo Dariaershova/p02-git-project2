@@ -37,11 +37,11 @@ section code {
 .button-nav {
   display: inline-block;
   font-size: 0.8em;
+  background-color: white;
   letter-spacing: 1px;
   color: rgb(76, 73, 87);
   padding: 1em 0.5em 0 0.5em;
   margin: 1em;
-  background-color: none;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease-out;
@@ -58,23 +58,47 @@ section code {
 
 .button-submit {
   display: inline-block;
-  border-style: solid;
+  border: 2px solid rgb(76, 73, 87);
+  background-color: white;
   color: rgb(76, 73, 87);
-  border-width: 2px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1em;
   font-size: 0.8em;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 1px;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
+}
+
+/*changing the border radius on hover*/
+.button-submit:hover, .button-submit:focus {
+  border-radius: 15px;
 
 }
 
-/*the box expands*/
-.button-submit:hover, .button-submit:focus {
-  padding: 0.25em 1em 0.25em 1em;
+
+.button-submit-alt {
+  display: inline-block;
+  font-weight: normal;
+  border: 2px solid rgb(76, 73, 87);
+  background-color: rgb(76, 73, 87);
+  color: white;
+  border-radius: 15px;
+  padding: 0.25rem 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
+  letter-spacing: 1px;
+  opacity: 0.74;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+
+}
+
+.button-submit-alt:hover, .button-submit:focus {
+  opacity: 1;
 
 }
 
@@ -89,27 +113,40 @@ section code {
   border-radius: 20px;
   border: 1px solid rgb(76, 73, 87);
   font-size: 0.9em;
-  padding: 0.3em 0 0.3em 0.5em;
-  margin-bottom: 1em;
+  padding: 0.3em 0 0.3em 0.7em;
   margin-top: 1em;
   width: 30em;
 }
 
 
 .form-input-field-extended {
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid rgb(76, 73, 87);
   font-size: 0.9em;
   margin-bottom: 1em;
   margin-top: 1em;
-  padding: 0.4em 0 0.3em 0.5em;
+  padding: 0.3em 0 0.3em 0.5em;
   width: 30em;
   height: 7em;
   text-align: left;
   vertical-align: text-top;
-  opacity: 0.54;
   cursor: auto;
 }
+
+textarea {
+    border: 1px solid rgb(76, 73, 87);
+}
+
+/*figure out autofill backround colour
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: white;
+    background-image: none;
+    color: black;
+    letter-spacing: 1px;
+}
+*/
+
 
 
 
@@ -127,13 +164,49 @@ section code {
 
 /*diplayed in the centre of the page, wraps*/
 .main-nav {
+
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
   display: flex;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
 
 }
 
+
+
+.form-contact {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  /*border is used for testing
+  border: 1px solid black; */
+  max-width: 28em;
+  padding: 1em;
+  background-color: white;
+
+}
+
+
+.form-contact-button {
+  max-width: 10em;
+  margin-top: 2em;
+}
 
 
 /*COLORS-----------------------
