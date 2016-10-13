@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Awesome Style Guide Template</title>
+    <title>Daria's and Isabel's Awesome Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -14,19 +14,16 @@
 
   <body>
 
-    <h1>Style Guide Template</h1>
-
-    <p>A template you can use to start building out your own style guides with.</p>
-
+    <h1>Daria's and Isabel's Awesome Style Guide</h1>
 
     <nav>
-      
+          
       <p>
         Go to:
         <a href="#interactive_elements">Interactive Elements</a>,
         <a href="#text_elements">Text Elements</a>,
         <a href="#combined_elements">Combined Elements</a>,
-        <a href="#color_paletter">Color Palette</a>
+        <a href="#color_palette">Color Palette</a>
       </p>
 
     </nav>
@@ -45,10 +42,10 @@
         <p>.button-nav</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="button" href="#">Default Button</a>
+        <a class="button-nav" href="#">Default Button</a>
 
       </section>
 
@@ -58,10 +55,63 @@
 
       <section>
         <h2>Submit/Reset Buttons</h2>
+
+        <h3>CSS Selector</h3>
+        <p>.button-submit</p>
+
+        <h3>Sample code</h3>
+        <<code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
+
+        <h3>Rendered element</h3>
+        <a class="button-submit" href="">Submit Button</a>
+
+
       </section>
 
       <section>
-        <h2>Text Input Field</h2>
+        <h2>Text Input Fields</h2>
+
+        <h3>CSS Selector</h3>
+        <p>.form-input-field-basic</p>
+
+        <h3>Sample code</h3>
+        <code>&lt;input type="text" id="name" class="form-input-field-basic" placeholder="Name"&gt;</code>
+
+        <h3>CSS Selector</h3>
+        <p>.form-label-field-basic</p>
+
+        <h3>Sample code</h3>
+        <code>&lt;label for="name" class="form-label-field-basic"&gt;Name&lt;/label&gt;</code>
+
+        <h3>Rendered element</h3>
+        <form> 
+          <label for="name" class="form-label-field-basic">Name</label>
+          <input type="text" id="name" class="form-input-field-basic" placeholder="Name">
+
+        </form>
+      </section>
+
+      <section>
+        <h2>Text Input Field Extended</h2>
+
+        <h3>CSS Selector</h3>
+        <p>.form-input-field-extended, .textarea</p>
+
+        <h3>Sample code</h3>
+        <code>&lt;textarea id="message" class="form-input-field-extended"&gt;Message&lt;/textarea&gt;</code>
+
+        <h3>CSS Selector</h3>
+        <p>.form-label-field-basic</p>
+
+        <h3>Sample code</h3>
+        <code>&lt;label for="message class="form-label-field-basic"&gt;Message&lt;/label&gt;</code>
+
+        <h3>Rendered element</h3>
+        <form> 
+          <label for="message" class="form-label-field-basic">Message</label>
+          <textarea id="message" class="form-input-field-extended">Message</textarea>
+
+        </form>
       </section>
 
     </section>
@@ -98,14 +148,50 @@
 
       <section>
         <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+         <p>.main-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;nav class="main-nav"&gt;&lt;a href="" class="button-nav"&gt;Menu Option 1&lt;/a&gt;&lt;/nav&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <nav class = "main-nav"> 
+                          <a href="" class="button-nav">Menu Option 1</a>
+                          <a href="" class="button-nav">Menu Option 2</a>
+                          <a href="" class="button-nav">Menu Option 3</a>
+                          <a href="" class="button-nav">Menu Option 4</a>
+                          <a href="" class="button-nav">Menu Option 5</a>
+        </nav>
       </section>
+
 
       <section>
         <h2>Product Listing</h2>
       </section>
 
+
+      <section>
+        <h2>Form</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.</p>
+
+        <h3>Sample code</h3>
+        <code></code>
+
+        <h3>Rendered element</h3>
+      </section>
+
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    <!-- COLOR PALETTE SECTION // -->
+    <section id="color_palette">
+
+    </section>
+    <!-- // COLOR PALETTE SECTION -->
+
 
 
   </body>
