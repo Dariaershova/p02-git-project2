@@ -3,8 +3,9 @@
   Default styling for the style guide 
 */
 body {
-  font-family: sans-serif;
+  font-family: "Open Sans, Neue Helvetica", sans-serif;
   padding: 2rem;
+
 }
 
 
@@ -35,18 +36,81 @@ section code {
 /* Styling for the navigation button */
 .button-nav {
   display: inline-block;
-  padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #333;
-  border-radius: 0.25em;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  color: rgb(76, 73, 87);
+  padding: 1em 0.5em 0 0.5em;
+  margin: 1em;
+  background-color: none;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
+/*orange underline appears*/
 .button-nav:hover, .button-nav:focus {
-  background-color: #999;
+  border-bottom: 3px solid rgb(255, 192, 51);
+  border-radius: 3px;
+
 }
+
+
+.button-submit {
+  display: inline-block;
+  border-style: solid;
+  color: rgb(76, 73, 87);
+  border-width: 2px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+
+}
+
+/*the box expands*/
+.button-submit:hover, .button-submit:focus {
+  padding: 0.25em 1em 0.25em 1em;
+  text-align: center;
+
+}
+
+.form-label-field-basic {
+  color: transparent;
+  left: -99999px;
+  position: absolute;
+}
+
+
+.form-input-field-basic {
+  border-radius: 20px;
+  border: 1px solid rgb(76, 73, 87);
+  font-size: 0.9em;
+  padding: 0.3em 0 0.3em 0.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 30em;
+}
+
+
+.form-input-field-extended {
+  border-radius: 10px;
+  border: 1px solid rgb(76, 73, 87);
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 0.4em 0 0.3em 0.5em;
+  width: 30em;
+  height: 7em;
+  text-align: left;
+  vertical-align: text-top;
+  opacity: 0.54;
+  cursor: auto;
+}
+
 
 
 
@@ -60,3 +124,21 @@ section code {
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+/*diplayed in the centre of the page, wraps*/
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+
+
+/*COLORS-----------------------
+purple rgb(127,42,121)
+
+oramge rgb(255, 192, 51) 
+*/
+
