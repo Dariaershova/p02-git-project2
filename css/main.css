@@ -44,17 +44,29 @@ section code {
   margin: 1em;
   text-decoration: none;
   text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+
 }
 
 /*orange underline appears*/
 .button-nav:hover, .button-nav:focus {
   border-bottom: 3px solid rgb(255, 192, 51);
   border-radius: 3px;
-
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
+/*in-text link*/
+.in-text-link {
+  text-decoration: none;
+  color: #FFC033;
+}
+
+.in-text-link:hover, .in-text-link:focus{
+  color: #FFC033;
+  text-decoration: underline;
+}
+
+/*submit button*/
 
 .button-submit {
   display: inline-block;
@@ -154,7 +166,24 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 /* 
   TEXT ELEMENTS -------------------
 */
+ul {
+    list-style: none; 
+    padding: 0;
+}
 
+ul li { 
+    padding-left: 16px; 
+}
+
+ul li:before {
+    content: "•"; 
+    padding-right: 8px;
+    color: #7F2A79; 
+}
+
+li{
+  line-height: 2em;
+}
 
 
 
