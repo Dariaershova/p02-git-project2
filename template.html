@@ -4,7 +4,7 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Daria's and Isabel's Awesome Style Guide</title>
+    <title>Daria and Isabel's Awesome Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -14,16 +14,15 @@
 
   <body>
 
-    <h1>Daria's and Isabel's Awesome Style Guide</h1>
+    <h1>Daria and Isabel's Awesome Style Guide</h1>
 
     <nav>
           
       <p>
-        Go to:
-        <a href="#interactive_elements">Interactive Elements</a>,
-        <a href="#text_elements">Text Elements</a>,
-        <a href="#combined_elements">Combined Elements</a>,
-        <a href="#color_palette">Color Palette</a>
+        <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+        <a class="button-nav" href="#text_elements">Text Elements</a>
+        <a class="button-nav" href="#combined_elements">Combined Elements</a>
+        <a class="button-nav" href="#color_palette">Color Palette</a>
       </p>
 
     </nav>
@@ -51,6 +50,15 @@
 
       <section>
         <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.in-text-link</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="in-text-link" href="#"&gt;In-text link&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        Hello, I'm an <a class="in-text-link" href="#">in-text link</a> that links to nothing!
       </section>
 
       <section>
@@ -60,7 +68,7 @@
         <p>.button-submit</p>
 
         <h3>Sample code</h3>
-        <<code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
 
         <h3>Rendered element</h3>
         <a class="button-submit" href="">Submit Button</a>
@@ -73,7 +81,7 @@
         <p>.button-submit-alt</p>
 
         <h3>Sample code</h3>
-        <<code>&lt;a href="#" class="button-submit-alt"&gt;Submit Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-submit-alt"&gt;Submit Button&lt;/a&gt;</code>
 
         <h3>Rendered element</h3>
         <a class="button-submit-alt" href="">Alternative Submit Button</a>
@@ -140,10 +148,42 @@
 
       <section>
         <h2>Bulleted Lists</h2>
+        <h3>CSS selector:</h3>
+          <p>ul</p>
+
+        <h3>Sample code:</h3>
+          <code>&lt;ul&gt;&lt;li&gt;List Item&lt;/li&gt;&lt;/ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <h3>Easiest Plants to Grow:</h3>
+          <ul>
+            <li>Cucumbers</li>
+            <li>Cosmos</li>
+            <li>Lettuce</li>
+            <li>Sunflower</li>
+            <li>Radishes</li>
+            <li>Squash</li>
+          </ul>
+
       </section>
 
       <section>
         <h2>Numbered Lists</h2>
+        <h3>CSS selector:</h3>
+          <p>ol</p>
+
+        <h3>Sample code:</h3>
+          <code>&lt;ol&gt;&lt;li&gt;List Item&lt;/li&gt;&lt;/ol&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <h3>Top Five Vegan Cheeses</h3>
+          <ol reversed>
+            <li>Vegusto: No-Moo Mild-Aromatic</li>
+            <li>Cheezly: White Cheddar Style</li>
+            <li>Vegan Gourmet: Follow Your Heart Mozzarella Shreds</li>
+            <li>Sheese: Melty Smoked Cheddar Style</li>
+            <li>Violife Creamy: Original</li>
+          </ol>
       </section>
 
     </section>
