@@ -20,6 +20,7 @@ section h3 {
 
 section p {
   margin-top: 0;
+  width: 60%;
 }
 
 section code {
@@ -165,6 +166,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 /* 
   TEXT ELEMENTS -------------------
 */
+
 ul {
     list-style: none; 
     padding: 0;
@@ -211,7 +213,7 @@ li{
 
 }
 
-/*product listing*/
+/*product listing/////////*/
 
 .item-listing{
     width: 20%;
@@ -232,7 +234,9 @@ li{
 
 .item-listing p{
   margin-bottom: 0;
-  padding: 2.5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 100%;
 }
 
 .item-info-top{
@@ -247,10 +251,10 @@ li{
 }
 
 .item-info-top .star{
-  padding: 4%;
+  padding-bottom: 4%;
   padding-top: 1%;
   color: #CCCCCB;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .item-info-bottom{
