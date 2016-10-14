@@ -8,7 +8,6 @@ body {
 
 }
 
-
 section:not([id]) {
   margin: 1em 0;
   padding: 0.5em 0;
@@ -44,6 +43,8 @@ section code {
   margin: 1em;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 
 }
 
@@ -51,8 +52,6 @@ section code {
 .button-nav:hover, .button-nav:focus {
   border-bottom: 3px solid rgb(255, 192, 51);
   border-radius: 3px;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
 }
 
 /*in-text link*/
@@ -212,8 +211,52 @@ li{
 
 }
 
+/*product listing*/
 
+.item-listing{
+    width: 20%;
+    border-radius: 5px;
+    background: #f2f2f2;
+}
 
+.item-listing img{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.item-listing h4{
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+.item-listing p{
+  margin-bottom: 0;
+  padding: 2.5%;
+}
+
+.item-info-top{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 0.5em;
+}
+
+.item-info-top p{
+  color: #FFC033;
+  font-size: 0.9em;
+}
+
+.item-info-top .star{
+  padding: 4%;
+  padding-top: 1%;
+  color: #CCCCCB;
+  font-size: 2em;
+}
+
+.item-info-bottom{
+  text-align: center;
+  padding: 1.5em;
+}
 .form-contact {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
