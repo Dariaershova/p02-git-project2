@@ -3,7 +3,7 @@
   Default styling for the style guide 
 */
 body {
-  font-family: "Open Sans, Neue Helvetica", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 2rem;
 
 }
@@ -37,6 +37,9 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+p {
+  font-size: 0.9em;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -277,6 +280,8 @@ ol {
   text-align: center;
   padding: 1.5em;
 }
+
+
 .form-contact {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
