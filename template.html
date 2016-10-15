@@ -8,6 +8,8 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/flexboxes.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   </head>
@@ -18,13 +20,11 @@
 
     <nav>
           
-      <p>
         <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
         <a class="button-nav" href="#text_elements">Text Elements</a>
         <a class="button-nav" href="#combined_elements">Combined Elements</a>
         <a class="button-nav" href="#color_palette">Color Palette</a>
         <a class="button-nav" href="citations.html" target=_blank>Citations</a>
-      </p>
 
     </nav>
 
@@ -255,8 +255,8 @@
         <code>&lt;form class="form-contact"&gt;
         &lt;label for="input_type_1" class="form-label-field-basic"&gt;Label&lt;/label&gt;
         &lt;input type="text" id="input_type_1" class="form-input-field-basic" placeholder="Paceholder text"&gt;
-        &lt;label for="Inout_type_2" class="form-label-field-basic"&gt;Label&lt;/label&gt;
-        &lt;input type="text" id="inout_type_2" class="form-input-field-extended" placeholder="Placeholder text"&gt;
+        &lt;label for="input_type_2" class="form-label-field-basic"&gt;Label&lt;/label&gt;
+        &lt;input type="text" id="input_type_2" class="form-input-field-extended" placeholder="Placeholder text"&gt;
         &lt;input type="submit" class="button-submit-alt form-contact-button" value="Submit"&gt;
         &lt;/form&gt;
         </code>
@@ -272,6 +272,58 @@
           <input type="submit" class="button-submit-alt form-contact-button" value="Submit">                       
         </form>
       </section>
+
+
+
+      <section>
+        <h2>2-column grid </h2>
+
+        <h3>CSS selector</h3>
+        <p>.grid-col-2of10, .grid-row, .h2, .p</p>
+
+        <h3>Sample code</h3>
+        <code>&lt;div class=""grid-row&gt;&lt;div class="grid-col-2of10"&gt;&lt;h2&gt;Name here&lt;/h2&gt;&lt;p&gt;Description here&lt;/p&gt;&lt;/div&gt;&lt;div class="grid-col-2of10"&gt;&lt;h2&gt;Name here&lt;/h2&gt;&lt;p&gt;Description here&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</code>        
+        
+        <h3>Rendered element</h3>
+        <div class="grid-row">
+          <div class="grid-col-2of10">
+            <h2>Name here</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. In scelerisque, dolor quis laoreet ornare, turpis quam pretium nibh, sed vestibulum nisl nisl vitae dolor. </p> 
+          </div>
+
+          <div class="grid-col-2of10">
+            <h2>Name here</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. </p> 
+          </div>
+        </div> 
+
+      </section>
+
+      <section>
+        <h2>2-column flex box grid </h2>
+
+        <h3>CSS selector</h3>
+        <p>.two-column-box, .two-column-text</p>
+
+        <h3>Sample code</h3>
+        <code>&lt;div class="two-column-box"&gt;&lt;div class="two-column-box-text"&gt;&lt;p&gt;Text&lt;p&gt;&lt;/div&gt;&lt;div class="two-column-box-text"&gt;&lt;p&gt;Text&lt;p&gt;&lt;/div&gt;&lt;/div&gt;</code>        
+        
+        <h3>Rendered element</h3>
+        <div class="two-column-box">
+          <div class="two-column-box-text">
+            <h2>Name here</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. In scelerisque, dolor quis laoreet ornare, turpis quam pretium nibh, sed vestibulum nisl nisl vitae dolor. </p> 
+          </div>
+
+          <div class="two-column-box-text">
+            <h2>Name here</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. </p> 
+          </div>
+        </div> 
+
+      </section>
+
+
 
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
