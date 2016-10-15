@@ -69,8 +69,10 @@ p {
 
 /*in-text link*/
 .in-text-link {
-  text-decoration: none;
-  color: #FFC033;
+  color: #000;
+  text-decoration: underline;
+  -moz-text-decoration-color: #FFC033;
+  text-decoration-color: #FFC033;
 }
 
 .in-text-link:hover, .in-text-link:focus{
