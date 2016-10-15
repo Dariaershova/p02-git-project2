@@ -23,14 +23,6 @@ nav{
   text-align: center;
 }
 
-section h3 {
-  margin-bottom: 0;
-}
-
-section p {
-  margin-top: 0;
-  line-height: 1.3em;
-}
 
 section code {
   background-color: #EEE;
@@ -70,14 +62,13 @@ p {
 /*in-text link*/
 .in-text-link {
   color: #000;
-  text-decoration: underline;
-  -moz-text-decoration-color: #FFC033;
-  text-decoration-color: #FFC033;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(255, 192, 51);
+
 }
 
 .in-text-link:hover, .in-text-link:focus{
-  color: #FFC033;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 /*submit button*/
@@ -182,7 +173,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 */
 
 li{
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 ul {
