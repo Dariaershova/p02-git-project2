@@ -39,6 +39,16 @@
 }
 
 
+.two-column-box-image {
+	-webkit-justify-content: space-around;
+	-ms-justify-content:space-around;
+	justify-content: space-around;
+
+	-webkit-flex: 1 1 100px;
+    -ms-flex: 1 1 100px;
+    flex: 1 1 100px;
+}
+
 @media (min-width: 35em)  {
 
 }
