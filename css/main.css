@@ -64,6 +64,7 @@ h3{
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 
+
 }
 
 /*orange underline appears*/
@@ -96,8 +97,9 @@ h3{
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
-  transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
 }
 
 /*changing the border radius on hover*/
@@ -106,7 +108,7 @@ h3{
 
 }
 
-
+/*alternative submit button*/
 .button-submit-alt {
   display: inline-block;
   font-weight: normal;
@@ -121,8 +123,9 @@ h3{
   text-align: center;
   letter-spacing: 1px;
   opacity: 0.74;
-  transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
 
 }
 
@@ -131,6 +134,7 @@ h3{
 
 }
 
+/*labels and inputs*/
 .form-label-field-basic {
   color: transparent;
   left: -99999px;
@@ -166,6 +170,8 @@ textarea {
     border: 1px solid rgb(76, 73, 87);
 }
 
+
+
 /*figure out autofill backround colour
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
@@ -176,6 +182,53 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 */
 
+
+/*image category links*/
+a.category {
+  text-decoration: none;
+}
+
+.category-image-1 {
+  background-image: url(../img/placeholder.jpg);
+  height: 400px;
+  width: 400px;
+  opacity: 0.9;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+
+}
+
+.category-title {
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 3em;
+  padding-bottom: 0;
+  font-size: 1.4em;
+  color: black;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.category-subtitle {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 0;
+  padding-left: 5%;
+  font-size: 0.7em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  text-transform: lowercase;
+}
+
+.category-image:hover, .category-image:active {
+  opacity: 1;
+
+}
 
 
 
