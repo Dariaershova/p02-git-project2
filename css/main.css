@@ -143,9 +143,18 @@ h3{
   width: auto;
   background-color: rgb(255, 192, 51);
   padding-right: 3em;
-  padding-top: .2em;
-  padding-left: .2em;
-  padding-bottom: .2em;
+  padding-top: .3em;
+  padding-left: .3em;
+  padding-bottom: .3em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+
+.icon-button:hover, .icon-button:focus {
+  padding-top: .1em;
+  padding-left: .1em;
+  padding-bottom: .1em;
 }
 
 .icon-resize {
@@ -207,16 +216,56 @@ a.category {
   text-decoration: none;
 }
 
-.category-image-1 {
+.category-image {
   background-image: url(../img/placeholder.jpg);
-  height: 400px;
-  width: 400px;
   opacity: 0.9;
+  width: auto;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
 
+.image-two-fifth {
+  background-image: url(../img/placeholder.jpg);
+  width: 480px;
+  height: 400px;
+}
+
+.image-two-fifth-short {
+  background-image: url(../img/placeholder.jpg);
+  width: 480px;
+  height: 200px;
+}
+
+.image-three-fifth-short {
+  background-image: url(../img/placeholder.jpg);
+  width: 715px;
+  height: 200px;
+}
+
+.image-one-fifth-long {
+  background-image: url(../img/placeholder.jpg);
+  width: 235px;
+  height: 400px;
+}
+
+.image-one-fifth-short {
+  background-image: url(../img/placeholder.jpg);
+  width: 235px;
+  height: 200px;
+}
+
+.absolute-position {
+  position: absolute;
 
 }
+
+.relative-position {
+  position: relative;
+}
+
+
+
+
 
 .category-title {
   font-family: "Helvetica Neue", sans-serif;
