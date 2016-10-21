@@ -32,7 +32,7 @@
 }
 
 .two-column-box-text {
-	padding: 1em;
+	padding: 1em 1.5em 1em 0;
 	-webkit-flex: 1 1 23em;
 	-ms-flex: 1 1 23em;
 	flex: 1 1 23em;
@@ -48,6 +48,39 @@
     -ms-flex: 1 1 100px;
     flex: 1 1 100px;
 }
+
+
+.main-category-grid {
+	/* 
+	The statement below sets us into the flexbox display mode. Note support for flexbox still necessitates some vendor prefixes (see http://caniuse.com/#search=flex)
+	*/
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex; 
+
+	/* 
+		A flexbox will try to fit all elements in one line by default. The 'flex-wrap' property lets us wrap child elements that become too wide for their current row.
+	*/
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content: space-around;
+	-ms-justify-content:space-around;
+	justify-content: space-around;
+}
+
+.mini-flex {
+
+
+
+}
+
+
 
 @media (min-width: 35em)  {
 
