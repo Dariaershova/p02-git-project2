@@ -4,7 +4,8 @@
 */
 body {
   font-family: "Open Sans", sans-serif;
-  padding: 2rem;
+  padding-left: 2rem;
+
 
 }
 
@@ -65,8 +66,10 @@ h3{
   background-color: white;
   letter-spacing: 1px;
   color: rgb(76, 73, 87);
-  padding: 1em 0.5em 0 0.5em;
-  margin: 1em;
+  padding: 0 0.5em 0 0.5em;
+  margin-right: 1em;
+  border-bottom: 3px solid white;
+  border-radius: 3px;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease-out;
@@ -142,6 +145,31 @@ h3{
 
 }
 
+/*clickable icon*/
+.icon-button {
+  height: auto;
+  width: auto;
+  background-color: rgb(255, 192, 51);
+  padding-right: 3em;
+  padding-top: .3em;
+  padding-left: .3em;
+  padding-bottom: .3em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+
+.icon-button:hover, .icon-button:focus {
+  padding-top: .1em;
+  padding-left: .1em;
+  padding-bottom: .1em;
+}
+
+.icon-resize {
+  height: 4em;
+  width: auto;
+}
+
 /*labels and inputs*/
 .form-label-field-basic {
   color: transparent;
@@ -196,16 +224,56 @@ a.category {
   text-decoration: none;
 }
 
-.category-image-1 {
+.category-image {
   background-image: url(../img/placeholder.jpg);
-  height: 400px;
-  width: 400px;
   opacity: 0.9;
+  width: auto;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+}
 
+.image-two-fifth {
+  background-image: url(../img/placeholder.jpg);
+  width: 480px;
+  height: 400px;
+}
+
+.image-two-fifth-short {
+  background-image: url(../img/placeholder.jpg);
+  width: 480px;
+  height: 200px;
+}
+
+.image-three-fifth-short {
+  background-image: url(../img/placeholder.jpg);
+  width: 715px;
+  height: 200px;
+}
+
+.image-one-fifth-long {
+  background-image: url(../img/placeholder.jpg);
+  width: 235px;
+  height: 400px;
+}
+
+.image-one-fifth-short {
+  background-image: url(../img/placeholder.jpg);
+  width: 235px;
+  height: 200px;
+}
+
+.absolute-position {
+  position: absolute;
 
 }
+
+.relative-position {
+  position: relative;
+}
+
+
+
+
 
 .category-title {
   font-family: "Helvetica Neue", sans-serif;
@@ -292,10 +360,51 @@ ol {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
 
+}
+
+.secondary-nav {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+
+}
+
+.united-nav {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
 
 /*product listing/////////*/
