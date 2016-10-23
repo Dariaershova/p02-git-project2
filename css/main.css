@@ -25,6 +25,7 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+
 p {
   font-size: 0.9em;
   line-height: 1.4em;
@@ -41,14 +42,6 @@ h2{
 h3{
   font-size: 1.2em;
   margin-bottom: 0.5em;
-}
-
-.filter-header{
-    padding-bottom: 0;
-    max-width: 10em;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    border-bottom: solid 1px #000;
 }
 
 .centered-element{
@@ -409,6 +402,52 @@ ol {
 
 /*product listing/////////*/
 
+/*.item-listing{
+    width: 20%;
+    border-radius: 5px;
+    background: #f2f2f2;
+}
+
+.item-listing img{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.item-listing h4{
+    margin-top: 0;
+    margin-bottom: 0.3em;
+}
+
+.item-listing p{
+  margin-bottom: 0;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  width: 100%;
+}
+
+.item-info-top{
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 0.5em;
+}
+
+.item-info-top p{
+  color: #FFC033;
+  font-size: 0.9em;
+}
+
+.item-info-top .star{
+  padding-bottom: 4%;
+  padding-top: 1%;
+  color: #CCCCCB;
+  font-size: 1.5em;
+}
+
+.item-info-bottom{
+  text-align: center;
+  padding: 1.5em;
+}*/
 
 .item-listing{
     width: 20%;
@@ -416,16 +455,11 @@ ol {
     background: #f2f2f2;
 }
 
-.item-listing-unit img{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-.item-listing-icon-box:hover {
-    box-shadow: 0 8px 8px 0 #d9d9d9;
+.item-listing img{
+    width: 90%;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    margin-top: 0.8em;
 }
 
 .item-info-bottom{
@@ -476,4 +510,5 @@ purple rgb(127,42,121)
 
 oramge rgb(255, 192, 51) 
 */
+
 
