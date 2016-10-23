@@ -3,7 +3,7 @@
 }
 
 .two-column-box {
-	padding-top: 3em;
+
 	/* 
 		The statement below sets us into the flexbox display mode. Note support for flexbox still necessitates some vendor prefixes (see http://caniuse.com/#search=flex)
 	*/
@@ -28,8 +28,6 @@
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	/*border-style: solid;*/
-	/*border-width: 1px;*/
 
 }
 
@@ -51,34 +49,6 @@
     flex: 1 1 100px;
 }
 
-.box-item-listing {
-	padding: 1em;
-	-webkit-flex: 1 1 5em;
-	-ms-flex: 1 1 5em;
-	flex: 1 1 5em;
-}
-
-.box-item-listing-filter {
-	padding-left: 2em;
-	-webkit-flex: 1.5 1 8em;
-	-ms-flex: 1.5 1 8em;
-	flex: 1.5 1 8em;
-}
-
-.item-listing-unit{
-	position: relative;
-	padding: 0.8em;
-	-webkit-flex: 1 1 2em;
-	-ms-flex: 1 1 2em;
-	flex: 1 1 2em;
-	background: #f2f2f2;
-}
-
-.item-listing-icon-box{
-	-webkit-flex: 1 0.1 0.2em;
-	-ms-flex: 0.1 0.1 0.2em;
-	flex: 0.1 0.1 0.2em;
-
 
 .main-category-grid {
 	/* 
@@ -94,17 +64,6 @@
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap; 
-
-	-webkit-flex-direction: row-reverse;
-	-ms-flex-direction: row-reverse;
-	flex-direction: row-reverse;
-
-	justify-content: flex-end;
-	/*border-width: 1px;*/
-}
-
-
-@media (min-width: 20em)  {
 
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
@@ -124,6 +83,5 @@
 
 
 @media (min-width: 35em)  {
-
 
 }
