@@ -23,6 +23,23 @@
 	text-align: left;
 }
 
+.grid-col-1of4 {
+	width:20%;
+	background: white;
+	margin-right: 2em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	text-align: left;
+}
+
+.grid-col-3of4 {
+	width:70%;
+	background: white;
+	margin-right: 2em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	text-align: left;
+}
 
 .grid-row:after {
 	content: "";
@@ -39,4 +56,13 @@
 	.grid-col-1of5 {
 		width: 21%;
 	}
+
+	.grid-col-1of4 {
+		width: 10%;
+	}
+
+	.grid-col-3of4 {
+		width: 70%;
+	}
+
 }
