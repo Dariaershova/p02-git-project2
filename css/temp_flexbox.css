@@ -46,7 +46,7 @@
 }
 
 .item-listing-box{
-	padding-left: 2em;
+	padding-left: 1.5em;
 	margin-top: 2em;
 	display: flex;
 	flex-direction: row;
@@ -77,10 +77,25 @@
 	box-shadow: 0px 3px 5px #888888;
 }
 
+.cart-text-flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.summary-text-flex{
+
+}
+
 @media (min-width: 20em)  {
 
 	
 }
+
+
+
+
 
 
 
