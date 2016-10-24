@@ -32,7 +32,7 @@
 }
 
 .two-column-box-text {
-	padding: 1em 1.5em 1em 0;
+	padding: 1em 1.5em 1em 2em;
 	-webkit-flex: 1 1 23em;
 	-ms-flex: 1 1 23em;
 	flex: 1 1 23em;
@@ -69,21 +69,48 @@
 	-ms-flex-direction: row;
 	flex-direction: row;
 
-	-webkit-justify-content: space-around;
-	-ms-justify-content:space-around;
-	justify-content: space-around;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+
+
 }
 
 .mini-flex {
 
-
+	-webkit-flex: 1 1 150px;
+    -ms-flex: 1 1 150px;
+    flex: 1 1 150px;
 
 }
 
+.priority1
+{
+	position: relative;
+
+}
+
+.priority2
+{
+
+}
+
+.priority3
+{
+
+}
+
+.priority4
+{
+
+}
 
 
 @media (min-width: 35em)  {
 
 
+
 }
+
+
 
