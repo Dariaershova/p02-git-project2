@@ -5,6 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   padding-left: 2rem;
+  padding-right: 2rem;
 
 
 }
@@ -14,6 +15,12 @@ section:not([id]) {
   padding: 0.5em 0;
   border-top: 1px solid #333;
 }
+
+section.main-page {
+  padding-top: 5em;
+
+  } 
+
 
 .style-guide{
   text-align: center;
@@ -143,7 +150,7 @@ h3{
   height: auto;
   width: auto;
   background-color: rgb(255, 192, 51);
-  padding-right: 3em;
+  padding-right: 2em;
   padding-top: .3em;
   padding-left: .3em;
   padding-bottom: .3em;
@@ -225,10 +232,11 @@ a.category {
   transition: all 0.2s ease-out;
 }
 
-.image-two-fifth {
+.image-two-fifth-long {
   background-image: url(../img/placeholder.jpg);
   width: 480px;
   height: 400px;
+  
 }
 
 .image-two-fifth-short {
@@ -241,6 +249,12 @@ a.category {
   background-image: url(../img/placeholder.jpg);
   width: 715px;
   height: 200px;
+}
+
+.image-three-fifth-long {
+  background-image: url(../img/placeholder.jpg);
+  width: 715px;
+  height: 400px;
 }
 
 .image-one-fifth-long {
@@ -269,17 +283,18 @@ a.category {
 
 
 .category-title {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: left;
-  padding-left: 5%;
-  padding-top: 3em;
-  padding-bottom: 0;
   font-size: 1.4em;
   color: black;
-  text-transform: lowercase;
+  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
   margin-bottom: 0.2em;
+  position: absolute;
+  left: 5%;
+  top: 4em;
+
 }
 
 .category-subtitle {
@@ -292,10 +307,24 @@ a.category {
   margin-bottom: 0;
   color: black;
   text-transform: lowercase;
+  position: absolute;
+  left: 1%;
+  top: 13em;
 }
 
 .category-image:hover, .category-image:active {
   opacity: 1;
+
+}
+
+
+
+.category-title-2 {
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 100px;
 
 }
 
@@ -504,6 +533,11 @@ ol {
   margin-top: 2em;
 }
 
+
+.full-bleed-image-container {
+  position: relative;
+  background-image: url(../img/placeholder.jpg);
+}
 
 /*COLORS-----------------------
 purple rgb(127,42,121)
