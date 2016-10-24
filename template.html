@@ -11,6 +11,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
     <link href="css/flexboxes.css" rel="stylesheet">
+    <link href="css/temp_flexbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   </head>
@@ -305,33 +306,23 @@
              </div>
             </nav>
       <section>
-       <!--<h2>Product Listing</h2>
-        <h3>CSS selector:</h3>
-        <p>.item-listing, .item-info-top, .item-info-bottom, .star, .button-submit</p>
-        <h3>Sample code:</h3>
-        <h3>Rendered element:</h3>
-          <div class="item-listing">
-            <div class="item-info-top">
-              <p class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-              <h4>Item Name</h4> 
-              <p>$5.00</p> 
-            </div>
-            <img src="https://placeholdit.imgix.net/~text?txtsize=17&txt=180%C3%97200&w=180&h=200" alt="Placeholder for image of product">
-            <div class="item-info-bottom">
-              <a class="button-submit" href="">Add to Cart</a>
-            </div>
-          </div>-->
+
 
         <h2>Product Listing</h2>
         <h3>CSS selector:</h3>
         <p>.item-listing, .item-info-top, .item-info-bottom, .button-submit</p>
         <h3>Sample code:</h3>
         <h3>Rendered element:</h3>
-          <div class="item-listing">
-            <img src="https://placeholdit.imgix.net/~text?txtsize=17&txt=180%C3%97200&w=180&h=200" alt="Placeholder for image of product">
-            <div class="item-info-bottom">
-              <h4>Item Name</h4> 
-              <p>$5.00</p> 
+           <div class="grid-col-3of4 item-listing-box">
+            <div class="item-listing-unit">
+                <a href="#"><img src="img/itemplaceholder.png" alt="placeholder for product image"></a>
+                <div class="item-listing-icon-menu">
+                <img src="img/iconplaceholder.png" alt="placeholder for 'add to cart' button">
+                <img src="img/iconplaceholder.png" alt="placeholder for 'like' button">
+                <img src="img/iconplaceholder.png" alt="placeholder for button">
+                </div>
+                <p class="item-name centered-element">Item Name</p>
+                <p class="price-number centered-element">$5.00</p>
             </div>
           </div>
       </section>
