@@ -18,6 +18,7 @@
 	background: white;
 	margin-right: 2em;
 	margin-bottom: 1em;
+	margin-left: 1.5em;
 	text-align: left;
 }
 
@@ -108,16 +109,6 @@
 
 
 
-@media (min-width: 30em) {
-	.grid-col-1of2 {
-		width: 47%;
-
-	}
-
-	.grid-col-3of5 {
-
-	}
-
 
 @media (min-width: 30em) {
 
@@ -128,5 +119,11 @@
 	.grid-col-3of4 {
 		width: 70%;
 	}
+
+	.grid-col-1of2 {
+		width: 47%;
+
+	}
+
 
 }
