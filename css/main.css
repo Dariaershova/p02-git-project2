@@ -36,6 +36,7 @@ section code {
 p {
   font-size: 0.9em;
   line-height: 1.4em;
+  margin-bottom: 2em;
 }
 
 h1{
@@ -51,10 +52,44 @@ h3{
   margin-bottom: 0.5em;
 }
 
+em{
+  font-size: 0.8em;
+  color: #666666;
+}
+
+a{
+  margin-bottom: 0.8em;
+}
+
+.filter-header{
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-right: 3em;
+  text-transform: uppercase;
+}
+
 .centered-element{
   text-align: center;
 }
 
+.item-name{
+  margin-top: 0.7em;
+  line-height: 0.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 1.1em;
+}
+
+.price-number{
+  line-height: 0.4em;
+  font-size: 0.8em;
+  color: rgb(127,42,121);
+}
+
+
+.product-image{
+  float: left;
+}
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -427,11 +462,12 @@ ol {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  margin-left: 2em;
 }
 
 /*product listing/////////*/
 
-/*.item-listing{
+.item-listing{
     width: 20%;
     border-radius: 5px;
     background: #f2f2f2;
