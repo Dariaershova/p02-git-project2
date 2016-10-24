@@ -554,7 +554,6 @@ ol {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  margin-left: 16.8em;
 }
 
 /*product listing/////////*/
@@ -668,6 +667,17 @@ ol {
   background-position: center;
 }
 
+.title-image {
+  width: 100%;
+  height: 20em;
+}
+
+.title-image-text {
+  position: absolute;
+  left: 45%;
+  bottom: 50%;
+
+}
 /*COLORS-----------------------
 purple rgb(127,42,121)
 
