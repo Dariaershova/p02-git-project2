@@ -2,6 +2,54 @@
 	box-sizing: border-box;
 }
 
+
+/*main class for setting flexboxes */
+.box {
+
+	display: -webkit-flex; /* For support in a series of Webkit browsers */
+	display: -ms-flex; /* For support in IE 10 */
+	display: flex; 
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap; 
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+}
+
+
+.centered-flex {
+
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+
+}
+
+.box-item-image {
+	/*
+		Given we are working with an image, in this case we have set a flex-basis value that is a pixel value to reflect the 'minimum' width of the image before the flexbox reflows and stacks the elements inside. Additionally, the use of a flex-grow value of 3 ensures that our image is 'heavier' (will take up more space) when available.
+	*/
+	-webkit-flex: 1 2 100px;
+	-ms-flex: 1 2 100px;
+	flex: 1 2 100px;
+}
+
+
+.box-item-text {
+	/* 
+		For the text, we want it to behave a bit differently, in this case setting an em value for its flex-basis. Using a 1 for the flex-grow value means it weighs less in comparison to our image, and will take less space when possible.
+	*/
+	-webkit-flex: 1 1 18em;
+	-ms-flex: 1 1 18em;
+	flex: 1 1 18em;
+
+	padding-left: 2em;
+}
+
 .two-column-box {
 
 	/* 
@@ -84,11 +132,7 @@
 
 }
 
-.priority1
-{
-	position: relative;
 
-}
 
 .priority2
 {
@@ -104,6 +148,7 @@
 {
 
 }
+
 
 
 @media (min-width: 35em)  {
