@@ -130,6 +130,8 @@ th{
 .product-image{
   float: left;
 }
+
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -149,8 +151,6 @@ th{
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-
-
 }
 
 /*orange underline appears*/
@@ -161,7 +161,6 @@ th{
 
 .filter-nav {
   padding-left: 0;
-
 }
 
 
@@ -176,8 +175,8 @@ th{
   font-weight: bold;
 }
 
-/*submit button*/
 
+/*submit button*/
 .button-submit {
   display: inline-block;
   border: 2px solid rgb(76, 73, 87);
@@ -217,13 +216,10 @@ th{
   opacity: 0.74;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-
-
 }
 
 .button-submit-alt:hover, .button-submit:focus {
   opacity: 1;
-
 }
 
 /*clickable icon*/
@@ -250,6 +246,7 @@ th{
   height: 4em;
   width: auto;
 }
+
 
 /*labels and inputs*/
 .form-label-field-basic {
@@ -288,7 +285,6 @@ textarea {
 }
 
 
-
 /*figure out autofill backround colour
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
@@ -305,17 +301,55 @@ a.category {
   text-decoration: none;
 }
 
+.relative-positioning
+{
+  position: relative;
+}
+
 .category-image {
-  background-image: url(../img/placeholder.jpg);
   opacity: 0.9;
-  width: auto;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
 .category-image:hover, .category-image:active {
   opacity: 1;
+  box-shadow: 0px 3px 5px #888888;
 }
+
+.category-main-title {
+  position: absolute;
+  top: 4em;
+  width: 20em;
+  height: 5em;
+}
+
+.category-title {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 1.4em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  padding-left: 5%;
+
+}
+
+.category-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  letter-spacing: 2px;
+  padding-left: 5%;
+}
+
+
+/*not using anymore
 
 .image-two-fifth-long {
   background-image: url(../img/placeholder.jpg);
@@ -362,52 +396,12 @@ a.category {
 .relative-position {
   position: relative;
 }
-
-
-.category-title {
-  font-family: "Open Sans", sans-serif;
-  text-align: left;
-  font-size: 1.4em;
-  color: black;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  margin-bottom: 0.2em;
-  position: absolute;
-  left: 5%;
-  top: 4em;
-
-}
-
-.category-subtitle {
-  font-family: "Open Sans", sans-serif;
-  padding-top: 0;
-  padding-left: 5%;
-  font-size: 0.7em;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: black;
-  letter-spacing: 2px;
-  position: absolute;
-  left: 1%;
-  top: 13em;
-}
-
-
-.category-image-final {
-  opacity: 0.9;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
+*/
 
 
 
-.category-image-final:hover, .category-image-final:active {
-  opacity: 1;
-  box-shadow: 0px 3px 5px #888888;
 
-}
+
 
 
 .category-title-2 {
@@ -430,6 +424,8 @@ a.category {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
+  padding-top: 0;
+  margin-top: 0;
 
   }
 
