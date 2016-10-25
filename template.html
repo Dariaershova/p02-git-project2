@@ -48,9 +48,9 @@
 
         <h3>Rendered element:</h3>
         <a class="button-nav" href="#">Default Button</a>
-
       </section>
 
+      <!--in-text links styling-->
       <section>
         <h2>In-text link</h2>
 
@@ -64,6 +64,7 @@
         Hello, I'm an <a class="in-text-link" href="#">in-text link</a> that links to nothing!
       </section>
 
+      <!--submit button styling-->
       <section>
         <h2>Submit/Reset Buttons</h2>
 
@@ -77,6 +78,7 @@
         <a class="button-submit" href="">Submit Button</a>
       </section>
 
+      <!--alternative submit button styling-->
       <section>
         <h2>Alternative Submit Button </h2>
 
@@ -91,6 +93,7 @@
       </section>
 
 
+      <!--icon button with a padding on the right-->
       <section>
         <h2>Icon button</h2>
 
@@ -104,7 +107,7 @@
         <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png"></a>
       </section>
 
-
+      <!--form fields styling-->
       <section>
         <h2>Text Input Fields</h2>
 
@@ -123,10 +126,9 @@
         <h3>Rendered element</h3>
           <label for="name" class="form-label-field-basic">Name</label>
           <input type="text" id="name" class="form-input-field-basic" placeholder="Name">
-
-
       </section>
 
+      <!--extended field -->
       <section>
         <h2>Text Input Field Extended</h2>
 
@@ -148,25 +150,27 @@
       </section>
 
 
+      <!--image link-->
       <section>
         <h2>Image Category Link</h2>
 
         <h3>CSS Selector</h3>
-        <p>.category-image-final, .category-title, .category-subtitle, .priority1</p>
+        <p>.category-image, .category-title, .category-subtitle, .relative-positioning</p>
 
         <h3>Sample code</h3>
-        <code>&lt;div class="priority1"&dt;&lt;a href="#"&gt;&lt;img class="category-image-final"&gt;&lt;h3 class="category-title"&gt;Category 1&lt;/h3&gt;&lt;h4 class="category-subtitle"&gt;subtitle&lt;/h4&gt;&lt;/a&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="priority1"&dt;&lt;a href="#"&gt;&lt;img class="category-image"&gt;&lt;h3 class="category-title"&gt;Category 1&lt;/h3&gt;&lt;h4 class="category-subtitle"&gt;subtitle&lt;/h4&gt;&lt;/a&gt;&lt;/div&gt;</code>
 
         <h3>Rendered element</h3>
-              <div class="priority1">
-                        <a href="#">
-                        <img class="category-image-final" src="img/400x400.png" alt="Image description">
-                        <h3 class="category-title">Category 1</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                        </a>
+              <div class="relative-positioning">
+                <a href="#">
+                  <img class="category-image" src="img/400x400.png" alt="Image description">
+                    <div class="category-main-title">
+                       <h3 class="category-title">Category 1</h3>
+                       <h4 class="category-subtitle">Subtitle</h4>
+                    </div>
+                </a>
               </div>
       </section>
-
 
 
     </section>
@@ -177,6 +181,7 @@
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
 
+    <!--headings styling-->
       <section>
         <h2>Headings</h2>
         <h3>CSS selectors:</h3>
@@ -191,11 +196,13 @@
           <h3> Heading 3</h3>
       </section>
 
+      <!--paragraph styling-->
       <section>
         <h2>Paragraphs</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at purus vitae felis malesuada semper. Nulla imperdiet sem ante, ut pretium enim sodales vel. In dui ipsum, tempus vel mauris et, consequat sodales dolor. Donec sit amet venenatis lorem, ac luctus mauris. Quisque feugiat elementum est, sit amet pharetra ex faucibus at. Cras nec congue turpis, vitae volutpat elit. Vestibulum semper, risus ac blandit pulvinar, orci mi pretium orci, id fermentum lorem metus placerat risus. In rutrum felis ante, quis porta ex pretium nec. Integer condimentum quam in neque consectetur blandit.</p>
       </section>
 
+      <!--bulleted lists styling-->
       <section>
         <h2>Bulleted Lists</h2>
         <h3>CSS selector:</h3>
@@ -217,6 +224,7 @@
 
       </section>
 
+      <!--numbered lists styling-->
       <section>
         <h2>Numbered Lists</h2>
         <h3>CSS selector:</h3>
@@ -235,7 +243,7 @@
             <li>Bat Guano</li>
           </ol>
       </section>
-
+      
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
@@ -477,6 +485,40 @@
           </div>
         </div> 
 
+      </section>
+
+
+      <section>
+        <h2>2-column flex box grid with images </h2>
+
+        <h3>CSS selector</h3>
+        <p></p>
+
+        <h3>Sample code</h3>
+        <code></code>        
+        
+        <h3>Rendered element</h3>
+
+
+      <div class="box centered-flex">
+        
+        <!-- 
+          Wrapping our image in a <div> so we can position it next to our text.
+        -->
+        <div class="box-item-image">
+            <img src="img/600x150.png" alt="Description of the image">
+        </div>
+
+        <!-- 
+          Wrapping our text in a <div> so we can position it next to our text.
+        -->
+        <div class="box-item-text">
+          <h3 class="news-title">New Event</h3> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
+            <p class= "news-subtitle">Date, place, time</p>
+        </div>
+
+      </div>
       </section>
 
 
