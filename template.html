@@ -13,6 +13,7 @@
     <link href="css/flexboxes.css" rel="stylesheet">
     <link href="css/temp_flexbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
 
   </head>
 
@@ -155,21 +156,23 @@
         <h2>Image Category Link</h2>
 
         <h3>CSS Selector</h3>
-        <p>.category-image, .category-title, .category-subtitle, .relative-positioning</p>
+        <p>.category-image, .category-title-box, .category-subtitle, .relative-positioning</p>
 
         <h3>Sample code</h3>
-        <code>&lt;div class="priority1"&dt;&lt;a href="#"&gt;&lt;img class="category-image"&gt;&lt;h3 class="category-title"&gt;Category 1&lt;/h3&gt;&lt;h4 class="category-subtitle"&gt;subtitle&lt;/h4&gt;&lt;/a&gt;&lt;/div&gt;</code>
+        <code>&lt;div class="relative-positioning"&dt;&lt;a href="#"&gt;&lt;img class="category-image"&gt;&lt;&lt;div class="category-title-box"&gt;&lt;h3 class="category-title"&gt;Category 1&lt;/h3&gt;&lt;h4 class="category-subtitle"&gt;subtitle&lt;/h4&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</code>
 
         <h3>Rendered element</h3>
               <div class="relative-positioning">
                 <a href="#">
                   <img class="category-image" src="img/400x400.png" alt="Image description">
-                    <div class="category-main-title">
+                    <div class="category-title-box">
                        <h3 class="category-title">Category 1</h3>
                        <h4 class="category-subtitle">Subtitle</h4>
                     </div>
                 </a>
               </div>
+
+
       </section>
 
 
@@ -243,15 +246,34 @@
             <li>Bat Guano</li>
           </ol>
       </section>
+
+      <!--news article-->
+      <section>
+        <h2>News Article</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.news-title, .news-subtitle</p>
+
+        <h3>Sample code:</h3>
+          <code></code>
+
+        <h3>Rendered element:</h3>
+        <article>
+         <h3 class="news-title">New Event</h3> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
+            <p class= "news-subtitle">Date, place, time</p>
+        </article>
+      </section>
+
       
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
 
-
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
+    <!--main navigation-->
       <section>
         <h2>Main Navigation</h2>
         <h3>CSS selector:</h3>
@@ -271,6 +293,7 @@
       </section>
 
 
+      <!--secondary icon navigation-->
       <section>
         <h2>Secondary Navigation</h2>
 
@@ -289,9 +312,6 @@
 
 
       <section>
-
-
-      </section>
         <h2>United Navigation</h2>
 
         <h3>CSS Selector</h3>
@@ -314,56 +334,60 @@
                 <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png"></a>
              </div>
             </nav>
-      <section>
+      </section>
 
+
+      <!--main category navigation-->
       <section>
         <h2>Main category navigation</h2>
-
         <h3>CSS Selector</h3>
         <p>.main-category-grid</p>
 
         <h3>Sample code</h3>
-        <code>&lt;div class="main-category-grid"&gt;&lt;div class="priority1"&dt;&lt;a href="#"&gt;&lt;img class="category-image-final"&gt;&lt;h3 class="category-title"&gt;Category 1&lt;/h3&gt;&lt;h4 class="category-subtitle"&gt;subtitle&lt;/h4&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class="priority1"&dt;&lt;a href="#"&gt;&lt;img class="category-image-final"&gt;&lt;h3 class="category-title"&gt;Category 2&lt;/h3&gt;&lt;h4 class="category-subtitle"&gt;subtitle&lt;/h4&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;</code>
+        <code></code>
 
         <h3>Rendered element</h3>
-        <div class="main-category-grid">
-                
-                <!-- 
-                    Wrapping our image in a <div> so we can position it next to our text.
-                -->
-                <div class="priority1">
-                        <a href="itemlisting.html">
-                        <img class="category-image-final" src="img/400x400.png" alt="A toy robot with a menacing expression">
-                        <h3 class="category-title">Category 1</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                        </a>
-                </div>
 
-                <!-- 
-                    Wrapping our text in a <div> so we can position it next to our text.
-                -->
-                <div class="priority1">
-                        <img class="category-image-final" src="img/200x400.png" alt="A toy robot with a menacing expression">
-                        <h3 class="category-title">Category 2</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                </div>
+      <div class="grid-row">
+      <div class="grid-col-1of2 relative-positioning">
+       <a href="#">
+        <img class="category-image" src="img/600x300.png" alt="Image description">
+                    <div class="category-title-box">
+                       <h3 class="category-title">Category 1</h3>
+                       <h4 class="category-subtitle">Subtitle</h4>
+                    </div>
+       </a>
+       </div>
 
 
-                <div class="priority1">
-                        <img class="category-image-final" src="img/200x400.png" alt="A toy robot with a menacing expression">
-                        <h3 class="category-title">Category 2</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                </div>
+      <div class="grid-col-1of2 relative-positioning">
+       <a href="#">
+        <img class="category-image" src="img/600x300.png" alt="Image description">
+                    <div class="category-title-box">
+                       <h3 class="category-title">Category 2</h3>
+                       <h4 class="category-subtitle">Subtitle</h4>
+                    </div>
+       </a>
+       </div>
+       </div>
 
+        <div class="relative-positioning">
+                <a href="#">
+                  <img class="category-image" src="img/1200x300.png" alt="Image description">
+                    <div class="category-title-box">
+                       <h3 class="category-title">New Collection</h3>
+                       <h4 class="category-subtitle">Subtitle</h4>
+                    </div>
+                </a>
+          </div>
 
-                <div class="priority1">
-                        <img class="category-image-final" src="img/200x400.png" alt="A toy robot with a menacing expression">
-                         <h3 class="category-title">Category 2</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                </div>
-        </div>
+        <img class="main-grid-image-1of3" src="img/400x300.png">
+        <img class="main-grid-image-1of3" src="img/400x300.png">
+        <img class="main-grid-image-1of3" src="img/400x300.png">
+
+         
+       </section>
       </section>
-
 
 
       <section>
