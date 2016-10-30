@@ -56,9 +56,11 @@ em{
   color: #666666;
 }
 
+/*
 a{
   margin-bottom: 0.8em;
 }
+*/
 
 th{
   font-size: 0.8em;
@@ -166,7 +168,6 @@ th{
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-
 }
 
 /*orange underline appears*/
@@ -177,7 +178,6 @@ th{
 
 .filter-nav {
   padding-left: 0;
-
 }
 
 .button-nav-add-to-cart{
@@ -194,8 +194,8 @@ th{
   font-weight: bold;
 }
 
-/*submit button*/
 
+/*submit button*/
 .button-submit {
   display: inline-block;
   border: 2px solid rgb(76, 73, 87);
@@ -235,13 +235,10 @@ th{
   opacity: 0.74;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-
-
 }
 
 .button-submit-alt:hover, .button-submit:focus {
   opacity: 1;
-
 }
 
 /*clickable icon*/
@@ -268,6 +265,7 @@ th{
   height: 4em;
   width: auto;
 }
+
 
 /*labels and inputs*/
 .form-label-field-basic {
@@ -348,6 +346,7 @@ textarea {
 .grid-col-3of4-product-view h3{
   margin-bottom:0;
 }
+
 /*figure out autofill backround colour
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
@@ -364,17 +363,55 @@ a.category {
   text-decoration: none;
 }
 
+.relative-positioning{
+  position: relative;
+}
+
 .category-image {
-  background-image: url(../img/placeholder.jpg);
   opacity: 0.9;
-  width: auto;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+
 }
 
 .category-image:hover, .category-image:active {
   opacity: 1;
+  box-shadow: 0px 3px 5px #888888;
 }
+
+.category-title-box {
+  position: absolute;
+  top: 4em;
+  width: 20em;
+  height: 5em;
+}
+
+.category-title {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 1.4em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  padding-left: 5%;
+
+}
+
+.category-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7em;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  letter-spacing: 2px;
+  padding-left: 5%;
+}
+
+
+/*not using anymore
 
 .image-two-fifth-long {
   background-image: url(../img/placeholder.jpg);
@@ -421,81 +458,63 @@ a.category {
 .relative-position {
   position: relative;
 }
+*/
 
 
-.category-title {
-  font-family: "Open Sans", sans-serif;
-  text-align: left;
-  font-size: 1.4em;
-  color: black;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  margin-bottom: 0.2em;
-  position: absolute;
-  left: 5%;
-  top: 4em;
 
+
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+li{
+  line-height: 1.5em;
 }
 
-.category-subtitle {
-  font-family: "Open Sans", sans-serif;
-  padding-top: 0;
-  padding-left: 5%;
-  font-size: 0.7em;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: black;
-  letter-spacing: 2px;
-  position: absolute;
-  left: 1%;
-  top: 13em;
+ul {
+  list-style: none; 
+  padding: 0;
 }
 
-
-.category-image-final {
-  opacity: 0.9;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+ul li { 
+  padding-left: 1.3em; 
 }
 
-
-
-.category-image-final:hover, .category-image-final:active {
-  opacity: 1;
-  box-shadow: 0px 3px 5px #888888;
-
+ul li:before {
+  content: "•"; 
+  padding-right: 0.7em;
+  color: #7F2A79; 
 }
 
-
-.category-title-2 {
-  font-family: "Helvetica Neue", sans-serif;
-  text-align: left;
-  position: absolute;
-  left: 0;
-  top: 100px;
-
+ol {
+  padding-left: 2.5em; 
 }
 
+.text-section{
+  width: 65%;
+}
 
-.news-title
-  {
+/*newa article*/
 
-  font-family: "Open Sans", sans-serif;
+.news-title {
+  font-family: "Rancho", cursive;
   text-align: left;
   font-size: 1.3em;
   color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-
+  padding-top: 0;
+  margin-bottom: 0;
+  margin-top: 0;
   }
-
 
 .news-subtitle {
       font-family: "Open Sans", sans-serif;
-      padding-top: 0.3em;
+      padding-top: 0.2em;
       font-size: 0.7em;
       letter-spacing: 2px;
 }
@@ -511,7 +530,6 @@ a.category {
   box-shadow: 0px 3px 5px #888888;
 
 }
-
 
 /* 
   TEXT ELEMENTS -------------------
@@ -611,9 +629,55 @@ ol {
   align-items: center;
 }
 
+
+/*main category grid*/
+.main-grid-box {
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+
+.main-grid-image-1of2-1 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1em;
+  float: left;
+}
+
+.main-grid-image-1of2-2 {
+  width:100%;
+  height: 100%;
+  margin-bottom: 1em;
+  float: right;
+}
+
+.main-grid-image-1of1 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1em;
+}
+
+.main-grid-image-1of3 {
+  width: 33%;
+  height: 33%;
+  margin-left-bottom: 1em;
+}
+
+
+
+
 /*product listing/////////*/
+.item-listing{
+    width: 20%;
+    border-radius: 5px;
+    background: #f2f2f2;
+}
 
-
+.item-listing img{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%
+}
 
 /*.item-listing p{
   margin-bottom: 0;
@@ -653,6 +717,7 @@ ol {
 }*/
 
 
+/*form classes*/
 .form-contact {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -670,13 +735,13 @@ ol {
 
 }
 
-
 .form-contact-button {
   max-width: 10em;
   margin-top: 2em;
 }
 
 
+/*full bleed background image */
 .full-bleed-image-container {
   position: relative;
   background-image: url(../img/succulent-lineup-darkened.png);
