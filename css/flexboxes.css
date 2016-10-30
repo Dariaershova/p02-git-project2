@@ -80,7 +80,7 @@
 }
 
 .two-column-box-text {
-	padding: 1em 1.5em 1em 2em;
+	padding: 0 1.5em 1em 2em;
 	-webkit-flex: 1 1 23em;
 	-ms-flex: 1 1 23em;
 	flex: 1 1 23em;
