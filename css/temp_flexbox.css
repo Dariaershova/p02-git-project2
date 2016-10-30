@@ -46,14 +46,14 @@
 }
 
 .item-listing-box{
-	padding-left: 1.5em;
 	margin-top: 2em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: space-around;
-	justify-content: flex-start;
+	align-items: center;
+  	justify-content: center;
 }
+
 
 .item-listing-unit{
 	position: relative;
@@ -62,7 +62,8 @@
 }
 
 .item-listing-unit img:hover, .item-listing-unit img:focus{
-	box-shadow: 0px 5px 5px #888888;
+	/*box-shadow: 0px 5px 5px #888888;*/
+	opacity: 0.75;
 }
 
 .item-listing-icon-menu{

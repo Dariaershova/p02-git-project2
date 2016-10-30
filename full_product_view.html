@@ -16,7 +16,7 @@
 
 <body>
 
-	<nav class="united-nav">
+	<!--<nav class="united-nav">
     <div class = "main-nav"> 
         <a href="index.html" class="button-nav">Home</a>
         <a href="itemlisting.html" class="button-nav">Shop all</a>
@@ -28,8 +28,9 @@
         <a href="checkout.html"><img class="icon-button icon-resize" src="img/placeholder-icon.png"></a>
         <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png"></a>
      </div>
-    </nav>
+    </nav>!-->
 
+    <section id="#listing-full-view">
     <div class="grid-row">
         <div class="grid-col-1of4">
         <h1 class="filter-header">Categories</h1>
@@ -43,26 +44,51 @@
             <a href="#" class="button-nav filter-nav">Category 7</a>
         </nav>
         </div>
-        <div class="grid-col-3of4-product-view">
-            <figure class="product-image">
-            <img src="img/itemplaceholder.png" alt="placeholder">
-            </figure>
 
-            <h3>Item Name</h3>
-            <em>Latin Name</em>
-            <p>Item description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar gravida massa ut vulputate. Donec metus tortor, elementum nec accumsan ut, placerat eget mi. Quisque tincidunt, ante ut interdum dignissim, dolor nisl gravida enim, a varius tortor nisl vel magna. Proin a malesuada arcu, in dictum neque. </p>
-            <a class="button-submit" href="cart.html">Add to Cart</a>
-        </div>
-        <div class="grid-col-3of4-suggested-products">
-        <p>People who looked at this also looked at:</p>
-        <img src="https://placeholdit.imgix.net/~text?txtsize=11&txt=120%C3%97120&w=120&h=120">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=11&txt=120%C3%97120&w=120&h=120">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=11&txt=120%C3%97120&w=120&h=120">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=11&txt=120%C3%97120&w=120&h=120">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=11&txt=120%C3%97120&w=120&h=120">
-        </div>
-    </div>
+        <div class="grid-col-3of4">
+            <section id="product-listing">
+                <figure class="product-image">
+                    <img src="img/succulent1.png" alt="small, green succulent plant with red tips in a light blue flower pot">
+                </figure>
 
+                <h3>Red-Beaked Succulent</h3>
+                <p class="latin-name"><em>Echeveria amoena</em></p>
+                <p class="price-number medium-text">$5.00</p>
+                &#9733; &#9733; &#9733; &#9733; &#9733; <a class="in-text-link margin-left small-text" href="#reviews">2 reviews</a>
+                <p class="narrower-paragraph">The <em>Echeveria amoena</em> or Red-Beaked Succulent, is a pale green succulent of the Crassulaceae family. Native to Mexico and Central America, these succulents need a fair amount of sunshine, but require little water. Water these plants from the roots to avoid over-watering. If the tips begin to yellow, water the plant more frequently. The leaves may also spread out wide if there is not enough sunlight.</p>
+                <form class="form-input-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" min="1" max="5" placeholder="1">
+                </form>
+                <a class="button-submit button-nav-add-to-cart" href="cart.html">Add to Cart</a>
+            </section>
+
+            <section id="suggested-products">
+                <div class="suggested-products">
+                    <p>People who looked at this also looked at:</p>
+                    <img src="img/thumbnail1.png" alt="thumbnail for related product: small green succulent with red tips in a white and terracotta coloured flower pot">
+                    <img src="img/thumbnail2.png" alt="thumbnail for related product: green succulent with medium-length stalks in a white and aqua-coloured flower pot">
+                    <img src="img/thumbnail3.png" alt="thumbnail for related product: green succulent with plump leaves in a round, peach and silver flower pot"> 
+                    <img src="img/thumbnail4.png" alt="thumbnail for related product: green succulent with medium-sized flat leaves in a pink and gold flower pot"> 
+                    <img src="img/thumbnail5.png" alt="thumbnail for related product: large-leafed green succulent in yellow-lipped, white with black polka-dotted flower pot">
+                </div>
+            </section>
+            <section id="reviews">
+                <h2>Reviews</h2>
+                <div class="review">
+                    <h3>Super easy to take care of!</h3>
+                    <p class="latin-name"><em>Alexander Mudd, VA, USA</em></p>
+                    <p>Item review. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar gravida massa ut vulputate. Donec metus tortor, elementum nec accumsan ut, placerat eget mi. Quisque tincidunt, ante ut interdum dignissim, dolor nisl gravida enim, a varius tortor nisl vel magna. Proin a malesuada arcu, in dictum neque.</p>
+                </div>
+                <div class="review">
+                    <h3>Adorable, will definitely buy more</h3>
+                    <p class="latin-name"><em>Becca Green, BC, Canada</em></p>
+                    <p>Item review. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar gravida massa ut vulputate. Donec metus tortor, elementum nec accumsan ut, placerat eget mi. Quisque tincidunt, ante ut interdum dignissim, dolor nisl gravida enim, a varius tortor nisl vel magna. Proin a malesuada arcu, in dictum neque.</p>
+                </div>
+                <a class="button-submit" href="#">Leave a Review</a>
+            </section>
+        </div>
+    </section>
 
 </body>
 

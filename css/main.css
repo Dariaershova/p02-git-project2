@@ -7,7 +7,6 @@ body {
   padding-left: 2rem;
   padding-right: 2rem;
 
-
 }
 
 
@@ -45,8 +44,8 @@ section code {
 p {
   font-size: 0.9em;
   line-height: 1.5em;
-  margin-bottom: 2em;
   text-align: left;
+  margin-bottom: 1.6em;
 }
 
 
@@ -60,7 +59,7 @@ h2{
 
 h3{
   font-size: 1.2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
 }
 
 em{
@@ -189,6 +188,13 @@ td.data {
   text-align: left;
 }
 
+.filter-header{
+  font-size: 1.6em;
+  margin-top: 1em;
+  margin-right: 3em;
+ /* text-transform: uppercase;*/
+}
+
 .table-button-right {
   padding-top:0;
   padding-bottom: 1em;
@@ -240,6 +246,32 @@ td.data {
   padding-bottom: 2em;
 }
 
+.item-name{
+  margin-top: 0.7em;
+  line-height: 0.5em;
+  font-size: 1em;
+  margin-bottom: 1.1em;
+}
+
+.price-number{
+  line-height: 0.4em;
+  font-size: 0.9em;
+  /*color: #1aa75c;*/
+  color: #b065d2;
+}
+
+.latin-name{
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+
+#product-listing{
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+}
 
 
 .filter-header{
@@ -251,8 +283,14 @@ td.data {
 
 .product-image{
   float: left;
+  margin-left: 0;
+  margin-right: 2em;
+  margin-bottom: 0;
 }
 
+.margin-left{
+  margin-left: 0.5em;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -310,6 +348,10 @@ td.data {
   border-radius: 3px;
 }
 
+
+.button-nav-add-to-cart{
+  margin-top: 1.1em;
+}
 
 /*in-text link*/
 .in-text-link {
@@ -466,6 +508,49 @@ textarea {
     border: 1px solid rgb(76, 73, 87);
 }
 
+.form-input-quantity{
+  margin: 0;
+  float: left;
+  margin-right: 2em;
+  padding: 0;
+}
+
+.form-input-quantity input{
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-size: 0.9em;
+  margin-top: 1em;
+
+}
+
+.form-input-quantity label{
+  font-size: 0.9em;
+  margin-right: 0.25em;
+}
+
+.border-top{
+  border-top: solid 1px black;
+}
+
+.review{
+  border-bottom: dotted 1px black;
+}
+
+#reviews h2{
+  margin-bottom: 1em;
+}
+
+#reviews h3{
+  color: rgb(127,42,121);
+}
+
+.grid-col-3of4-product-view a{
+  font-size: 0.8em;
+}
+
+.grid-col-3of4-product-view h3{
+  margin-bottom:0;
+}
 
 
 /*figure out autofill backround colour
@@ -484,8 +569,7 @@ a.category {
   text-decoration: none;
 }
 
-.relative-positioning
-{
+.relative-positioning{
   position: relative;
 }
 
@@ -541,7 +625,6 @@ a.category {
     color:  rgb(127,42,121);
     margin-top: 4em;
     margin-left: 5%;
-;
 
 
 }
@@ -721,6 +804,36 @@ ol {
 
 }
 
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+li{
+  line-height: 1.5em;
+}
+
+ul {
+  list-style: none; 
+  padding: 0;
+}
+
+ul li { 
+  padding-left: 1.3em; 
+}
+
+ul li:before {
+  content: "•"; 
+  padding-right: 0.7em;
+  color: #7F2A79; 
+}
+
+ol {
+  padding-left: 2.5em; 
+}
+
+.text-section{
+  width: 65%;
+}
 
 /* 
   COMBINED ELEMENTS -------------------
@@ -828,40 +941,12 @@ ol {
     margin-right: 5%
 }
 
-.item-listing h4{
-    margin-top: 0;
-    margin-bottom: 0.3em;
-}
-
-.item-listing p{
+/*.item-listing p{
   margin-bottom: 0;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   width: 100%;
 }
-
-.item-info-top{
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 0.5em;
-}
-
-.item-info-top p{
-  color: #FFC033;
-  font-size: 0.9em;
-}
-
-.item-info-top .star{
-  padding-bottom: 4%;
-  padding-top: 1%;
-  color: #CCCCCB;
-  font-size: 1.5em;
-}
-
-.item-info-bottom{
-  text-align: center;
-  padding: 1.5em;
-}*/
 
 .item-listing{
     width: 20%;
@@ -878,7 +963,6 @@ ol {
 
 .item-info-bottom{
   text-align: center;
-  /*padding: 1.5em;*/
 }
 
 .item-info-bottom h4{
@@ -892,7 +976,7 @@ ol {
   margin-bottom: 0.5em;
   padding-bottom: 1em;
   width: 100%;
-}
+}*/
 
 
 /*form classes*/
@@ -924,7 +1008,7 @@ ol {
 /*full bleed background image */
 .full-bleed-image-container {
   position: relative;
-  background-image: url(../img/placeholder.jpg);
+  background-image: url(../img/succulent-lineup-darkened.png);
   background-position: center;
 }
 
@@ -935,6 +1019,7 @@ ol {
 }
 
 .title-image {
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -942,7 +1027,10 @@ ol {
 .title-image-text {
   position: absolute;
   text-align: center;
-
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  position: relative;
 }
 
 
@@ -958,3 +1046,19 @@ oramge rgb(255, 192, 51)
 */
 
 
+.right {
+  float: right;
+  font-size: 1.5em;
+}
+
+.left{
+  float: left;
+}
+
+.medium-text{
+  font-size: 1em;
+}
+
+.small-text{
+  font-size: 0.9em;
+}
