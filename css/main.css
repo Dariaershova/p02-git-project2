@@ -34,7 +34,7 @@ section code {
 p {
   font-size: 0.9em;
   line-height: 1.5em;
-  margin-bottom: 1.6em;
+  margin-bottom: 1em;
 }
 
 
@@ -49,11 +49,12 @@ h2{
 h3{
   font-size: 1.2em;
   margin-bottom: 0em;
+  padding-bottom: 0em;
 }
 
 em{
-  font-size: 0.8em;
-  color: #666666;
+  font-size: 1em;
+  color: black;
 }
 
 /*
@@ -85,7 +86,7 @@ th{
   font-size: 1.6em;
   margin-top: 1em;
   margin-right: 3em;
- /* text-transform: uppercase;*/
+  padding-bottom: 0em;
 }
 
 .cart-header{
@@ -121,13 +122,15 @@ th{
 .price-number{
   line-height: 0.4em;
   font-size: 0.9em;
-  /*color: #1aa75c;*/
+  margin-bottom: 1em;
   color: #b065d2;
 }
 
 .latin-name{
   margin: 0;
   margin-bottom: 0.5em;
+  font-size: 0.85em;
+  color: #666666;
 }
 
 
@@ -176,10 +179,29 @@ th{
   border-radius: 3px;
 }
 
-.filter-nav {
-  padding-left: 0;
+.button-nav-selected{
+  color: black;
+  font-weight: bold;
+
+  border-bottom: 3px solid rgb(255, 192, 51);
+  border-radius: 3px;
 }
 
+.filter-nav {
+  padding-left: 0;
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+}
+
+.filter-nav-first{
+  padding-left: 0;
+  margin-top: 0.5em;
+  padding-top: 0em;
+}
+
+.filter-nav li{
+    margin-top: 0.5em;
+}
 .button-nav-add-to-cart{
   margin-top: 1.1em;
 }
@@ -339,6 +361,10 @@ textarea {
   color: rgb(127,42,121);
 }
 
+#reviews p{
+  margin-bottom: 2em;
+}
+
 .grid-col-3of4-product-view a{
   font-size: 0.8em;
 }
@@ -472,22 +498,31 @@ a.category {
 
 li{
   line-height: 1.5em;
+  margin-bottom: 1em;
+  line-height: 1em;
 }
 
 ul {
   list-style: none; 
   padding: 0;
+  margin-top: 0.5em;
 }
 
 ul li { 
   padding-left: 1.3em; 
 }
 
-ul li:before {
+.selected{
+  font-weight: bold;
+  color: black;
+}
+
+/*
+.bullets li:before {
   content: "•"; 
   padding-right: 0.7em;
   color: #7F2A79; 
-}
+}*/
 
 ol {
   padding-left: 2.5em; 
@@ -535,7 +570,7 @@ ol {
   TEXT ELEMENTS -------------------
 */
 
-li{
+/*li{
   line-height: 1.5em;
 }
 
@@ -552,7 +587,7 @@ ul li:before {
   content: "•"; 
   padding-right: 0.7em;
   color: #7F2A79; 
-}
+}*/
 
 ol {
   padding-left: 2.5em; 
@@ -786,4 +821,36 @@ oramge rgb(255, 192, 51)
 
 .small-text{
   font-size: 0.9em;
+}
+
+@media only screen and (max-width: 50em) {
+  .filter-nav {
+  float: left;
+  margin-bottom: 0;
+  }
+}
+
+  .filter-nav-first{
+  float: left;
+  margin-bottom: 0;
+  margin-left: 0;
+  }
+
+  li{
+    float: left;
+    margin-bottom: 1em;
+    line-height: 1em;
+  }
+
+  ul {
+    float: left;
+    list-style: none; 
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+
+  ul li { 
+    padding-left: 0.5em; 
+  }
 }
