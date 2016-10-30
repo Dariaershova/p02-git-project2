@@ -1,80 +1,133 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <title>LeafMe</title>
 
-	<title>LeafMe</title>
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/grids.css" rel="stylesheet">
+        <link href="css/flexboxes.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    </head>
 
-	<link href="css/main.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/grids.css" rel="stylesheet">
-    <link href="css/temp_flexbox.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
+    <body>
 
-<body>
-
-	<nav class="united-nav">
-    <div class = "main-nav"> 
-        <a href="index.html" class="button-nav">Home</a>
-        <a href="itemlisting.html" class="button-nav">Shop all</a>
-        <a href="#news_and_events" class="button-nav">News and Events</a>
-        <a href="#about_company" class="button-nav">About company</a>
-        <a href="#contacts" class="button-nav">Contacts</a>
-     </div>
-     <div class="secondary-nav">
-        <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png"></a>
-        <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png"></a>
-     </div>
+    <nav>
+         <div class="secondary-nav full-bleed-bar">
+            <a href="index.html"><img class="icon-button icon-resize" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
+            <a href="cart.html"><img class="icon-button icon-resize" src="img/icons/cart.png" alt="cart icon, shopping bag icon"></a>
+            <a href="checkout.html"><img class="icon-button icon-resize" src="img/icons/profile.png" alt="profile icon"></a>
+         </div>
     </nav>
 
-    <div class="grid-row">
-        <div class="grid-col-2-3-cart">
-        <h1 class="cart-header">Cart</h1>
-        <img src="https://placeholdit.imgix.net/~text?txtsize=14&txt=150%C3%97200&w=150&h=200">
-        <h2 class="cart-sub-header">Item Name</h2>
-            
-            <table class="reduced-table">
-            <tr>
-                <th>Quantity</th>
-                <th>Item Price</th> 
-                <th>Total Price</th> 
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>$5.00</td> 
-                <td>$5.00</td> 
-            </tr>
-            </table>
-            <a class="button-submit" href="#">Modify</a>
-            <a class="button-submit" href="#">Remove</a>
-        </div>
-        <div class="grid-col-1-3-checkout">
-            <h2 class="summary-header">Order Summary</h2>
+    <nav>
+        <div class = "main-nav"> 
+            <a href="index.html" class="button-nav">Home</a>
+            <a href="itemlisting.html" class="button-nav">Shop all</a>
+            <a href="#news_and_events" class="button-nav">News and Events</a>
+            <a href="#about_company" class="button-nav">About company</a>
+            <a href="#contacts" class="button-nav">Contacts</a>
+         </div>
+    </nav>
 
-            <table class="full-table">
+    <section id="#section-title" class="section-image">
+            <div id="#" class="section-title-box">
+            <img class="" src="img/1200x300.png" alt="Image description">
+            <h3 class="section-title">The lovelies you chose</h3>
+            </div>
+    </section>
+
+    <section id="#checkout" class="main-page">
+    <div class="grid-row">
+    <div class="grid-col-cart">
+    <table class="cart-header">
+        
+        <nav class = "checkout-nav"> 
+                          <a href="cart.html" class="button-nav checkout-nav-button active">Shopping Bag /</a>
+                          <a href="shipping.html" class="button-nav checkout-nav-button">Shipping /</a>
+                          <a href="payment.html" class="button-nav checkout-nav-button">Payment /</a>
+                          <a href="order-review.html" class="button-nav checkout-nav-button">Order review /</a>
+                          <a href="receipt.html" class="button-nav checkout-nav-button">Receipt</a>
+        </nav>
+
+
+          <tr>
+            <th>Image</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Item Price</th>
+            <th>Total Price</th>
+          </tr>
+
+          <tr>
+            <td><img class="cart-image" src="img/150x200.png" alt="Image description">
+            </td>
+            <td>Name of the plant</td>
+            <td>Number of items</td>
+            <td>$xx.xx</td>
+            <td class="cart-price">$xx.xx</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
+            <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
+          </tr>
+
+          <tr>
+            <td><img class="cart-image" src="img/150x200.png" alt="Image description"></td>
+            <td>Name of the plant</td>
+            <td>Number of items</td>
+            <td>$xx.xx</td>
+            <td class="cart-price">$xx.xx</td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
+            <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
+          </tr>
+
+        </table>
+        </div>
+
+        <div class="grid-col-checkout">
+        <table class="checkout-header">
+        <h3 class="checkout-title">Order Summary</h3>
             <tr>
-                <td>Item Name</td>
-                <td>$5.00</td> 
+                <td class="checkout-line">Subtotal</td>
+                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
             </tr>
             <tr>
-                <td>Shipping</td>
-                <td>$2.00</td> 
+                <td class="checkout-line">Shipping</td>
+                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
             </tr>
             <tr>
-                <td>Tax</td>
-                <td>$0.00</td> 
+                <td class="checkout-line">Estimated Tax</td>
+                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
             </tr>
-            <tr class="table-total">
-                <td class="table-total">Total</td>
-                <td class="table-total">$0.00</td> 
+            <tr>
+                <td class="checkout-price">Total</td>
+                <td class="checkout-price right-alignment">XXXXXXXXX</td> 
             </tr>
-            </table>
-            <a href="checkout.html" class="button-submit">Checkout</a>
+                
+               <td>
+               </td>
+        </table>
+            
+            <a class="button-checkout" href="shipping.html">checkout</a>
+
         </div>
     </div>
+ 
+    </section>
 
 
 </body>
