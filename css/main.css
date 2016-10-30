@@ -9,6 +9,11 @@ body {
 
 }
 
+
+footer {
+  padding: 1em;
+}
+
 section:not([id]) {
   margin: 1em 0;
   padding: 0.5em 0;
@@ -16,9 +21,14 @@ section:not([id]) {
 }
 
 section.main-page {
-  padding-top: 5em;
+  padding-top: 1em;
+  padding-bottom: 4em;
   } 
 
+section.section-image {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  } 
 
 .style-guide{
   text-align: center;
@@ -34,7 +44,8 @@ section code {
 p {
   font-size: 0.9em;
   line-height: 1.5em;
-  margin-bottom: 1em;
+  text-align: left;
+  margin-bottom: 1.6em;
 }
 
 
@@ -57,29 +68,125 @@ em{
   color: black;
 }
 
+.white-text {
+  color: white;
+}
 /*
 a{
   margin-bottom: 0.8em;
 }
 */
 
-th{
-  font-size: 0.8em;
+.centered-element{
+  text-align: center;
+}
+
+
+/*table properties*/
+table, td, th {
+  border-bottom: 0.5px dashed grey;
+
+}
+
+table {
+    border-collapse: collapse;
+    border-right: 0.5px solid grey; 
+
+}
+
+th {
+  font-size: 0.7em;
+  color: grey;
+  text-align: left;
+  letter-spacing: 1px;
+  padding: 1em;
+}
+
+th.action-button-left {
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  font-size: 1em;
+  text-align: left;
+  width: 4em;
+}
+
+th.action-button-right {
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  font-size: 1em;
+  text-align: right;
+  width: 5em;
+}
+
+
+td {
+  font-size: 1em;
+  padding: 0.6em;
+  vertical-align: top;
+  text-align: left;
+
 }
 
 .full-table{
-  width: 100%;
+  width: 80%;
   margin-bottom: 3em;
 }
+
+
+.contact-table {
+  padding-top: 2em;
+  border-collapse: collapse;
+  border: none;
+}
+
+td.title {
+  border: none;
+  padding-bottom: 1.5em;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+td.data {
+  border: none;
+  padding-bottom: 1.5em;
+  font-size: 0.9em;
+
+}
+
+
+.contact-title {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 1.2em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding-left: 0.4em;
+  padding-bottom: 2em;
+}
+
 
 .reduced-table{
   width: 70%;
   margin-bottom: 3em;
 }
 
-.table-total{
-  padding-top: 1em;
+/*cart table*/
+.cart-header {
+  width: 100%;
+}
+
+
+.cart-price {
+  font-size: 1em;
   font-weight: bold;
+}
+
+.table-button-left {
+  padding-top:0;
+  padding-bottom: 1em;
+  text-align: left;
 }
 
 .filter-header{
@@ -89,27 +196,55 @@ th{
   padding-bottom: 0em;
 }
 
-.cart-header{
-  font-size: 1.8em;
-  margin-right: 3em;
+.table-button-right {
+  padding-top:0;
+  padding-bottom: 1em;
+  text-align: right;
+}
+
+/*checkout table*/
+.checkout-header {
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  border-right: 0.5px solid transparent; 
+
+}
+
+.checkout-title {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  font-size: 1.2em;
+  color: black;
   text-transform: uppercase;
-  border-bottom: solid 1px darkgrey;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding-left: 0.4em;
+  padding-bottom: 1em;
 }
 
-.cart-sub-header{
-  font-size: 1em;
-  padding-left: 2em;
+
+.checkout-line {
+  font-size: 0.7em;
+  color: grey;
+  text-align: left;
+  letter-spacing: 1px;
+  border-bottom: 1px solid transparent;
+  border-right: 0.5px solid transparent;
 }
 
-.summary-header{
-  font-size: 1em;
-  margin-top: 2.3em;
-  margin-right: 3em;
-  border-bottom: solid 1px darkgrey;
+.right-alignment {
+  float: right;
 }
 
-.centered-element{
-  text-align: center;
+
+.checkout-price {
+  font-size: 0.7em;
+  color: black;
+  text-align: left;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2em;
 }
 
 .item-name{
@@ -123,7 +258,7 @@ th{
   line-height: 0.4em;
   font-size: 0.9em;
   margin-bottom: 1em;
-  color: #b065d2;
+  color: rgb(127,42,121);
 }
 
 .latin-name{
@@ -165,6 +300,7 @@ th{
   color: rgb(76, 73, 87);
   padding: 0 0.5em 0 0.5em;
   margin-right: 1em;
+  margin-top: 3em;
   border-bottom: 3px solid white;
   border-radius: 3px;
   text-decoration: none;
@@ -180,6 +316,7 @@ th{
 }
 
 .button-nav-selected{
+  padding-top: 0em;
   color: black;
   font-weight: bold;
 
@@ -193,18 +330,54 @@ th{
   margin-bottom: 0.8em;
 }
 
+
 .filter-nav-first{
   padding-left: 0;
-  margin-top: 0.5em;
+  margin-top: 0.3em;
   padding-top: 0em;
 }
 
-.filter-nav li{
-    margin-top: 0.5em;
+.filter-nav .button-nav{
+  margin-top: 0.8em;
 }
+
+.filter-nav ul{
+  padding-top: 0;
+  margin-bottom: 0.3em;
+}
+
+.filter-nav li{
+  padding-top:0;
+  margin-bottom:0.3em;
+}
+
+/*edit button*/
+.edit-button {
+  color: grey;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+}
+
+.checkout-nav-button {
+  font-size: 1.2em;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  margin-top: 1em;
+}
+
+.active {
+  color: black;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(127,42,121);
+  border-radius: 3px;
+}
+
+
 .button-nav-add-to-cart{
   margin-top: 1.1em;
 }
+
 /*in-text link*/
 .in-text-link {
   color: #000;
@@ -237,41 +410,63 @@ th{
 /*changing the border radius on hover*/
 .button-submit:hover, .button-submit:focus {
   border-radius: 15px;
+}
 
+/*checkout button*/
+.button-checkout{
+  display: block;
+  border: 2px solid rgb(127,42,121);
+  background-color: rgb(127,42,121);
+  color: white;
+  padding: 0.25rem 1em;
+  max-width: 100%;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+
+}
+
+/*changing the border radius on hover*/
+.button-checkout:hover, .button-checkout:focus {
+  border-radius: 15px;
 }
 
 /*alternative submit button*/
 .button-submit-alt {
   display: inline-block;
   font-weight: normal;
-  border: 2px solid rgb(76, 73, 87);
-  background-color: rgb(76, 73, 87);
+  border: 2px solid white;
+  background-color: rgb(127,42,121);
   color: white;
-  border-radius: 15px;
   padding: 0.25rem 1em;
   font-size: 0.8em;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 1px;
-  opacity: 0.74;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
 .button-submit-alt:hover, .button-submit:focus {
-  opacity: 1;
+  border-radius: 15px;
+
 }
 
 /*clickable icon*/
 .icon-button {
   height: auto;
   width: auto;
-  background-color: rgb(255, 192, 51);
-  padding-right: 2em;
-  padding-top: .3em;
-  padding-left: .3em;
-  padding-bottom: .3em;
+  background-color: rgb(127,42,121);
+  padding-right: 0.2em;
+  padding-top: .2em;
+  padding-left: .2em;
+  padding-bottom: .2em;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -284,7 +479,7 @@ th{
 }
 
 .icon-resize {
-  height: 4em;
+  height: 2em;
   width: auto;
 }
 
@@ -296,25 +491,38 @@ th{
   position: absolute;
 }
 
-
 .form-input-field-basic {
   border-radius: 20px;
   border: 1px solid rgb(76, 73, 87);
   font-size: 0.9em;
   padding: 0.3em 0 0.3em 0.7em;
   margin-top: 1em;
-  width: 30em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+
+.form-label-field-full {
+  font-size: 0.4em;
+  padding-right: .2em;
+  padding-bottom: .2em;
+}
+
+.form-input-field-full {
+  border: 1px solid rgb(76, 73, 87);
+  font-size: 0.9em;
+  padding: 0.3em 0 0.3em 0.7em;
+  width: 100%;
+  margin-bottom: 1em;
 }
 
 
 .form-input-field-extended {
-  border-radius: 15px;
   border: 1px solid rgb(76, 73, 87);
   font-size: 0.9em;
   margin-bottom: 1em;
-  margin-top: 1em;
   padding: 0.3em 0 0.3em 0.5em;
-  width: 30em;
+  width: 100%;
   height: 7em;
   text-align: left;
   vertical-align: text-top;
@@ -373,6 +581,7 @@ textarea {
   margin-bottom:0;
 }
 
+
 /*figure out autofill backround colour
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
@@ -394,6 +603,7 @@ a.category {
 }
 
 .category-image {
+  /*width: 10%;*/
   opacity: 0.9;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -403,13 +613,6 @@ a.category {
 .category-image:hover, .category-image:active {
   opacity: 1;
   box-shadow: 0px 3px 5px #888888;
-}
-
-.category-title-box {
-  position: absolute;
-  top: 4em;
-  width: 20em;
-  height: 5em;
 }
 
 .category-title {
@@ -422,8 +625,17 @@ a.category {
   font-weight: bold;
   margin-bottom: 0.2em;
   padding-left: 5%;
-
+  text-decoration: none;
 }
+
+.category-title-box {
+  position: absolute;
+  top: 4em;
+  width: 20em;
+  height: 15em;
+  text-decoration: none;
+}
+
 
 .category-subtitle {
   font-family: "Open Sans", sans-serif;
@@ -435,6 +647,41 @@ a.category {
   letter-spacing: 2px;
   padding-left: 5%;
 }
+
+.shop-button {
+    border: 2px solid rgb(127,42,121);
+    background-color: transparent;
+    color:  rgb(127,42,121);
+    margin-top: 4em;
+    margin-left: 5%;
+
+
+}
+
+/*section image tags*/
+
+.section-title-box {
+  position: relative;
+  width: auto;
+}
+
+.section-title {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 1.4em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 0;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+
+
+
 
 
 /*not using anymore
@@ -534,15 +781,44 @@ ol {
 
 /*newa article*/
 
+/*news grid*/
+.cropped-container {
+  margin-left: 10%;
+  margin-right: 8%;
+}
+
+.news-article {
+  width: 33%;
+}
+
+.news-date {
+  font-size: 2em;
+  margin-bottom: 0;
+  text-align: center;
+  }
+
+.news-month {
+  text-align: center;
+
+}
+
+.news-date-container {
+  background-color: white;
+  opacity: 0.5;
+  width: 6em;
+  height: 8em;
+}
+
+
 .news-title {
-  font-family: "Rancho", cursive;
+  font-family: "Open Sans", sans-serif;
   text-align: left;
   font-size: 1.3em;
   color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  padding-top: 0;
+  padding-top: 0.5em;
   margin-bottom: 0;
   margin-top: 0;
   }
@@ -597,7 +873,6 @@ ol {
   width: 65%;
 }
 
-
 /* 
   COMBINED ELEMENTS -------------------
 */
@@ -617,9 +892,36 @@ ol {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+
+  padding-top: 2em;
+
+}
+
+.checkout-nav {
+  display: -webkit-flex; /* For support in a series of Webkit browsers */
+  display: -ms-flex; /* For support in IE 10 */
+  display: flex;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
   -webkit-justify-content: flex-start;
   -ms-justify-content: flex-start;
   justify-content: flex-start;
+
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+
+  padding-bottom: 2em;
 
 }
 
@@ -639,7 +941,6 @@ ol {
   -webkit-justify-content: flex-end;
   -ms-justify-content: flex-end;
   justify-content: flex-end;
-
 }
 
 .united-nav {
@@ -663,42 +964,6 @@ ol {
   -ms-align-items: center;
   align-items: center;
 }
-
-
-/*main category grid*/
-.main-grid-box {
-  margin-left: 1em;
-  margin-right: 1em;
-
-}
-
-.main-grid-image-1of2-1 {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 1em;
-  float: left;
-}
-
-.main-grid-image-1of2-2 {
-  width:100%;
-  height: 100%;
-  margin-bottom: 1em;
-  float: right;
-}
-
-.main-grid-image-1of1 {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 1em;
-}
-
-.main-grid-image-1of3 {
-  width: 33%;
-  height: 33%;
-  margin-left-bottom: 1em;
-}
-
-
 
 
 /*product listing/////////*/
@@ -754,19 +1019,21 @@ ol {
 
 /*form classes*/
 .form-contact {
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
+  /*
+  display: -ms-flex; 
   display: flex;
 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  */
+  display: block;
 
   /*border is used for testing
   border: 1px solid black; */
-  max-width: 28em;
+  max-width: 100%;
   padding: 1em;
-  background-color: white;
+  margin-top: 0;
 
 }
 
@@ -783,22 +1050,33 @@ ol {
   background-position: center;
 }
 
-.full-bleed-image-container img{
-  width: 100%;
+.full-bleed-bar {
+  position: relative;
+  background-color: rgb(127,42,121);
+  background-position: center;
 }
 
 .title-image {
   position: relative;
   width: 100%;
-  height: 20em;
+  height: 100%;
 }
 
 .title-image-text {
+  position: absolute;
+  text-align: center;
   font-size: 5em;
   color: white;
   text-align: center;
   position: relative;
 }
+
+
+
+
+
+
+
 /*COLORS-----------------------
 purple rgb(127,42,121)
 

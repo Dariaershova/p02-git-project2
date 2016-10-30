@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-<html>
 
 <head>
     <meta charset="utf-8">
@@ -12,11 +11,21 @@
     <link href="css/flexboxes.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <nav class="united-nav">
+<nav>
+     <div class="secondary-nav full-bleed-bar">
+        <a href="index.html"><img class="icon-button icon-resize" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
+        <a href="cart.html"><img class="icon-button icon-resize" src="img/icons/cart.png" alt="cart icon, shopping bag icon"></a>
+        <a href="checkout.html"><img class="icon-button icon-resize" src="img/icons/profile.png" alt="profile icon"></a>
+     </div>
+</nav>
+
+<nav>
     <div class = "main-nav"> 
         <a href="index.html" class="button-nav">Home</a>
         <a href="itemlisting.html" class="button-nav">Shop all</a>
@@ -24,53 +33,87 @@
         <a href="#about_company" class="button-nav">About company</a>
         <a href="#contacts" class="button-nav">Contacts</a>
      </div>
-     <div class="secondary-nav">
-        <a href="checkout.html"><img class="icon-button icon-resize" src="img/placeholder-icon.png"></a>
-        <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png"></a>
-     </div>
-    </nav>
+</nav>
 
 <!--Main categories-->
     <section id="categories" class="main-page">
 
-    <h2 class="centered-element">SHOP</h2>
+      <div class="grid-row">
 
-       <div class="main-category-grid">
-                
-                <!-- 
-                    Wrapping our image in a <div> so we can position it next to our text.
-                -->
-                <div class="priority1">
-                        <a href="itemlisting.html">
-                        <img class="category-image-final" src="img/400x400.png" alt="A toy robot with a menacing expression">
-                        <h3 class="category-title">Category 1</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                        </a>
-                </div>
-
-                <!-- 
-                    Wrapping our text in a <div> so we can position it next to our text.
-                -->
-                <div class="priority1">
-                        <img class="category-image-final" src="img/200x400.png" alt="A toy robot with a menacing expression">
-                        <h3 class="category-title">Category 2</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                </div>
+      <div class="grid-col-1of2 relative-positioning">
+       <a href="#">
+        <img class="category-image" src="img/all_plants.png" alt="Beautiful ornage flowers">
+                    <div class="category-title-box">
+                       <h3 class="category-title">All plants</h3>
+                       <h4 class="category-subtitle">2048 lovelies to choose from</h4>
 
 
-                <div class="priority1">
-                        <img class="category-image-final" src="img/200x400.png" alt="A toy robot with a menacing expression">
-                        <h3 class="category-title">Category 3</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                </div>
+                    </div>
+
+       </a>
+       </div>
 
 
-                <div class="priority1">
-                        <img class="category-image-final" src="img/200x400.png" alt="A toy robot with a menacing expression">
-                         <h3 class="category-title">Category 4</h3>
-                        <h4 class="category-subtitle">Subtitle</h4>
-                </div>
+      <div class="grid-col-1of2 relative-positioning">
+       <a href="#">
+        <img class="category-image" src="img/planters.png" alt="Ceramic animal planters" >
+                    <div class="category-title-box">
+                       <h3 class="category-title">Planters</h3>
+                       <h4 class="category-subtitle">It's all about animals!</h4>
+                    </div>
+       </a>
+       </div>
+
+       </div>
+
+       <div class = "grid-row">
+        <div class="relative-positioning">
+                <a href="#">
+                  <img class="category-image grid-col-1of1-image" src="img/succulents.png" alt="Image description">
+                    <div class="category-title-box">
+                       <h3 class="category-title">NEW COLLection</h3>
+                       <h4 class="category-subtitle">128 reasons why succulents don't suck</h4>
+                    </div>
+                </a>
         </div>
+        </div>
+
+      <div class = "grid-row">
+
+      <div class="grid-col-1of3 relative-positioning">
+         <a href="#">
+          <img class="category-image" src="img/lavender.png" alt="Image description">
+            <div class="category-title-box">
+              <h3 class="category-title">Lavender Craze</h3>
+              <h4 class="category-subtitle">All things purple</h4>
+            </div>
+        </a>
+      </div>
+
+
+
+        <div class="grid-col-1of3 relative-positioning">
+         <a href="#">
+          <img class="category-image" src="img/malva.png" alt="Image description">
+            <div class="category-title-box">
+              <h3 class="category-title">HAPPY MALVA</h3>
+              <h4 class="category-subtitle">Special Promotion</h4>
+            </div>
+        </a>
+      </div>
+
+          <div class="grid-col-1of3 relative-positioning">
+         <a href="#">
+          <img class="category-image" src="img/tools.png" alt="beautiful garden tools">
+            <div class="category-title-box">
+              <h3 class="category-title">Dig in</h3>
+              <h4 class="category-subtitle">Tools and equipment</h4>
+            </div>
+        </a>
+      </div>
+
+      </div>
+
     </section>
 
 
@@ -79,34 +122,64 @@
     <section id="news_and_events" class="main-page">
 
     <h2 class="centered-element">OUR NEWS</h2>
-    <div class="grid-row">
-          <div class="grid-col-1of5">
-            <h3 class="news-title">New Event</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
-            <p class= "news-subtitle">Date, place, time</p>
+     <div class = "grid-row cropped-container">
 
-          </div>
+        <div class="grid-col-1of3 news-article">
+          <div class="relative-positioning">
+              <a href="#">
+                <img class="grid-col-1of6 category-image" src="img/400x300.png" alt="Image description">
+                  <div class="category-title-box news-date-container">
+                         <h3 class="category-title news-date">24</h3>
+                         <h4 class="category-subtitle news-month">august</h4>
+                  </div>
+              </a>
+                  <h3 class="news-title">New Event</h3> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
+                  <p class= "news-subtitle">Date, place, time</p>
+        </div>
+        </div>
 
-          <div class="grid-col-3of5">
-            <h3 class="news-title">New collection</h3> 
-            <a href="itemlisting.html">
-            <img src="img/600x150.png" class="news-image">
-           </a>
-          </div>
+         <div class="grid-col-1of3 news-article">
+          <div class="relative-positioning">
+              <a href="#">
+                <img class="grid-col-1of6 category-image" src="img/400x300.png" alt="Image description">
+                  <div class="category-title-box news-date-container">
+                         <h3 class="category-title news-date">26</h3>
+                         <h4 class="category-subtitle news-month">august</h4>
+                  </div>
+              </a>
+                  <h3 class="news-title">New Event</h3> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
+                  <p class= "news-subtitle">Date, place, time</p>
+        </div>
+        </div>
 
+         <div class="grid-col-1of3 news-article">
+          <div class="relative-positioning">
+              <a href="#">
+                <img class="grid-col-1of6 category-image" src="img/400x300.png" alt="Image description">
+                  <div class="category-title-box news-date-container">
+                         <h3 class="category-title news-date">12</h3>
+                         <h4 class="category-subtitle news-month">september</h4>
+                  </div>
+              </a>
+                  <h3 class="news-title">New Event</h3> 
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
+                  <p class= "news-subtitle">Date, place, time</p>
+        </div>
+        </div>
 
-          <div class="grid-col-1of5">
-            <h3 class="news-title">New Event</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More</a></p>
-            <p class= "news-subtitle">Date, place, time</p>
-          </div>
+      </div>
 
     </section>
 
 <!--About company-->
     <section id="about_company" class="main-page">
+
+    <div class = "full-bleed-image-container">
     <h2 class="centered-element">ABOUT US</h2>
-       <div class="two-column-box full-bleed-image-container">
+
+       <div class="two-column-box cropped-container">
           <div class="two-column-box-text">
             <h3 class="news-title">About company</h3> 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. In scelerisque, dolor quis laoreet ornare, turpis quam pretium nibh, sed vestibulum nisl nisl vitae dolor. </p> 
@@ -117,35 +190,62 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. </p> 
           </div>
         </div> 
+      </div>
 
     </section>
 
 <!--About Contacts-->
-    <section id="contacts" class="main-page">
-<h2 class="centered-element">OUR CONTACTS</h2>
-<div class="two-column-box">
-          <div class="two-column-box-text">
-            <h3 class="news-title">Contacts</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. In scelerisque, dolor quis laoreet ornare, turpis quam pretium nibh, sed vestibulum nisl nisl vitae dolor. </p> 
+<section id="contacts" class="main-page">
+
+  <div class = "full-bleed-bar">
+  <h2 class="centered-element">LEAF US</h2>
+  <div class="two-column-box cropped-container">
+          <div class="two-column-box-text white-text">
+              <table class="full-table contact-table">
+                <h3 class="contact-title">Contact us</h3>
+
+                <tr>
+                    <td class="title">Phone</td>
+                    <td class="data">XXXXXXXXX</td> 
+                </tr>
+
+                <tr>
+                    <td class="title">Email</td>
+                    <td class="data">XXXXXXXXX</td> 
+                </tr>
+
+                <tr>
+                    <td class="title">Address</td>
+                    <td class="data">XXXXXXXXX</td> 
+                </tr>
+
+                </table>
           </div>
 
           <div class="two-column-box-text">
-            <h3 class="news-title">Got questions?</h3> 
-                <form class="form-contact">  
+              <form class="form-contact">  
               <label for="name" class="form-label-field-basic">Name</label>
-              <input type="text" id="name" class="form-input-field-basic" placeholder="Name"> 
+              <input type="text" id="name" class="form-input-field-full" placeholder="Name"> 
               <label for="email" class="form-label-field-basic">E-mail</label>
-              <input type="email" id="email" class="form-input-field-basic" placeholder="E-mail"> 
+              <input type="email" id="email" class="form-input-field-full" placeholder="E-mail"> 
               <label for="message" class="form-label-field-basic">Message</label>
               <textarea id="message" class="form-input-field-extended" placeholder="Message"></textarea>
               <input type="submit" class="button-submit-alt form-contact-button" value="Submit">                       
             </form>
 
-          </div>
-        </div> 
+      </div>
+    </div> 
+  </div>
 
 
     </section>
+
+
+    <footer class="centered-element">
+      <a href="template.html">Style guide</a>
+      <a href="citations.html">Citation</a>
+      <a href="https://github.com/Dariaershova/p02-git-project2.git">GitHub repository</a>
+    </footer>
 
 </body>
 

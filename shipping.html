@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>LeafMe</title>
+        <title>Secure Checkout</title>
 
         <link href="css/main.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
@@ -44,58 +44,56 @@
     <div class="grid-row">
     <div class="grid-col-cart">
     <table class="cart-header">
-        
-        <nav class = "checkout-nav"> 
-                          <a href="cart.html" class="button-nav checkout-nav-button active">Shopping Bag /</a>
-                          <a href="shipping.html" class="button-nav checkout-nav-button">Shipping /</a>
+
+         <nav class = "checkout-nav"> 
+                          <a href="cart.html" class="button-nav checkout-nav-button">Shopping Bag /</a>
+                          <a href="shipping.html" class="button-nav checkout-nav-button active">Shipping /</a>
                           <a href="payment.html" class="button-nav checkout-nav-button">Payment /</a>
                           <a href="order-review.html" class="button-nav checkout-nav-button">Order review /</a>
                           <a href="receipt.html" class="button-nav checkout-nav-button">Receipt</a>
-        </nav>
+        </nav>          
 
+        <tr>
+            <th>Shipping Address</th>
+            <th class="action-button-right"><a class="edit-button" href="#">Edit</a></th>
+            <th class="action-button-left"><a class="edit-button" href="#">Remove</a></th>
+        </tr>
 
-          <tr>
-            <th>Image</th>
-            <th>Item</th>
-            <th>Quantity</th>
-            <th>Item Price</th>
-            <th>Total Price</th>
-          </tr>
+        <tr>
 
-          <tr>
-            <td><img class="cart-image" src="img/150x200.png" alt="Image description">
-            </td>
-            <td>Name of the plant</td>
-            <td>Number of items</td>
-            <td>$xx.xx</td>
-            <td class="cart-price">$xx.xx</td>
-          </tr>
+        <td>
+            <form class="form-contact">  
+              <label for="first-name" class="form-label-field-full">First Name*</label>
+              <input type="text" id="first-name" class="form-input-field-full" placeholder=""> 
 
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
-            <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
-          </tr>
+              <label for="last-name" class="form-label-field-full">Last Name*</label>
+              <input type="text" id="last-name" class="form-input-field-full" placeholder=""> 
 
-          <tr>
-            <td><img class="cart-image" src="img/150x200.png" alt="Image description"></td>
-            <td>Name of the plant</td>
-            <td>Number of items</td>
-            <td>$xx.xx</td>
-            <td class="cart-price">$xx.xx</td>
-          </tr>
+              <label for="address" class="form-label-field-full">Address*</label>
+              <textarea id="message" class="form-input-field-extended" placeholder=""></textarea>
 
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
-            <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
-          </tr>
+              <label for="city" class="form-label-field-full">City*</label>
+              <input type="text" id="city" class="form-input-field-full" placeholder=""> 
 
+                <label for="code" class="form-label-field-full">Postal Code*</label>
+              <input type="text" id="code" class="form-input-field-full" placeholder=""> 
+
+                <label for="country" class="form-label-field-full">Country*</label>
+              <input type="text" id="country" class="form-input-field-full" placeholder=""> 
+
+                <label for="phone" class="form-label-field-full">Phone*</label>
+              <input type="text" id="phone" class="form-input-field-full" placeholder=""> 
+
+            <input type="checkbox" name="address-checked" class="checkbox-label" checked>Save this address to my profile</br>
+                       
+            </form>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
         </table>
+
         </div>
 
         <div class="grid-col-checkout">
@@ -121,8 +119,7 @@
                <td>
                </td>
         </table>
-            
-            <a class="button-checkout" href="shipping.html">checkout</a>
+                       <a class="button-checkout" href="payment.html">Ship to this address</a>
 
         </div>
     </div>
