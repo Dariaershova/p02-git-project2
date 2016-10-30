@@ -22,7 +22,6 @@ section:not([id]) {
 
 section.main-page {
   padding-top: 1em;
-  padding-bottom: 4em;
   } 
 
 section.section-image {
@@ -305,7 +304,6 @@ td.data {
   color: rgb(76, 73, 87);
   padding: 0 0.5em 0 0.5em;
   margin-right: 1em;
-  margin-top: 3em;
   border-bottom: 3px solid white;
   border-radius: 3px;
   text-decoration: none;
@@ -456,6 +454,41 @@ td.data {
 .icon-resize {
   height: 2em;
   width: auto;
+}
+
+
+
+/*intro element*/
+
+.intro {
+  width: 20%;
+  padding-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 35%;
+  float: left;
+}
+
+.tagline {
+  color: rgb(127,42,121);
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 4.8em;
+  line-height: 1.2em;
+  vertical-align: top;
+  font-weight: bold;
+
+
+}
+
+.intro:after {
+  content: "";
+  display: block;
+  clear:both;
 }
 
 
@@ -747,6 +780,7 @@ ol {
 .cropped-container {
   margin-left: 10%;
   margin-right: 8%;
+  padding-top: 1em;
 }
 
 .news-article {
