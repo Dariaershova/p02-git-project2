@@ -18,43 +18,43 @@
     <body>
 
     <nav>
-         <div class="secondary-nav full-bleed-bar">
-            <a href="index.html"><img class="icon-button icon-resize" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
-            <a href="cart.html"><img class="icon-button icon-resize" src="img/icons/cart.png" alt="cart icon, shopping bag icon"></a>
-            <a href="checkout.html"><img class="icon-button icon-resize" src="img/icons/profile.png" alt="profile icon"></a>
-         </div>
+     <div class="secondary-nav full-bleed-bar">
+        <a href="index.html"><img class="icon-button icon-resize" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
+        <a href="cart.html"><img class="icon-button icon-resize" src="img/icons/cart.png" alt="cart icon, shopping bag icon"></a>
+        <a href="#"><img class="icon-button icon-resize" src="img/icons/profile.png" alt="profile icon"></a>
+     </div>
     </nav>
 
     <nav>
         <div class = "main-nav"> 
             <a href="index.html" class="button-nav">Home</a>
             <a href="itemlisting.html" class="button-nav">Shop all</a>
-            <a href="#news_and_events" class="button-nav">News and Events</a>
-            <a href="#about_company" class="button-nav">About company</a>
-            <a href="#contacts" class="button-nav">Contacts</a>
+            <a href="index.html#news_and_events" class="button-nav">News and Events</a>
+            <a href="index.html#about_company" class="button-nav">About company</a>
+            <a href="index.html#contacts" class="button-nav">Contacts</a>
          </div>
     </nav>
 
+    <!--
     <section id="#section-title" class="section-image">
             <div id="#" class="section-title-box">
-            <img class="" src="img/1200x300.png" alt="Image description">
+            <img class="" src="img/checkout.png" alt="Image description">
             <h3 class="section-title">The lovelies you chose</h3>
             </div>
-    </section>
+    </section>-->
 
-    <section id="#checkout" class="main-page">
+    <section id="#shipping" class="main-page">
     <div class="grid-row">
     <div class="grid-col-cart">
-    <table class="cart-header">
-
-         <nav class = "checkout-nav"> 
+        <nav class = "checkout-nav"> 
                           <a href="cart.html" class="button-nav checkout-nav-button">Shopping Bag /</a>
                           <a href="shipping.html" class="button-nav checkout-nav-button active">Shipping /</a>
                           <a href="payment.html" class="button-nav checkout-nav-button">Payment /</a>
                           <a href="order-review.html" class="button-nav checkout-nav-button">Order review /</a>
                           <a href="receipt.html" class="button-nav checkout-nav-button">Receipt</a>
-        </nav>          
+        </nav>    
 
+    <table class="cart-header">
         <tr>
             <th>Shipping Address</th>
             <th class="action-button-right"><a class="edit-button" href="#">Edit</a></th>
@@ -99,29 +99,28 @@
         </div>
 
         <div class="grid-col-checkout">
-        <table class="checkout-header">
         <h3 class="checkout-title">Order Summary</h3>
+
+        <table class="checkout-header">
             <tr>
-                <td class="checkout-line">Subtotal</td>
-                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-line">Shipping</td>
-                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-line">Estimated Tax</td>
-                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-price">Total</td>
-                <td class="checkout-price right-alignment">XXXXXXXXX</td> 
-            </tr>
+                    <td class="checkout-line">Subtotal</td>
+                    <td class="checkout-line right-alignment">C$15.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Shipping</td>
+                    <td class="checkout-line right-alignment">C$9.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Estimated Tax</td>
+                    <td class="checkout-line right-alignment">C$3.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-price">Total</td>
+                    <td class="checkout-price right-alignment">C$27.00</td> 
+                </tr>
                 
-               <td>
-               </td>
         </table>
-                       <a class="button-checkout" href="payment.html">Ship to this address</a>
+                <a class="button-checkout" href="payment.html">Ship to this address</a>
 
         </div>
     </div>
