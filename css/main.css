@@ -4,8 +4,6 @@
 */
 body {
   font-family: "Open Sans", sans-serif;
-  /*padding-left: 2rem;
-  padding-right: 2rem;*/
 }
 
 
@@ -23,14 +21,20 @@ section.main-page {
   padding-top: 1em;
 } 
 
+section.main-page-full-bleed {
+  padding-top: 1em;
+  } 
+
 section.section-image {
   padding-top: 1em;
   padding-bottom: 1em;
-} 
+  max-width: 100%;
+  } 
 
-section.section-image img{
+section.section-image img {
   max-width: 100%;
 } 
+
 
 .style-guide{
   text-align: center;
@@ -126,8 +130,8 @@ td {
   padding: 0.6em;
   vertical-align: top;
   text-align: left;
-
 }
+
 
 .full-table{
   width: 80%;
@@ -175,8 +179,14 @@ td.data {
 }
 
 /*cart table*/
+
+.cart-image {
+  width: 100%;
+}
+
 .cart-header {
   width: 100%;
+  margin-bottom: 3em;
 }
 
 
@@ -221,7 +231,7 @@ td.data {
   letter-spacing: 1px;
   font-weight: bold;
   padding-left: 0.4em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 
@@ -370,7 +380,7 @@ td.data {
 .active {
   color: black;
   font-weight: bold;
-  border-bottom: 3px solid rgb(127,42,121);
+  border-bottom: 3px solid rgb(255, 192, 51);
   border-radius: 3px;
 }
 
@@ -639,8 +649,8 @@ a.category {
 }
 
 .category-image {
-  /*width: 10%;*/
-  opacity: 0.9;
+  width: 100%;
+  opacity: 0.7;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 
@@ -648,7 +658,6 @@ a.category {
 
 .category-image:hover, .category-image:active {
   opacity: 1;
-  box-shadow: 0px 3px 5px #888888;
 }
 
 .category-title {
@@ -658,11 +667,20 @@ a.category {
   color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 0.2em;
   padding-left: 5%;
   text-decoration: none;
 }
+
+.yellow {
+  background-color: rgb(255, 192, 51);
+  margin-right: 2em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+
 
 .category-title-box {
   position: absolute;
@@ -671,6 +689,7 @@ a.category {
   height: 15em;
   text-decoration: none;
 }
+
 
 
 .category-subtitle {
@@ -682,6 +701,7 @@ a.category {
   color: black;
   letter-spacing: 2px;
   padding-left: 5%;
+  font-weight: bold;
 }
 
 .shop-button {
@@ -702,15 +722,15 @@ a.category {
 
 .section-title-box {
   position: relative;
-  width: auto;
+  max-width: auto;
 }
 
 .section-title {
   font-family: "Open Sans", sans-serif;
+  text-align: center;
   font-size: 5em;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-weight: bold;
   padding: 0;
   position: absolute;
@@ -1160,6 +1180,7 @@ oramge rgb(255, 192, 51)
     float: left;
     margin-bottom: 1em;
     line-height: 1em;
+    font-size: 0.9em;
   }
 
   ul {
