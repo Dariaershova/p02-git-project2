@@ -247,6 +247,10 @@
 
 	}
 
+	.tagline {
+		font-size: 0.9em;
+	}
+
 }
 
 
@@ -287,6 +291,16 @@
 
 		.checkout-nav-button {
 		font-size: 0.8em;
+	}
+
+
+	.tagline {
+		font-size: 0.6em;
+	}
+
+	.cropped-container {
+		margin-left: 5%;
+		margin-right: 3%;
 	}
 
 
