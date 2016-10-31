@@ -71,6 +71,7 @@
 	margin-right: 2em;
 	margin-bottom: 0;
 	margin-left: 2em;
+	padding-left: 1em;
 	text-align: left;
 }
 
@@ -80,6 +81,7 @@
 	margin-right: 2em;
 	margin-bottom: 1em;
 	margin-left: 2em;
+	padding-left: 1em;
 	text-align: left;
 }
 
@@ -231,6 +233,7 @@
 		margin-right: 0;
 		width: 60%;
 	}
+	
 	.grid-col-3of4{
 		margin-left: 0;
 		margin-right: 0;
