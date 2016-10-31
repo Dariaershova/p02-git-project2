@@ -4,9 +4,8 @@
 */
 body {
   font-family: "Open Sans", sans-serif;
-  padding-left: 2rem;
-  padding-right: 2rem;
-
+  /*padding-left: 2rem;
+  padding-right: 2rem;*/
 }
 
 
@@ -22,12 +21,16 @@ section:not([id]) {
 
 section.main-page {
   padding-top: 1em;
-  } 
+} 
 
 section.section-image {
   padding-top: 1em;
   padding-bottom: 1em;
-  } 
+} 
+
+section.section-image img{
+  max-width: 100%;
+} 
 
 .style-guide{
   text-align: center;
@@ -701,8 +704,8 @@ a.category {
 .section-title {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-  font-size: 1.4em;
-  color: black;
+  font-size: 5em;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
