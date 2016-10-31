@@ -439,7 +439,6 @@ td.data {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 
-
 }
 
 /*changing the border radius on hover*/
@@ -721,6 +720,10 @@ a.category {
 
 /*section image tags*/
 
+#section-title{
+  position: relative;
+}
+
 .section-title-box {
   position: relative;
   max-width: auto;
@@ -729,11 +732,7 @@ a.category {
 .section-title {
   font-family: "Open Sans", sans-serif;
   text-align: center;
-<<<<<<< HEAD
-  font-size: 2em;
-=======
   font-size: 5em;
->>>>>>> origin/master
   color: white;
   text-transform: uppercase;
   font-weight: bold;
@@ -1167,11 +1166,13 @@ oramge rgb(255, 192, 51)
 }
 
 @media only screen and (max-width: 50em) {
+
+
   .filter-nav {
   float: left;
   margin-bottom: 0;
   }
-}
+
 
   .filter-nav-first{
   float: left;
