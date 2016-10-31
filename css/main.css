@@ -696,6 +696,10 @@ a.category {
 
 /*section image tags*/
 
+#section-title{
+  position: relative;
+}
+
 .section-title-box {
   position: relative;
   width: auto;
@@ -703,7 +707,6 @@ a.category {
 
 .section-title {
   font-family: "Open Sans", sans-serif;
-  text-align: center;
   font-size: 5em;
   color: white;
   text-transform: uppercase;
@@ -1139,11 +1142,13 @@ oramge rgb(255, 192, 51)
 }
 
 @media only screen and (max-width: 50em) {
+
+
   .filter-nav {
   float: left;
   margin-bottom: 0;
   }
-}
+
 
   .filter-nav-first{
   float: left;
