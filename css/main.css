@@ -660,6 +660,11 @@ a.category {
   opacity: 1;
 }
 
+
+.grid-col-1of3 .category-image {
+  opacity: 1;
+}
+
 .category-title {
   font-family: "Open Sans", sans-serif;
   text-align: left;
@@ -864,7 +869,7 @@ ol {
 
 .news-date-container {
   background-color: white;
-  opacity: 0.5;
+  opacity: 0.9;
   width: 6em;
   height: 8em;
 }
