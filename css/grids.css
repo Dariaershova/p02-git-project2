@@ -193,6 +193,7 @@
 	padding-right: 8em;
 }
 
+
 .grid-row:after {
 	content: "";
 	display: block;
