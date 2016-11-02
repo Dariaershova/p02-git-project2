@@ -16,10 +16,12 @@ section:not([id]) {
   border-top: 1px solid #333;
 }
 
+/*daria*/
 section.main-page {
   padding-top: 1em;
 } 
 
+/*daria*/
 section.main-page-full-bleed {
   padding-top: 1em;
   } 
@@ -72,11 +74,13 @@ h3{
   padding-bottom: 0em;
 }
 
+/*daria*/
 .white-text {
   color: white;
 }
 
 /*Isabel*/
+/*daria*/
 .centered-element{
   text-align: center;
 }
@@ -126,19 +130,20 @@ td {
   text-align: left;
 }
 
-
+/*daria*/
 .full-table{
   width: 80%;
   margin-bottom: 3em;
 }
 
-
+/*daria*/
 .contact-table {
   padding-top: 2em;
   border-collapse: collapse;
   border: none;
 }
 
+/*daria*/
 td.title {
   border: none;
   padding-bottom: 1.5em;
@@ -146,6 +151,7 @@ td.title {
   opacity: 0.8;
 }
 
+/*daria*/
 td.data {
   border: none;
   padding-bottom: 1.5em;
@@ -153,7 +159,7 @@ td.data {
 
 }
 
-
+/*daria*/
 .contact-title {
   font-family: "Open Sans", sans-serif;
   text-align: left;
@@ -173,22 +179,24 @@ td.data {
 }
 
 /*cart table*/
-
+/*daria*/
 .cart-image {
   width: 100%;
 }
 
+/*daria*/
 .cart-header {
   width: 100%;
   margin-bottom: 3em;
 }
 
-
+/*daria*/
 .cart-price {
   font-size: 1em;
   font-weight: bold;
 }
 
+/*daria*/
 .table-button-left {
   padding-top:0;
   padding-bottom: 1em;
@@ -203,13 +211,14 @@ td.data {
   padding-bottom: 0em;
 }
 
+/*daria*/
 .table-button-right {
   padding-top:0;
   padding-bottom: 1em;
   text-align: right;
 }
 
-/*checkout table*/
+/*daria*/
 .checkout-header {
   width: 100%;
   border-bottom: 1px solid transparent;
@@ -217,6 +226,7 @@ td.data {
 
 }
 
+/*daria*/
 .checkout-title {
   font-family: "Open Sans", sans-serif;
   text-align: left;
@@ -229,7 +239,7 @@ td.data {
   padding-bottom: 2em;
 }
 
-
+/*daria*/
 .checkout-line {
   font-size: 0.7em;
   color: grey;
@@ -239,11 +249,12 @@ td.data {
   border-right: 0.5px solid transparent;
 }
 
+/*daria*/
 .right-alignment {
   float: right;
 }
 
-
+/*daria*/
 .checkout-price {
   font-size: 0.7em;
   color: black;
@@ -333,6 +344,7 @@ td.data {
 
 /* Styling for the navigation button */
 /*Isabel*/
+/*daria*/
 .button-nav {
   display: inline-block;
   font-size: 0.8em;
@@ -351,6 +363,7 @@ td.data {
 
 /*orange underline appears*/
 /*Isabel*/
+/*daria*/
 .button-nav:hover, .button-nav:focus {
   border-bottom: 3px solid rgb(255, 192, 51);
   border-radius: 3px;
@@ -394,13 +407,14 @@ td.data {
   margin-bottom:0.3em;
 }
 
-/*edit button*/
+/*daria*/
 .edit-button {
   color: grey;
   font-size: 0.7em;
   letter-spacing: 1px;
 }
 
+/*daria*/
 .checkout-nav-button {
   font-size: 1.2em;
   margin-right: 0;
@@ -409,6 +423,7 @@ td.data {
   margin-top: 1em;
 }
 
+/*daria*/
 .active {
   color: black;
   font-weight: bold;
@@ -423,6 +438,7 @@ td.data {
 
 /*in-text link*/
 /*Isabel*/
+/*daria*/
 .in-text-link {
   color: #000;
   text-decoration: none;
@@ -458,7 +474,7 @@ td.data {
   border-radius: 15px;
 }
 
-/*checkout button*/
+/*daria*/
 .button-checkout{
   display: block;
   border: 2px solid rgb(127,42,121);
@@ -476,12 +492,13 @@ td.data {
 
 }
 
-/*changing the border radius on hover*/
+/*daria*/
 .button-checkout:hover, .button-checkout:focus {
   border-radius: 15px;
 }
 
 /*alternative submit button*/
+/*daria*/
 .button-submit-alt {
   display: inline-block;
   font-weight: normal;
@@ -498,12 +515,14 @@ td.data {
   transition: all 0.2s ease-out;
 }
 
+/*daria*/
 .button-submit-alt:hover, .button-submit:focus {
   border-radius: 15px;
 
 }
 
 /*clickable icon*/
+/*daria*/
 .icon-button {
   height: auto;
   width: auto;
@@ -516,13 +535,14 @@ td.data {
   transition: all 0.2s ease-out;
 }
 
-
+/*daria*/
 .icon-button:hover, .icon-button:focus {
   padding-top: .1em;
   padding-left: .1em;
   padding-bottom: .1em;
 }
 
+/*daria*/
 .icon-resize {
   height: 2em;
   width: auto;
@@ -532,6 +552,7 @@ td.data {
 
 /*intro element*/
 
+/*daria*/
 .intro {
   width: 20%;
   padding-top: 2em;
@@ -539,11 +560,13 @@ td.data {
   margin-right: auto;
 }
 
+/*daria*/
 .logo {
   width: 35%;
   float: left;
 }
 
+/*daria*/
 .tagline {
   color: rgb(127,42,121);
   font-size: 1.2em;
@@ -556,14 +579,14 @@ td.data {
 
 
 }
-
+/*daria*/
 .intro:after {
   content: "";
   display: block;
   clear:both;
 }
 
-
+/*daria*/
 /*labels and inputs*/
 .form-label-field-basic {
   color: transparent;
@@ -571,6 +594,7 @@ td.data {
   position: absolute;
 }
 
+/*daria*/
 .form-input-field-basic {
   border-radius: 20px;
   border: 1px solid rgb(76, 73, 87);
@@ -581,13 +605,14 @@ td.data {
   margin-bottom: 1em;
 }
 
-
+/*daria*/
 .form-label-field-full {
   font-size: 0.4em;
   padding-right: .2em;
   padding-bottom: .2em;
 }
 
+/*daria*/
 .form-input-field-full {
   border: 1px solid rgb(76, 73, 87);
   font-size: 0.9em;
@@ -596,7 +621,7 @@ td.data {
   margin-bottom: 1em;
 }
 
-
+/*daria*/
 .form-input-field-extended {
   border: 1px solid rgb(76, 73, 87);
   font-size: 0.9em;
@@ -609,6 +634,7 @@ td.data {
   cursor: auto;
 }
 
+/*daria*/
 textarea {
     border: 1px solid rgb(76, 73, 87);
 }
@@ -672,10 +698,12 @@ a.category {
   text-decoration: none;
 }
 
+/*daria*/
 .relative-positioning{
   position: relative;
 }
 
+/*daria*/
 .category-image {
   width: 100%;
   opacity: 0.7;
@@ -684,15 +712,17 @@ a.category {
 
 }
 
+/*daria*/
 .category-image:hover, .category-image:active {
   opacity: 1;
 }
 
-
+/*daria*/
 .grid-col-1of3 .category-image {
   opacity: 1;
 }
 
+/*daria*/
 .category-title {
   font-family: "Open Sans", sans-serif;
   text-align: left;
@@ -714,7 +744,7 @@ a.category {
 }
 
 
-
+/*daria*/
 .category-title-box {
   position: absolute;
   top: 4em;
@@ -723,8 +753,7 @@ a.category {
   text-decoration: none;
 }
 
-
-
+/*daria*/
 .category-subtitle {
   font-family: "Open Sans", sans-serif;
   font-size: 0.7em;
@@ -874,27 +903,32 @@ ol {
 /*newa article*/
 
 /*news grid*/
+/*daria*/
 .cropped-container {
   margin-left: 10%;
   margin-right: 8%;
   padding-top: 1em;
 }
 
+/*daria*/
 .news-article {
   width: 33%;
 }
 
+/*daria*/
 .news-date {
   font-size: 2em;
   margin-bottom: 0;
   text-align: center;
   }
 
+/*daria*/
 .news-month {
   text-align: center;
 
 }
 
+/*daria*/
 .news-date-container {
   background-color: white;
   opacity: 0.9;
@@ -902,7 +936,7 @@ ol {
   height: 8em;
 }
 
-
+/*daria*/
 .news-title {
   font-family: "Open Sans", sans-serif;
   text-align: left;
@@ -916,6 +950,7 @@ ol {
   margin-top: 0;
   }
 
+/*daria*/
 .news-subtitle {
       font-family: "Open Sans", sans-serif;
       padding-top: 0.2em;
@@ -970,7 +1005,7 @@ ol {
   COMBINED ELEMENTS -------------------
 */
 
-/*diplayed in the centre of the page, wraps*/
+/*daria*/
 .main-nav {
 
   display: -webkit-flex; /* For support in a series of Webkit browsers */
@@ -993,6 +1028,7 @@ ol {
 
 }
 
+/*daria*/
 .checkout-nav {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -1018,6 +1054,7 @@ ol {
 
 }
 
+/*daria*/
 .secondary-nav {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -1036,6 +1073,7 @@ ol {
   justify-content: flex-end;
 }
 
+/*daria*/
 .united-nav {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
@@ -1110,7 +1148,7 @@ ol {
 }*/
 
 
-/*form classes*/
+/*daria*/
 .form-contact {
   /*
   display: -ms-flex; 
@@ -1130,6 +1168,7 @@ ol {
 
 }
 
+/*daria*/
 .form-contact-button {
   max-width: 10em;
   margin-top: 2em;
@@ -1143,6 +1182,7 @@ ol {
   background-position: center;
 }
 
+/*daria*/
 .full-bleed-bar {
   position: relative;
   background-color: rgb(127,42,121);
