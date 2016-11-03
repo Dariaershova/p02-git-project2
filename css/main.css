@@ -172,12 +172,6 @@ td.data {
   padding-bottom: 2em;
 }
 
-
-.reduced-table{
-  width: 70%;
-  margin-bottom: 3em;
-}
-
 /*cart table*/
 /*daria*/
 .cart-image {
@@ -801,65 +795,6 @@ a.category {
 }
 
 
-
-
-
-
-/*not using anymore
-
-.image-two-fifth-long {
-  background-image: url(../img/placeholder.jpg);
-  width: 480px;
-  height: 400px;
-  
-}
-
-.image-two-fifth-short {
-  background-image: url(../img/placeholder.jpg);
-  width: 480px;
-  height: 200px;
-}
-
-.image-three-fifth-short {
-  background-image: url(../img/placeholder.jpg);
-  width: 715px;
-  height: 200px;
-}
-
-.image-three-fifth-long {
-  background-image: url(../img/placeholder.jpg);
-  width: 715px;
-  height: 400px;
-}
-
-.image-one-fifth-long {
-  background-image: url(../img/placeholder.jpg);
-  width: 235px;
-  height: 400px;
-}
-
-.image-one-fifth-short {
-  background-image: url(../img/placeholder.jpg);
-  width: 235px;
-  height: 200px;
-}
-
-.absolute-position {
-  position: absolute;
-
-}
-
-.relative-position {
-  position: relative;
-}
-*/
-
-
-
-
-
-
-
 /* 
   TEXT ELEMENTS -------------------
 */
@@ -885,12 +820,6 @@ ul li {
   color: black;
 }
 
-/*
-.bullets li:before {
-  content: "•"; 
-  padding-right: 0.7em;
-  color: #7F2A79; 
-}*/
 
 ol {
   padding-left: 2.5em; 
@@ -973,33 +902,6 @@ ol {
 /* 
   TEXT ELEMENTS -------------------
 */
-
-/*li{
-  line-height: 1.5em;
-}
-
-ul {
-  list-style: none; 
-  padding: 0;
-}
-
-ul li { 
-  padding-left: 1.3em; 
-}
-
-ul li:before {
-  content: "•"; 
-  padding-right: 0.7em;
-  color: #7F2A79; 
-}*/
-
-ol {
-  padding-left: 2.5em; 
-}
-
-.text-section{
-  width: 65%;
-}
 
 /* 
   COMBINED ELEMENTS -------------------
@@ -1097,55 +999,6 @@ ol {
 }
 
 
-/*product listing/////////*/
-.item-listing{
-    width: 20%;
-    border-radius: 5px;
-    background: #f2f2f2;
-}
-
-.item-listing img{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%
-}
-
-/*.item-listing p{
-  margin-bottom: 0;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  width: 100%;
-}
-
-.item-listing{
-    width: 20%;
-    border-radius: 5px;
-    background: #f2f2f2;
-}
-
-.item-listing img{
-    width: 90%;
-    margin-left: 0.8em;
-    margin-right: 0.8em;
-    margin-top: 0.8em;
-}
-
-.item-info-bottom{
-  text-align: center;
-}
-
-.item-info-bottom h4{
-    margin-top: 0.3em;
-    padding-bottom: 0;
-    margin-bottom: 0.1em;
-}
-
-.item-info-bottom p{
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  padding-bottom: 1em;
-  width: 100%;
-}*/
 
 
 /*daria*/
@@ -1176,11 +1029,11 @@ ol {
 
 
 /*full bleed background image */
-.full-bleed-image-container {
+/*.full-bleed-image-container {
   position: relative;
   background-image: url(../img/succulent-lineup-darkened.png);
   background-position: center;
-}
+}*/
 
 /*daria*/
 .full-bleed-bar {
@@ -1189,7 +1042,7 @@ ol {
   background-position: center;
 }
 
-.title-image {
+/*.title-image {
   position: relative;
   width: 100%;
   height: 100%;
@@ -1202,7 +1055,7 @@ ol {
   color: white;
   text-align: center;
   position: relative;
-}
+}*/
 
 
 
@@ -1211,16 +1064,6 @@ purple rgb(127,42,121)
 
 oramge rgb(255, 192, 51) 
 */
-
-
-.right {
-  float: right;
-  font-size: 1.5em;
-}
-
-.left{
-  float: left;
-}
 
 /*Isabel*/
 .medium-text{
