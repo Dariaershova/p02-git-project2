@@ -94,15 +94,16 @@
 
 /*daria*/
 .grid-col-cart {
-	width: 70%;
+	width: 69%;
 	float: left;
 }
 
 /*daria*/
 .grid-col-checkout {
-	width: 30%;
+	width: 28%;
 	float: right;
 	padding-left: 2em;
+	padding-bottom: 2em;
 }
 
 
@@ -172,7 +173,7 @@
 		margin-right: 12%;
 	}
 
-
+	/*
 	.grid-col-cart {
 		width: 100%;
 
@@ -181,13 +182,7 @@
 	.grid-col-checkout {
 		width: 100%;
 		padding-left: 0;
-	}
-
-
-	.checkout-nav-button {
-		font-size: 1em;
-	}
-
+	}*/
 
 	/*the 3 column grid breakpoints*/
 	/*daria*/
@@ -224,6 +219,21 @@
 	.contact-table {
 		margin-left: 0;
 	}
+
+	.grid-col-cart {
+		width: 100%;
+	}
+
+	.grid-col-checkout {
+		width: 50%;
+		padding-left: 0;
+		float: left;
+	}
+
+	.checkout-title {
+		text-align: left;
+		padding-bottom: 1em;
+	}
 }
 
 
@@ -251,6 +261,7 @@
 		position: static;
 		padding-left: 0;
 	}
+
 
 }
 
@@ -297,22 +308,10 @@
 		padding-right: 0;
 	}
 
-	th {
-		display: block;
-		padding: 0;
-		border-collapse: collapse;
-	}
 
-	th.action-button-right {
-		text-align: left;
-		padding: 0;
+	.grid-col-checkout {
+		width: 80%;
 	}
-
-	th.action-button-left {
-		text-align: left;
-		padding: 0;
-	}
-
 
 }
 
@@ -364,49 +363,15 @@
 		padding-bottom: 2em;
 	}
 
-
-	/*checkout navigation*/
-	.checkout-nav {
-   -webkit-flex-direction: column;
-   -ms-flex-direction: column;
-  	flex-direction: column;
-
-  	padding: 0;
-  	padding-bottom: 1em;
-	}
-
-	.checkout-nav-button {
-		font-size: 1.2em;
-		margin-top: .2em;
-	}
-}
-
-
-@media (min-width: 30em) {
-
-
-	.grid-col-3of4 {
-		width: 70%;
-	}
-
-
-	.grid-col-1of2 {
-		/*width: 47%;*/
-
-	}
-
-	.grid-col-1of2-images {
+	.grid-col-checkout {
 		width: 100%;
-
-	}
-
-	.grid-col-3of5 {
-
 	}
 
 
 
 }
+
+
 
 
 
