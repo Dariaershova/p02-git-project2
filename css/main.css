@@ -87,23 +87,25 @@ h3{
 
 
 /*table properties*/
-table, td, th {
-  border-bottom: 0.5px dashed grey;
-
+table, td{
+  border-bottom: 0.5px dotted #666666;
 }
+
 
 table {
     border-collapse: collapse;
-    border-right: 0.5px solid grey; 
+    border-right: 0.5px solid #666666; 
 
 }
 
 th {
-  font-size: 0.7em;
-  color: grey;
+  font-size: 0.8em;
+  color: #666666;
   text-align: left;
   letter-spacing: 1px;
   padding: 1em;
+  font-weight: normal;
+  border-bottom: 0.5px solid #666666;
 }
 
 th.action-button-left {
@@ -125,6 +127,7 @@ th.action-button-right {
 
 td {
   font-size: 1em;
+  font-weight: normal;
   padding: 0.6em;
   vertical-align: top;
   text-align: left;
@@ -226,7 +229,6 @@ td.data {
   text-align: left;
   font-size: 1.2em;
   color: black;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
   padding-left: 0.4em;
@@ -235,8 +237,8 @@ td.data {
 
 /*daria*/
 .checkout-line {
-  font-size: 0.7em;
-  color: grey;
+  font-size: 0.8em;
+  color: #666666;
   text-align: left;
   letter-spacing: 1px;
   border-bottom: 1px solid transparent;
@@ -250,7 +252,7 @@ td.data {
 
 /*daria*/
 .checkout-price {
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: black;
   text-align: left;
   letter-spacing: 1px;
@@ -321,6 +323,8 @@ td.data {
 /*Isabel*/
 .suggested-products img{
   margin-right: 0.8em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 
 }
 
@@ -403,8 +407,8 @@ td.data {
 
 /*daria*/
 .edit-button {
-  color: grey;
-  font-size: 0.7em;
+  color: #666666;
+  font-size: 0.8em;
   letter-spacing: 1px;
 }
 
@@ -415,6 +419,7 @@ td.data {
   margin-left: 0;
   padding-right: 0;
   margin-top: 1em;
+  text-transform: uppercase;
 }
 
 /*daria*/
@@ -448,9 +453,9 @@ td.data {
 /*Isabel*/
 .button-submit {
   display: inline-block;
-  border: 2px solid rgb(76, 73, 87);
-  background-color: white;
-  color: rgb(76, 73, 87);
+  border: 2px solid rgb(127,42,121);
+  background-color: rgb(127,42,121);
+  color: white;
   padding: 0.25rem 1em;
   font-size: 0.8em;
   text-decoration: none;
@@ -601,7 +606,7 @@ td.data {
 
 /*daria*/
 .form-label-field-full {
-  font-size: 0.4em;
+  font-size: 0.9em;
   padding-right: .2em;
   padding-bottom: .2em;
 }
@@ -642,8 +647,8 @@ textarea {
 }
 
 .form-input-quantity input{
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   font-size: 0.9em;
   margin-top: 1em;
 
