@@ -17,9 +17,10 @@ section:not([id]) {
 }
 
 /*daria*/
+/*
 section.main-page {
   padding-top: 1em;
-} 
+} */
 
 /*daria*/
 section.main-page-full-bleed {
@@ -35,6 +36,11 @@ section.section-image {
 section.section-image img {
   max-width: 100%;
 } 
+
+/*modifying the color of default links*/
+a {
+  color: black;
+}
 
 
 .style-guide{
@@ -138,15 +144,19 @@ td {
 
 /*daria*/
 .contact-table {
-  padding-top: 2em;
   border-collapse: collapse;
   border: none;
+  width: 90%;
+  color: white;
+  padding-right: 5em;
+  padding-bottom: 2em;
+  margin-top: 1em;
+  margin-left: 5em;
 }
 
 /*daria*/
 td.title {
   border: none;
-  padding-bottom: 1.5em;
   font-size: 0.9em;
   opacity: 0.8;
 }
@@ -154,7 +164,6 @@ td.title {
 /*daria*/
 td.data {
   border: none;
-  padding-bottom: 1.5em;
   font-size: 0.9em;
 
 }
@@ -342,6 +351,22 @@ td.data {
   INTERACTIVE ELEMENTS -------------------
 */
 
+
+/*styling for main menu buttons*/
+.menu-button {
+  font-family: 'Open Sans', sans-serif;  
+  display: inline-block;
+  color: white;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 1em;
+  padding: 0 0.5em 0 0.5em;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+
 /* Styling for the navigation button */
 /*Isabel*/
 /*daria*/
@@ -524,47 +549,66 @@ td.data {
 /*clickable icon*/
 /*daria*/
 .icon-button {
+  width: 9em;
   height: auto;
-  width: auto;
-  background-color: rgb(127,42,121);
-  padding-right: 0.2em;
-  padding-top: .2em;
-  padding-left: .2em;
-  padding-bottom: .2em;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  padding-right: 2em;
+  padding-left: 1em;
+  padding-top: .5em;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
 }
 
 /*daria*/
 .icon-button:hover, .icon-button:focus {
-  padding-top: .1em;
-  padding-left: .1em;
-  padding-bottom: .1em;
+  padding-right: 1.8em;
+  
 }
 
-/*daria*/
-.icon-resize {
-  height: 2em;
-  width: auto;
+/*section separator element*/
+
+/*daria*
+
+/*section title*/
+.section-title {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 1em;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+  color: rgb(127,42,121);
+  text-transform: lowercase;
+  font-weight: bold;
+  margin-top: -.5em;
 }
-
-
-
-/*intro element*/
 
 /*daria*/
 .intro {
-  width: 20%;
-  padding-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  padding-bottom: 1em;
+
 }
 
 /*daria*/
 .logo {
-  width: 35%;
-  float: left;
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
+/*daria*/
+.logo-central {
+  width: 20.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  padding-bottom: .2em;
+}
+
+
+
 
 /*daria*/
 .tagline {
@@ -607,9 +651,10 @@ td.data {
 
 /*daria*/
 .form-label-field-full {
-  font-size: 0.4em;
+  font-size: 0.7em;
   padding-right: .2em;
   padding-bottom: .2em;
+  text-align: left;
 }
 
 /*daria*/
@@ -706,99 +751,97 @@ a.category {
 /*daria*/
 .category-image {
   width: 100%;
-  opacity: 0.7;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
 
 }
 
 /*daria*/
-.category-image:hover, .category-image:active {
-  opacity: 1;
+.category-title-box {
+  position: absolute;
+  bottom: 5em;
+  left: 1em;
+  width: 16em;
+  height: 6em;
+  text-decoration: none;
 }
 
 /*daria*/
-.grid-col-1of3 .category-image {
-  opacity: 1;
+.category-title-box-mini {
+  position: absolute;
+  bottom: 4em;
+  left: 1em;
+  width: 16em;
+  height: 5em;
+  text-decoration: none;
 }
 
 /*daria*/
 .category-title {
   font-family: "Open Sans", sans-serif;
   text-align: left;
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: bolder;
-  margin-bottom: 0.2em;
-  padding-left: 5%;
+  font-weight: bold;
   text-decoration: none;
+  text-align: left;
 }
 
-.yellow {
-  background-color: rgb(255, 192, 51);
-  margin-right: 2em;
-  padding-top: .5em;
-  padding-bottom: .5em;
-}
-
-
-/*daria*/
-.category-title-box {
-  position: absolute;
-  top: 4em;
-  width: 20em;
-  height: 15em;
-  text-decoration: none;
-}
 
 /*daria*/
 .category-subtitle {
   font-family: "Open Sans", sans-serif;
   font-size: 0.7em;
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 0;
   color: black;
   letter-spacing: 2px;
-  padding-left: 5%;
   font-weight: bold;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+
+.category-white-text {
+  color: white;
 }
 
 .shop-button {
-    border: 2px solid rgb(127,42,121);
-    background-color: transparent;
-    color:  rgb(127,42,121);
-    margin-top: 4em;
-    margin-left: 5%;
-
-
-}
-
-/*section image tags*/
-
-#section-title{
-  position: relative;
-}
-
-.section-title-box {
-  position: relative;
-  max-width: auto;
-}
-
-.section-title {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  font-size: 5em;
-  color: white;
+  border: 2px solid rgb(127,42,121) ;
+  background-color: transparent;
+  color:  rgb(127,42,121);
+  display: block;
+  padding: 0.2rem 1em;
+  font-size: 0.8em;
+  width: 5em;
+  text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
-  padding: 0;
-  position: absolute;
-  top: 20%;
-  left: 30%;
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
 }
+
+.shop-button:hover, .shop-button:focus {
+  color: white;
+  border-radius: 15px;
+  background-color: rgb(127,42,121);
+}
+
+
+.shop-button-alt {
+  border: 2px solid white;
+  background-color: transparent;
+  color:  white;
+}
+
+
+.shop-button-alt:hover, .shop-button-alt:focus {
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+
 
 
 
@@ -865,19 +908,16 @@ a.category {
 */
 
 li{
-  line-height: 1.5em;
-  margin-bottom: 1em;
-  line-height: 1em;
+  line-height: 1.4em;
 }
 
 ul {
   list-style: none; 
   padding: 0;
-  margin-top: 0.5em;
+  font-size: 0.9em;
 }
 
 ul li { 
-  padding-left: 1.3em; 
 }
 
 .selected{
@@ -893,61 +933,80 @@ ul li {
 }*/
 
 ol {
-  padding-left: 2.5em; 
+  padding: 0;
+  font-size: 0.9em;
+  text-align: left;
+  line-height: 1.4em;
 }
 
 .text-section{
   width: 65%;
 }
 
-/*newa article*/
+/*news article tags and classes*/
 
-/*news grid*/
-/*daria*/
-.cropped-container {
-  margin-left: 10%;
-  margin-right: 8%;
-  padding-top: 1em;
+/*news and events section*/
+.news-and-events {
+  padding-top: 6em;
 }
 
 /*daria*/
-.news-article {
-  width: 33%;
+.news-image {
+  width: 100%;
+
 }
 
 /*daria*/
 .news-date {
-  font-size: 2em;
-  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  text-decoration: none;
   }
 
 /*daria*/
 .news-month {
   text-align: center;
-
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7em;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0;
 }
 
 /*daria*/
 .news-date-container {
-  background-color: white;
+  position: absolute;
+  background-color: rgb(127,42,121);
   opacity: 0.9;
+  top: 2.5em;
+  left: 0;
   width: 6em;
   height: 8em;
+  text-decoration: none;
 }
+
 
 /*daria*/
 .news-title {
   font-family: "Open Sans", sans-serif;
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: black;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-weight: bold;
   padding-top: 0.5em;
   margin-bottom: 0;
   margin-top: 0;
+  padding-left: .1em;
+  text-decoration: none;
   }
 
 /*daria*/
@@ -957,18 +1016,15 @@ ol {
       font-size: 0.7em;
       letter-spacing: 2px;
 }
+/*end of news article classes*/
 
 
-.news-image {
-  float: left;
-  opacity: 0.9;
+/*about company classes*/
+.about-company {
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
-.news-image:hover, .news-image:focus {
-  opacity: 1;
-  box-shadow: 0px 3px 5px #888888;
-
-}
 
 /* 
   TEXT ELEMENTS -------------------
@@ -1007,7 +1063,18 @@ ol {
 
 /*daria*/
 .main-nav {
+  position: absolute;
+  padding-left: 8em;
 
+}
+
+/*daria*/
+.secondary-nav {
+
+}
+
+/*daria*/
+.united-nav {
   display: -webkit-flex; /* For support in a series of Webkit browsers */
   display: -ms-flex; /* For support in IE 10 */
   display: flex;
@@ -1020,13 +1087,16 @@ ol {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
 
-  padding-top: 2em;
-
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
+
+
 
 /*daria*/
 .checkout-nav {
@@ -1054,47 +1124,7 @@ ol {
 
 }
 
-/*daria*/
-.secondary-nav {
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
 
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  -webkit-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  justify-content: flex-end;
-}
-
-/*daria*/
-.united-nav {
-  display: -webkit-flex; /* For support in a series of Webkit browsers */
-  display: -ms-flex; /* For support in IE 10 */
-  display: flex;
-
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-}
 
 
 /*product listing/////////*/
@@ -1147,25 +1177,26 @@ ol {
   width: 100%;
 }*/
 
+/*classes for feedback form*/
+/*daria*/
 
 /*daria*/
-.form-contact {
-  /*
-  display: -ms-flex; 
-  display: flex;
+.form-feedback {
 
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  */
   display: block;
+  width: 90%;
+  color: white;
+  text-align: left;
+  padding-top: 1em;
+}
 
-  /*border is used for testing
-  border: 1px solid black; */
-  max-width: 100%;
-  padding: 1em;
-  margin-top: 0;
-
+/*daria*/
+.form-subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
 }
 
 /*daria*/
@@ -1183,10 +1214,20 @@ ol {
 }
 
 /*daria*/
+.full-bleed-bar-top {
+  position: relative;
+  background-color: rgb(127,42,121);
+  background-position: center;
+}
+
+/*daria*/
 .full-bleed-bar {
   position: relative;
   background-color: rgb(127,42,121);
   background-position: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+
 }
 
 .title-image {
@@ -1246,13 +1287,6 @@ oramge rgb(255, 192, 51)
   margin-left: 0;
   }
 
-  li{
-    float: left;
-    margin-bottom: 1em;
-    line-height: 1em;
-    font-size: 0.9em;
-  }
-
   ul {
     float: left;
     list-style: none; 
@@ -1265,3 +1299,6 @@ oramge rgb(255, 192, 51)
     padding-left: 0.5em; 
   }
 }
+
+
+
