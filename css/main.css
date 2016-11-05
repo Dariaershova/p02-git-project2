@@ -547,16 +547,9 @@ td.data {
   height: auto;
   padding-right: 2em;
   padding-left: 1em;
-  padding-top: .5em;
+  padding-top: .3em;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-
-}
-
-/*daria*/
-.icon-button:hover, .icon-button:focus {
-  padding-right: 1.8em;
-  
 }
 
 /*section separator element*/
@@ -884,7 +877,6 @@ a.category {
   position: relative;
 }
 */
-
 
 /* 
   TEXT ELEMENTS -------------------
