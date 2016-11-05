@@ -153,7 +153,37 @@
 
 }
 
+/*Item Listings--------------->/*
 
+/*Isabel*/
+.item-listing-box{
+	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+}
+
+/*Isabel*/
+.item-listing-unit{
+	position: relative;
+	margin-bottom: 2em;
+	margin-left: 2em;
+}
+/*Isabel*/
+
+.item-listing-unit img{
+	-webkit-transition: all 0.2s ease-out;
+  	transition: all 0.2s ease-out;
+}
+
+/*Isabel*/
+.item-listing-unit img:hover, .item-listing-unit img:focus{
+	opacity: 0.75;
+}
+
+/*<---------------Item Listings/*
 
 @media (min-width: 35em)  {
 
