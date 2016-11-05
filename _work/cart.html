@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Secure Checkout</title>
+
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/grids.css" rel="stylesheet">
+        <link href="css/flexboxes.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!--main navigation-->
+    <nav class="united-nav full-bleed-bar-top">
+        <a href="index.html"><img class="icon-button logo-flex" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
+        <div class = "main-nav"> 
+            <a href="itemlisting.html" class="menu-button">Shop all</a>
+            <a href="index.html#news_and_events" class="menu-button">News and Events</a>
+            <a href="index.html#about_company" class="menu-button">About company</a>
+            <a href="index.html#contacts" class="menu-button">Contacts</a>
+         </div>
+
+         <div class="secondary-nav">
+            <a href="#" class="menu-button">Search</a>
+            <a href="#" class="menu-button">Login</a>
+            <a href="cart.html" class="menu-button">View basket</a>
+         </div>
+    </nav>
+
+
+    <div class="intro">
+        <img class="logo-central" src="img/icons/logo-central.png">
+        <h2 class="section-title">unique plants for unique experiences</h2>
+    </div>
+
+
+
+    <!--checkout section of the page-->
+    <section id="#shopping-bag">
+        <div class="grid-row cropped-container">
+
+        <!--left side-->
+        <div class="grid-col-cart">
+
+            <!--navigation for checkout process-->
+            <nav class = "checkout-nav"> 
+                              <a href="cart.html" class="checkout-nav-button active">Shopping Bag /</a>
+                              <a href="shipping.html#shipping" class="checkout-nav-button">Shipping /</a>
+                              <a href="payment.html#payment" class="checkout-nav-button">Payment /</a>
+                              <a href="order-review.html#review" class="checkout-nav-button">Order review /</a>
+                              <a href="receipt.html#receipt" class="checkout-nav-button">Receipt</a>
+            </nav>
+
+             <table class="cart-header">
+              <tr>
+                <th>Image</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Item Price</th>
+                <th>Total Price</th>
+              </tr>
+
+              <tr>
+                <td><img class="cart-image" src="img/succulent1-150.png" alt="Image description">
+                </td>
+                <td>"Red-Beaked" Succulent</td>
+                <td>1</td>
+                <td>C$5.00</td>
+                <td class="cart-price">C$5.00</td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
+                <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
+              </tr>
+
+              <tr>
+                <td><img class="cart-image" src="img/succulent2-150.png" alt="Image description"></td>
+                <td>"Bluebean" Succulent</td>
+                <td>2</td>
+                <td>C$5.00</td>
+                <td class="cart-price">C$10.00</td>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
+                <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
+              </tr>
+
+            </table>
+            </div>
+            <!--end of the left side-->
+
+            <!--right side-->
+            <div class="grid-col-checkout">
+            <h3 class="checkout-title">Order Summary</h3>
+
+            <table class="checkout-header">
+                <tr>
+                    <td class="checkout-line">Subtotal</td>
+                    <td class="checkout-line right-alignment">C$15.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Shipping</td>
+                    <td class="checkout-line right-alignment">C$9.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Estimated Tax</td>
+                    <td class="checkout-line right-alignment">C$3.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-price">Total</td>
+                    <td class="checkout-price right-alignment">C$27.00</td> 
+                </tr>
+            </table>
+                
+                <a class="button-checkout" href="shipping.html#shipping">checkout</a>
+
+            </div>
+            <!--end of the right side-->
+
+        </div>
+    </section>
+    <!--end of the checkout section-->
+
+
+</body>
+
+</html>
