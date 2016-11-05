@@ -35,30 +35,32 @@
     </nav>
 
 
+    <!--section separator central element-->
     <div class="intro">
-        <img class="logo-central" src="img/icons/logo-central.png">
+        <img class="logo-central" src="img/icons/logo-central.png" alt="leaf me logo really big">
         <h2 class="section-title">unique plants for unique experiences</h2>
     </div>
 
 
 
     <!--checkout section of the page-->
-    <section id="#shopping-bag" class="main-page">
-        <div class="grid-row">
+    <section id="#shopping-bag" class="checkout-process">
+        <div class="grid-row cropped-container">
 
         <!--left side-->
         <div class="grid-col-cart">
 
             <!--navigation for checkout process-->
             <nav class = "checkout-nav"> 
-                              <a href="cart.html" class="button-nav checkout-nav-button active">Shopping Bag /</a>
-                              <a href="shipping.html#shipping" class="button-nav checkout-nav-button">Shipping /</a>
-                              <a href="payment.html#payment" class="button-nav checkout-nav-button">Payment /</a>
-                              <a href="order-review.html#review" class="button-nav checkout-nav-button">Order review /</a>
-                              <a href="receipt.html#receipt" class="button-nav checkout-nav-button">Receipt</a>
+                              <a href="cart.html" class="checkout-nav-button active">Shopping Bag /</a>
+                              <a href="shipping.html#shipping" class="checkout-nav-button">Shipping /</a>
+                              <a href="payment.html#payment" class="checkout-nav-button">Payment /</a>
+                              <a href="order-review.html#review" class="checkout-nav-button">Order review /</a>
+                              <a href="receipt.html#receipt" class="checkout-nav-button">Receipt</a>
             </nav>
 
-             <table class="cart-header">
+            <!--cart contents-->
+            <table class="cart-header">
               <tr>
                 <th>Image</th>
                 <th>Item</th>
@@ -68,7 +70,8 @@
               </tr>
 
               <tr>
-                <td><img class="cart-image" src="img/succulent1-150.png" alt="Image description">
+                <td><img class="cart-image" src="img/succulent1-100.png" alt="Image description">
+                <a href="#" class="edit-button">Edit</a>
                 </td>
                 <td>"Red-Beaked" Succulent</td>
                 <td>1</td>
@@ -77,36 +80,24 @@
               </tr>
 
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
-                <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
-              </tr>
+                <td><img class="cart-image" src="img/succulent2-100.png" alt="Image description">
+                <a href="#" class="edit-button">Edit</a></td>
 
-              <tr>
-                <td><img class="cart-image" src="img/succulent2-150.png" alt="Image description"></td>
                 <td>"Bluebean" Succulent</td>
                 <td>2</td>
                 <td>C$5.00</td>
                 <td class="cart-price">C$10.00</td>
               </tr>
 
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
-                <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
-              </tr>
-
             </table>
-            </div>
-            <!--end of the left side-->
 
-            <!--right side-->
-            <div class="grid-col-checkout">
-            <h3 class="checkout-title">Order Summary</h3>
+        </div>
+        <!--end of the left side-->
+
+        <!--right side-->
+        <div class="grid-col-checkout">
+
+            <p class="checkout-title">Order Summary</p>
 
             <table class="checkout-header">
                 <tr>
@@ -122,15 +113,15 @@
                     <td class="checkout-line right-alignment">C$3.00</td> 
                 </tr>
                 <tr>
-                    <td class="checkout-price">Total</td>
-                    <td class="checkout-price right-alignment">C$27.00</td> 
+                    <td class="checkout-line checkout-price">Total</td>
+                    <td class="checkout-line checkout-price right-alignment">C$27.00</td> 
                 </tr>
             </table>
                 
-                <a class="button-checkout" href="shipping.html#shipping">checkout</a>
+            <a class="button-checkout" href="shipping.html#shipping">checkout</a>
 
-            </div>
-            <!--end of the right side-->
+        </div>
+        <!--end of the right side-->
 
         </div>
     </section>
