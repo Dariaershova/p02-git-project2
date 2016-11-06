@@ -162,14 +162,14 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
-  	justify-content: center;
+  	justify-content: flex-start;
 }
 
 /*Isabel*/
 .item-listing-unit{
 	position: relative;
 	margin-bottom: 2em;
-	margin-left: 2em;
+	margin-right: 1.8em;
 }
 /*Isabel*/
 

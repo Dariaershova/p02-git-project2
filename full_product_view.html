@@ -16,85 +16,86 @@
 
 <body>
 
-	<nav>
-         <div class="secondary-nav full-bleed-bar">
-            <a href="index.html"><img class="icon-button icon-resize" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
-            <a href="cart.html"><img class="icon-button icon-resize" src="img/icons/cart.png" alt="cart icon, shopping bag icon"></a>
-            <a href="checkout.html"><img class="icon-button icon-resize" src="img/icons/profile.png" alt="profile icon"></a>
-         </div>
-    </nav>
-
-    <nav>
+        <!--main navigation-->
+    <nav class="united-nav full-bleed-bar-top">
+        <a href="index.html"><img class="icon-button logo-flex" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
         <div class = "main-nav"> 
-            <a href="index.html" class="button-nav">Home</a>
-            <a href="itemlisting.html" class="button-nav">Shop all</a>
-            <a href="#news_and_events" class="button-nav">News and Events</a>
-            <a href="#about_company" class="button-nav">About company</a>
-            <a href="#contacts" class="button-nav">Contacts</a>
+            <a href="itemlisting.html" class="menu-button">Shop all</a>
+            <a href="index.html#news_and_events" class="menu-button">News and Events</a>
+            <a href="index.html#about_company" class="menu-button">About company</a>
+            <a href="index.html#contacts" class="menu-button">Contacts</a>
+         </div>
+
+         <div class="secondary-nav">
+            <a href="#" class="menu-button">Search</a>
+            <a href="#" class="menu-button">Login</a>
+            <a href="cart.html" class="menu-button">View basket</a>
          </div>
     </nav>
 
 
     <section id="#listing-full-view">
-    <div class="grid-row">
-        <div class="grid-col-1of4">
-        <h1 class="filter-header">Categories</h1>
-        <nav class="filter-nav">
-            <a href="#" class="button-nav button-nav-selected filter-nav-first">All Plants</a>
-                <ul>
-                    <li><a href="itemlisting.html" class="button-nav button-nav-selected">Succulents</a></li>
-                    <li><a href="#" class="button-nav">Cacti</a></li>
-                    <li><a href="#" class="button-nav">Air Plants</a></li>
-                </ul>
-            <a href="#" class="button-nav filter-nav">Pots + Containers</a>
-            <a href="#" class="button-nav filter-nav">Equipment</a>
-            <a href="#" class="button-nav filter-nav">Sale</a>
-        </nav>
-        </div>
+        <div class="cropped-container-modified">
+            <div class="grid-row">
+                <div class="grid-col-1of4">
+                <h1 class="filter-header">Categories</h1>
+                    <nav class="filter-nav">
+                        <a href="#" class="button-nav button-nav-selected filter-nav-first">All Plants</a>
+                            <ul>
+                                <li><a href="#" class="in-text-link sub-category selected-nav">Succulents</a></li>
+                                <li><a href="#" class="sub-category">Cacti</a></li>
+                                <li><a href="#" class="sub-category">Air Plants</a></li>
+                            </ul>
+                        <a href="#" class="button-nav filter-nav filter-nav-unselected">Pots + Containers</a>
+                        <a href="#" class="button-nav filter-nav filter-nav-unselected">Equipment + Tools</a>
+                        <a href="#" class="button-nav filter-nav filter-nav-unselected">Sale</a>
+                    </nav>
+                    </div>
 
-        <div class="grid-col-3of4">
-            <section id="product-listing">
-                <figure class="product-image">
-                    <img src="img/succulent1.png" alt="small, green succulent plant with red tips in a light blue flower pot">
-                </figure>
+                <div class="grid-col-3of4">
+                    <section id="product-listing">
+                        <figure class="product-image">
+                            <img src="img/succulent1.png" alt="small, green succulent plant with red tips in a light blue flower pot">
+                        </figure>
 
-                <h3>Red-Beaked Succulent</h3>
-                <p class="latin-name"><em class="latin-name">Echeveria amoena</em></p>
-                <p class="price-number medium-text">C$5.00</p>
-                &#9733; &#9733; &#9733; &#9733; &#9733; <a class="in-text-link margin-left small-text" href="#reviews">2 reviews</a>
-                <p>The <em>Echeveria amoena</em> or Red-Beaked Succulent, is a pale green succulent of the Crassulaceae family. Native to Mexico and Central America, these succulents need a fair amount of sunshine, but require little water. Water these plants from the roots to avoid over-watering. If the tips begin to yellow, water the plant more frequently. The leaves may also spread wide if there is not enough sunlight.</p>
-                <form class="form-input-quantity">
-                    <label>Quantity:</label>
-                    <input type="number" name="quantity" min="1" max="5" placeholder="1">
-                </form>
-                <a class="button-submit button-nav-add-to-cart" href="cart.html">Add to Cart</a>
-            </section>
+                        <h3>Red-Beaked Succulent</h3>
+                        <p class="latin-name"><em class="latin-name">Echeveria amoena</em></p>
+                        <p class="price-number medium-text">C$5.00</p>
+                        &#9733; &#9733; &#9733; &#9733; &#9733; <a class="in-text-link margin-left small-text" href="#reviews">2 reviews</a>
+                        <p>The <em>Echeveria amoena</em> or Red-Beaked Succulent, is a pale green succulent of the Crassulaceae family. Native to Mexico and Central America, these succulents need a fair amount of sunshine, but require little water. Water these plants from the roots to avoid over-watering. If the tips begin to yellow, water the plant more frequently. The leaves may also spread wide if there is not enough sunlight.</p>
+                        <form class="form-input-quantity">
+                            <label>Quantity:</label>
+                            <input type="number" name="quantity" min="1" max="5" placeholder="1">
+                        </form>
+                        <a class="button-submit button-nav-add-to-cart" href="cart.html">Add to Cart</a>
+                    </section>
 
-            
-                <div class="suggested-products">
-                    <p>People who looked at this also looked at:</p>
-                    <img src="img/thumbnail1.png" alt="thumbnail for related product: small green succulent with red tips in a white and terracotta coloured flower pot">
-                    <img src="img/thumbnail2.png" alt="thumbnail for related product: green succulent with medium-length stalks in a white and aqua-coloured flower pot">
-                    <img src="img/thumbnail3.png" alt="thumbnail for related product: green succulent with plump leaves in a round, peach and silver flower pot"> 
-                    <img src="img/thumbnail4.png" alt="thumbnail for related product: green succulent with medium-sized flat leaves in a pink and gold flower pot"> 
-                    <img src="img/thumbnail5.png" alt="thumbnail for related product: large-leafed green succulent in yellow-lipped, white with black polka-dotted flower pot">
+                    
+                        <div class="suggested-products">
+                            <p>People who looked at this also looked at:</p>
+                            <img src="img/thumbnail1.png" alt="thumbnail for related product: small green succulent with red tips in a white and terracotta coloured flower pot">
+                            <img src="img/thumbnail2.png" alt="thumbnail for related product: green succulent with medium-length stalks in a white and aqua-coloured flower pot">
+                            <img src="img/thumbnail3.png" alt="thumbnail for related product: green succulent with plump leaves in a round, peach and silver flower pot"> 
+                            <img src="img/thumbnail4.png" alt="thumbnail for related product: green succulent with medium-sized flat leaves in a pink and gold flower pot"> 
+                            <img src="img/thumbnail5.png" alt="thumbnail for related product: large-leafed green succulent in yellow-lipped, white with black polka-dotted flower pot">
+                        </div>
+                    
+                    <section id="reviews">
+                        <h2>Reviews</h2>
+                        <div class="review">
+                            <h3>Super easy to take care of!</h3>
+                            <p class="latin-name"><em>Alexander Mudd, VA, USA</em></p>
+                            <p>My girlfriend is infamous for killing off all sorts of plants. No matter what she does, they always seem to die. By some miracle, this guy has lasted half a year so far and still appears to be thriving. I'm impressed @LeafMe! Will definitely buy from you guys again.</p>
+                        </div>
+                        <div class="review">
+                            <h3>Soooo cuteeeee</h3>
+                            <p class="latin-name"><em>Becca Green, BC, Canada</em></p>
+                            <p>Omg. Ok. So like this thing is the cutest plant I've ever seen. When I opened up the package I couldn't believe it. Mine showed up almost perfectly round with plump little leaves, and I basically died. It did spread out a little but I mean it's alive so I totally understand that it'd want to stretch out its' little leaves. Love it!</p>
+                        </div>
+                        <a class="button-submit" href="#">Leave a Review</a>
+                    </section>
                 </div>
-            
-            <section id="reviews">
-                <h2>Reviews</h2>
-                <div class="review">
-                    <h3>Super easy to take care of!</h3>
-                    <p class="latin-name"><em>Alexander Mudd, VA, USA</em></p>
-                    <p>My girlfriend is infamous for killing off all sorts of plants. No matter what she does, they always seem to die. By some miracle, this guy has lasted half a year so far and still appears to be thriving. I'm impressed @LeafMe! Will definitely buy from you guys again.</p>
-                </div>
-                <div class="review">
-                    <h3>Soooo cuteeeee</h3>
-                    <p class="latin-name"><em>Becca Green, BC, Canada</em></p>
-                    <p>Omg. Ok. So like this thing is the cutest plant I've ever seen. When I opened up the package I couldn't believe it. Mine showed up almost perfectly round with plump little leaves, and I basically died. It did spread out a little but I mean it's alive so I totally understand that it'd want to stretch out its' little leaves. Love it!</p>
-                </div>
-                <a class="button-submit" href="#">Leave a Review</a>
-            </section>
-        </div>
+            </div>
         </div>
     </section>
 
