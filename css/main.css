@@ -591,11 +591,10 @@ td.data {
 /*clickable icon*/
 /*daria*/
 .icon-button {
-  width: 9em;
+  width: 7.5em;
   height: auto;
   padding-right: 2em;
   padding-left: 1em;
-  padding-top: .3em;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -1105,13 +1104,13 @@ ol {
 
 /*daria*/
 .main-nav {
-  position: absolute;
-  padding-left: 8em;
+  padding-bottom: .1em;
 
 }
 
 /*daria*/
 .secondary-nav {
+    padding-bottom: .1em;
 
 }
 
