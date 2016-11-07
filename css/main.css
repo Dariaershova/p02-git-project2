@@ -94,25 +94,22 @@ h3{
 
 
 /*table properties*/
-table, td{
-  border-bottom: 0.5px dotted #666666;
+table, td, th {
+  border-bottom: 0.5px solid grey;
+
 }
 
-
 table {
-    border-collapse: collapse;
-    /*border-right: 0.5px solid #666666; */
+  border-collapse: collapse;
 }
 
 th {
-  font-size: 0.8em;
-  color: #666666;
+  font-size: 0.7em;
+  color: grey;
   text-align: left;
   letter-spacing: 1px;
-  font-weight: normal;
-  border-bottom: 0.5px solid #666666;
   padding: 1em 1em 1em 0;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 td {
@@ -237,8 +234,8 @@ td.data {
 
 /*daria*/
 .checkout-line {
-  font-size: 0.8em;
-  color: #666666;
+  font-size: 0.7em;
+  color: grey;
   text-align: left;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -253,7 +250,6 @@ td.data {
 
 /*daria*/
 .checkout-price {
-  font-size: 0.8em;
   color: black;
   font-weight: bold;
   border-bottom: 1px solid transparent;
@@ -1001,6 +997,9 @@ ol {
   line-height: 1.4em;
 }
 
+
+
+
 .text-section{
   width: 65%;
 }
@@ -1086,6 +1085,18 @@ ol {
   padding-top: 5em;
   padding-bottom: 5em;
 }
+
+
+.li-extended {
+  padding-bottom: 1em;
+  margin-left: 1em;
+}
+
+
+.about-company-bit {
+  padding-right: 1.5em;
+}
+
 
 
 /* 
