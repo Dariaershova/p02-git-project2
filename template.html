@@ -34,38 +34,58 @@
     </nav>
 
 
-
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
 
       <!-- Default Button styling section -->
       <section>
 
-        <h2>Navigation Button</h2>
+        <h2>Main Navigation Button</h2>
 
         <h3>CSS selector:</h3>
-        <p>.button-nav</p>
+        <p>.menu-button</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="menu-button"&gt;Menu Button&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        <a class="button-nav" href="#">Default Button</a>
+        <div class="full-bleed-bar-partial">
+        <a class="menu-button" href="#">Default Button</a>
+        </div>
       </section>
 
-      <!--in-text links styling-->
+
+      <!--shop button-->
       <section>
-        <h2>In-text link</h2>
+        <h2>Shop Button</h2>
 
         <h3>CSS selector:</h3>
-        <p>.in-text-link</p>
+        <p>.shop-button</p>
 
         <h3>Sample code:</h3>
-        <code>&lt;a class="in-text-link" href="#"&gt;In-text link&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="shop-button"&gt;Shop Button&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
-        Hello, I'm an <a class="in-text-link" href="#">in-text link</a> that links to nothing!
+        <a class="shop-button" href="#">Shop</a>
       </section>
+
+
+        <!--alternative shop button-->
+      <section>
+        <h2>Alternative Shop Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.shop-button-alt, .shop-button</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="shop-button shop-button-alt"&gt;Shop Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <div class="full-bleed-bar-partial">
+        <a class="shop-button shop-button-alt" href="#">Shop</a>
+        </div>
+      </section>
+
 
       <!--edit/remove button-->
       <section>
@@ -79,36 +99,6 @@
 
         <h3>Rendered element:</h3>
         <a class="edit-button" href="#">Edit</a>
-      </section>
-
-
-      <!--submit button styling-->
-      <section>
-        <h2>Submit/Reset Buttons</h2>
-
-        <h3>CSS Selector</h3>
-        <p>.button-submit</p>
-
-        <h3>Sample code</h3>
-        <code>&lt;a href="#" class="button-submit"&gt;Submit Button&lt;/a&gt;</code>
-
-        <h3>Rendered element</h3>
-        <a class="button-submit" href="">Submit Button</a>
-      </section>
-
-
-      <!--checkout button styling-->
-      <section>
-        <h2>Checkout Buttons</h2>
-
-        <h3>CSS Selector</h3>
-        <p>.button-checkout</p>
-
-        <h3>Sample code</h3>
-        <code>&lt;a href="#" class="button-checkout"&gt;Submit Button&lt;/a&gt;</code>
-
-        <h3>Rendered element</h3>
-        <a class="button-checkout" href="">checkout</a>
       </section>
 
 
@@ -127,23 +117,56 @@
       </section>
 
 
-      <!--icon button with a padding on the right-->
+      <!--checkout button styling-->
       <section>
-        <h2>Icon button</h2>
+        <h2>Checkout Buttons</h2>
 
         <h3>CSS Selector</h3>
-        <p>.icon-button, .icon-resize</p>
+        <p>.button-checkout</p>
 
         <h3>Sample code</h3>
-        <code>&lt;a href=""&gt;&lt;img class="icon-button icon-resize" src="img/placeholder-icon.png"&gt;&lt;/a&gt;</code>
+        <code>&lt;a href="#" class="button-checkout"&gt;Submit Button&lt;/a&gt;</code>
 
         <h3>Rendered element</h3>
-        <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png" alt="icon description"></a>
+        <a class="button-checkout" href="">checkout</a>
       </section>
 
+
+      <!--checkout process navigation button-->
+        <section>
+        <h2>Checkout process navigation button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.checkout-nav-button, .active</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="checkout-nav-button" href="#"&gt;Shipping&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a href="#" class="checkout-nav-button">Shipping /</a>
+        <a href="#" class="checkout-nav-button active">Payment /</a>
+      </section>
+
+
+
+      <!--in-text links styling-->
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.in-text-link</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="in-text-link" href="#"&gt;In-text link&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        Hello, I'm an <a class="in-text-link" href="#">in-text link</a> that links to nothing!
+      </section>
+
+      
       <!--form fields styling-->
       <section>
-        <h2>Text Input Fields for Feedback Forms</h2>
+        <h2>Text Input Fields (hidden label)</h2>
 
         <h3>CSS Selector</h3>
         <p>.form-input-field-basic</p>
@@ -165,25 +188,24 @@
 
       <!--form fields styling-->
       <section>
-        <h2>Text Input Field for Addresses</h2>
+        <h2>Text Input Field with labels </h2>
 
         <h3>CSS Selector</h3>
-        <p>.</p>
+        <p>.form-input-field-full</p>
 
         <h3>Sample code</h3>
-        <code>&lt;input type="text" id="name" class="form-input-field-basic" placeholder="Name"&gt;</code>
+        <code>&lt;input type="text" id="address" class="form-input-field-full" placeholder="Address*"&gt;</code>
 
         <h3>CSS Selector</h3>
-        <p>.form-label-field-basic</p>
+        <p>.form-label-field-full</p>
 
         <h3>Sample code</h3>
-        <code>&lt;label for="name" class="form-label-field-basic"&gt;Name&lt;/label&gt;</code>
+        <code>&lt;label for="address" class="form-label-field-full"&gt;Address&lt;/label&gt;</code>
 
           <h3>Rendered element</h3>
           <label for="address" class="form-label-field-full">Address*</label>
           <input type="text" id="address" class="form-input-field-full" placeholder="Address">
-
-  </section>
+      </section>
 
       <!--extended field -->
       <section>
@@ -207,104 +229,37 @@
       </section>
 
 
+      <!--shorter input fields-->
+      <h3>CSS Selector</h3>
+        <p>.form-input-field-shortened-2, .form-input-field-shortened</p>
+
+        <h3>Sample code</h3>
+        <code>&lt;input type="number" id="CVV-code" class="form-input-field-shortened-2" placeholder=""&gt;</code>
+        <code>&lt;input type="month" id="expiry-date" class="form-input-field-shortened" placeholder=""&gt;</code>
+
+        <h3>Rendered element</h3>
+          <label for="CVV-code" class="form-label-field-full">CVV code*</label>
+          <input type="number" id="CVV-code" class="form-input-field-shortened-2" placeholder=""> 
+
+          <label for="expiry-date" class="form-label-field-full">Expiry date*</label>
+          <input type="month" id="expiry-date" class="form-input-field-shortened"> 
+
+        </section>
+
+
       <!--checked box-->
       <section>
-      <h2>Image Category Link</h2>
+      <h2>Checkbox label</h2>
 
         <h3>CSS Selector</h3>
-        <p>.category-image, .category-title-box, .category-subtitle, .relative-positioning</p>
+        <p>.</p>
 
         <h3>Sample code</h3>
         <code></code>
 
         <h3>Rendered element</h3>
-        <input type="checkbox" name="address-checked" class="checkbox-label" checked>Choose this option<br>
+        <input type="checkbox" name="address-checked" checked>Choose this option<br>
       </section>
-
-
-      <!--image link-->
-      <section>
-        <h2>Image Category Link</h2>
-
-        <h3>CSS Selector</h3>
-        <p>.category-image, .category-title-box, .category-subtitle, .relative-positioning</p>
-
-        <h3>Sample code</h3>
-        <code>&lt;div class="relative-positioning"&gt;&lt;a href="#"&gt;&lt;img class="category-image"&gt;&lt;&lt;div class="category-title-box"&gt;&lt;h3 class="category-title"&gt;Category 1&lt;/h3&gt;&lt;h4 class="category-subtitle"&gt;subtitle&lt;/h4&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</code>
-
-        <h3>Rendered element</h3>
-              <div class="relative-positioning">
-                <a href="itemlisting.html">
-
-                  <img class="category-image" src="img/400x400.png" alt="Image description">
-                    <div class="category-title-box">
-                       <h3 class="category-title">Category 1</h3>
-                       <h4 class="category-subtitle">Subtitle</h4>
-                       <!--doesn't work
-                      <a href="#" class="button-submit">SHOP</a>-->
-                    </div>
-
-                </a>
-
-              </div>
-      </section>
-
-      <!--image for a cart-->
-      <section>
-        <h2>Cart Image</h2>
-
-        <h3>CSS Selector</h3>
-        <p>.cart-image</p>
-
-        <h3>Sample code</h3>
-        <code></code>
-
-        <h3>Rendered element</h3>
-          <img class="cart-image" src="img/150x200.png" alt="Image description">
-
-      </section>
-
-      <!--full container image-->
-      <section>
-       <h2>Full image container</h2>
-
-        <h3>CSS Selector</h3>
-        <p></p>
-
-        <h3>Sample code</h3>
-        <code></code>
-
-        <h3>Rendered element</h3>
-              <div class="relative-positioning">
-                <a href="#">
-                  <img class="category-image grid-col-1of1-image" src="img/1200x300.png" alt="Image description">
-                    <div class="category-title-box">
-                       <h3 class="category-title">New Collection</h3>
-                       <h4 class="category-subtitle">Subtitle</h4>
-                    </div>
-                </a>
-          </div>
-          </section>
-
-
-          <!--section image-->
-          <section>
-            <h2>Section image</h2>
-
-            <h3>CSS Selector</h3>
-            <p></p>
-
-            <h3>Sample code</h3>
-            <code></code>
-
-            <h3>Rendered element</h3>
-            <div id="#" class="section-title-box">
-            <img class="" src="img/1200x300.png" alt="Image description">
-            <h3 class="section-title">Section title</h3>
-
-            </div>
-            
-          </section>
 
 
     </section>
@@ -363,7 +318,6 @@
             <li>Radishes</li>
             <li>Squash</li>
           </ul>
-
       </section>
 
       <!--numbered lists styling-->
@@ -386,151 +340,163 @@
           </ol>
       </section>
 
-      <!--news article-->
-      <section>
-        <h2>News Article</h2>
 
+      <!--modified numbered lists styling-->
+      <section>
+        <h2>Modified Numbered Lists</h2>
         <h3>CSS selector:</h3>
-        <p>.news-title, .news-subtitle</p>
+          <p>.li-extended</p>
+
+        <h3>Sample code:</h3>
+          <code>&lt;ol&gt;&lt;li class="li-extended"&gt;List Item&lt;/li&gt;&lt;/ol&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <h3>Top Three Organic Fertilizers</h3>
+            <ol>
+                <li class="li-extended">Statement 1</li>
+                <li class="li-extended">Statement 2</li>
+                <li class="li-extended">Statement 3</li>
+          </ol>
+      </section>
+
+
+      <!--table reduced-->
+      <section>
+        <h2>Table heading (3 categories) </h2>
+        <h3>CSS selector:</h3>
+          <p>.cart-header, .cart-image, .cart-price</p>
 
         <h3>Sample code:</h3>
           <code></code>
 
         <h3>Rendered element:</h3>
-        <article>
-         <h3 class="news-title">New Event</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
-            <p class= "news-subtitle">Date, place, time</p>
-        </article>
-      </section>
-
-
-
-      <!--basic table-->
-      <section>
-      <h2>Basic Table</h2>
-
-        <h3>CSS selector:</h3>
-        <p>.</p>
-
-        <h3>Sample code:</h3>
-        <code></code>
-
-        <h3>Rendered element:</h3>
-        <table class="full-table contact-table">
-        <h3 class="checkout-title">Contact info</h3>
-
+        <table>
         <tr>
-            <td class="title">Phone</td>
-            <td class="data">XXXXXXXXX</td> 
-        </tr>
-
-        <tr>
-            <td class="title">Email</td>
-            <td class="data">XXXXXXXXX</td> 
-        </tr>
-
-        </table>
-
-      </section>
-
-      <!--cart item description-->
-      <section>
-      <h2>Cart Item Listing</h2>
-
-        <h3>CSS selector:</h3>
-        <p>.</p>
-
-        <h3>Sample code:</h3>
-        <code></code>
-
-        <h3>Rendered element:</h3>
-
-        <table class="cart-header">
-        <h3 class="checkout-title">Shopping bag</h3>
-          <tr>
-            <th>Image</th>
-            <th>Item</th>
-            <th>Quantity</th>
-            <th>Item Price</th>
-            <th>Total Price</th>
-          </tr>
-
-          <tr>
-            <td><img class="cart-image" src="img/150x200.png" alt="Image description">
-            </td>
-            <td>Name of the plant</td>
-            <td>Number of items</td>
-            <td>$xx.xx</td>
-            <td class="cart-price">$xx.xx</td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
-            <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
-          </tr>
-
-          <tr>
-            <td><img class="cart-image" src="img/150x200.png" alt="Image description"></td>
-            <td>Name of the plant</td>
-            <td>Number of items</td>
-            <td>$xx.xx</td>
-            <td class="cart-price">$xx.xx</td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="table-button-right"><a class="edit-button" href="#">Edit</a></td>
-            <td class="table-button-left"><a class="edit-button" href="#">Remove</a></td>
-          </tr>
-
-        </table>
-      </section>
-
-
-      <!--checkout summary-->
-      <section>
-        <h2>Checkout summary table</h2>
-
-        <h3>CSS selector:</h3>
-        <p>.</p>
-
-        <h3>Sample code:</h3>
-        <code></code>
-
-        <h3>Rendered element:</h3>
-        <table class="checkout-header">
-        <h3 class="checkout-title">Order Summary</h3>
-            <tr>
-                <td class="checkout-line">Subtotal</td>
-                <td class="checkout-line">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-line">Shipping</td>
-                <td class="checkout-line">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-line">Estimated Tax</td>
-                <td class="checkout-line">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-price">Total</td>
-                <td class="checkout-price">XXXXXXXXX</td> 
-            </tr>
-                
-               <td>
-               <a class="button-checkout" href="">checkout</a>
-               </td>
-        </table>
-      </section>
-
+            <th>Credit Card</th>
+            <th><a class="edit-button" href="#">Edit</a></th>
+            <th><a class="edit-button" href="#">Remove</a></th>
+      </tr>
+      </table>
 
       
+      <!--table-->
+      <section>
+        <h2>Basic table with 5 top categories</h2>
+        <h3>CSS selector:</h3>
+          <p>.cart-header, .cart-image, .cart-price</p>
+
+        <h3>Sample code:</h3>
+          <code></code>
+
+        <h3>Rendered element:</h3>
+              <table class="cart-header">
+              <tr>
+                <th>Image</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Item Price</th>
+                <th>Total Price</th>
+              </tr>
+
+              <tr>
+                <td><img class="cart-image" src="img/150x200.png" alt="Image description">
+                </td>
+                <td>Product name</td>
+                <td>1</td>
+                <td>C$0.00</td>
+                <td class="cart-price">C$0.00</td>
+              </tr>
+            </table>
+      </section>
+
+
+      <!--table no headings-->
+      <section>
+        <h2>Vertical table for contact info</h2>
+        <h3>CSS selector:</h3>
+          <p>.contact-table, .title, .data</p>
+
+        <h3>Sample code:</h3>
+          <code></code>
+
+        <h3>Rendered element:</h3>
+        <div class = "full-bleed-bar">
+          <table class="contact-table">
+
+                <tr>
+                    <td class="title">Phone</td>
+                    <td class="data">604-312-45-56</td> 
+                </tr>
+
+                <tr>
+                    <td class="title">Email</td>
+                    <td class="data">info@leafme.com</td> 
+                </tr>
+
+                <tr>
+                    <td class="title">Address</td>
+                    <td class="data">101-5099 Keats Way, Waterloo, Ontario, N2L 3Z5, Canada</td> 
+                </tr>
+
+            </table>
+            </div>
+      </section>
+
+
+      <!--checkout table-->
+      <section>
+      <h2>Checkout table</h2>
+      <h3>CSS selector:</h3>
+      <p></p>
+
+      <h3>Sample code:</h3>
+      <code></code>
+
+      <h3>Rendered element:</h3>
+      <div class="">
+
+            <h3 class="checkout-title">Order Summary</h3>
+
+            <table class="checkout-header">
+                <tr>
+                    <td class="checkout-line">Subtotal</td>
+                    <td class="checkout-line right-alignment">C$16.90</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Shipping</td>
+                    <td class="checkout-line right-alignment">C$9.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Estimated Tax</td>
+                    <td class="checkout-line right-alignment">C$3.10</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line checkout-price">Total</td>
+                    <td class="checkout-line checkout-price right-alignment">C$30.00</td> 
+                </tr>
+            </table>
+                
+            <a class="button-checkout" href="shipping.html#shipping">checkout</a>
+
+        </div>
+        </section>
+
+
+        <!--news articles-->
+      <section>
+        <h2>News Article</h2>
+        <h3>CSS selector:</h3>
+        <p>.news-title, news-subtitle</p>
+
+        <h3>Sample code:</h3>
+        <code></code>
+
+        <h3>Rendered element:</h3>
+         <h3 class="news-title">Halloween Craze</h3> 
+        <p>Get ahead of Halloween with our special promo that starts on August 24th. Everything orange will go on sale! Give your pumpkins the biggest smiles. Read Promo conditions <a class="in-text-link" href="#">here.</a></p>
+        <p class= "news-subtitle"><a href="#">leaf.com/orangecraze</a></p>
+        </section>
+
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
 
@@ -540,87 +506,109 @@
 
     <!--main navigation-->
       <section>
-        <h2>Main Navigation</h2>
+        <h2>United Navigation</h2>
         <h3>CSS selector:</h3>
-         <p>.main-nav</p>
-
-        <h3>Sample code:</h3>
-        <code>&lt;nav class="main-nav"&gt;&lt;a href="" class="button-nav"&gt;Menu Option 1&lt;/a&gt;&lt;/nav&gt;</code>
-
-        <h3>Rendered element:</h3>
-        <nav class = "main-nav"> 
-                          <a href="" class="button-nav">Menu Option 1</a>
-                          <a href="" class="button-nav">Menu Option 2</a>
-                          <a href="" class="button-nav">Menu Option 3</a>
-                          <a href="" class="button-nav">Menu Option 4</a>
-                          <a href="" class="button-nav">Menu Option 5</a>
-        </nav>
-      </section>
-
-
-      <!--main navigation-->
-      <section>
-        <h2>Checkout navigation</h2>
-        <h3>CSS selector:</h3>
-         <p>.checkout-nav</p>
+         <p>.united-nav, .main-nav, .secondary-nav</p>
 
         <h3>Sample code:</h3>
         <code></code>
 
         <h3>Rendered element:</h3>
-        <nav class = "checkout-nav"> 
-                          <a href="" class="button-nav checkout-nav-button active">Shopping Bag /</a>
-                          <a href="" class="button-nav checkout-nav-button">Shipping /</a>
-                          <a href="" class="button-nav checkout-nav-button">Payment /</a>
-                          <a href="" class="button-nav checkout-nav-button">Order review /</a>
-                          <a href="" class="button-nav checkout-nav-button">Receipt</a>
-        </nav>
+          <nav class="united-nav full-bleed-bar-top">
+            <a href="index.html"><img class="icon-button" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
+            <div class = "main-nav"> 
+                  <a href="itemlisting.html" class="menu-button">Menu 1</a>
+                  <a href="#news_and_events" class="menu-button">Menu 2</a>
+                  <a href="#about_company" class="menu-button">Menu 3</a>
+                  <a href="#contacts" class="menu-button">Menu 4</a>
+            </div>
+
+            <div class="secondary-nav">
+                  <a href="#" class="menu-button">SubMenu 1</a>
+                  <a href="#" class="menu-button">SubMenu 2</a>
+                  <a href="cart.html" class="menu-button">SubMenu 3</a>
+            </div>
+          </nav>
       </section>
 
 
-      <!--secondary icon navigation-->
+      <!--main category-->
       <section>
-        <h2>Secondary Navigation</h2>
+      <h2>Main category</h2>
+        <h3>CSS selector:</h3>
+        <p></p>
 
-        <h3>CSS Selector</h3>
-        <p>.secondary-nav</p>
+        <h3>Sample code:</h3>
+        <code></code>
 
-        <h3>Sample code</h3>
-        <code>&lt;nav class="secondary-nav"&gt;&lt;a href=""&gt;&lt;img class="icon-button icon-resize" src="img/placeholder-icon.png"&gt;&lt;/a&gt;&lt;/nav&gt;</code>
+        <h3>Rendered element:</h3>
+        <div class="grid-col-1of2">
+          <img class="category-image" src="img/600x600.png" alt="a plant with its root system taken out of the pot and lying on the grey wooden floor">
+          <div class="category-title-box">
+              <h3 class="category-title category-white-text">ALL PLANTS</h3>
+              <h4 class="category-subtitle category-white-text">2048 plants to choose from</h4>
+              <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
+          </div>
+      </div>
 
-        <h3>Rendered element</h3>
-        <nav class= "secondary-nav">
-          <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png" alt="icon description"></a>
-          <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png" alt="icon description"></a>
-        </nav>
+      <div class="grid-col-1of2">
+          <img class="category-image" src="img/600x600.png" alt="a plant with its root system taken out of the pot and lying on the grey wooden floor">
+          <div class="category-title-box">
+              <h3 class="category-title category-white-text">ALL PLANTS</h3>
+              <h4 class="category-subtitle category-white-text">2048 plants to choose from</h4>
+              <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
+          </div>
+      </div>
       </section>
 
-
-      <!--united navigation-->
+      <!--main section separator-->
       <section>
-        <h2>United Navigation</h2>
+      <h2>Central page decoration</h2>
+        <h3>CSS selector:</h3>
+        <p></p>
 
-        <h3>CSS Selector</h3>
-        <p>.united-nav</p>
+        <h3>Sample code:</h3>
+        <code></code>
 
-        <h3>Sample code</h3>
-        <code>&lt;nav class="united-nav"&gt;&lt;div class = "main-nav"&gt;...&lt;/div&gt;&lt;div class = "secondary-nav"&gt;...&lt;/div&gt;&lt;/nav&gt;</code>
+        <h3>Rendered element:</h3>
+        <div class="intro">
+        <img class="logo-central" src="img/icons/logo-central.png" alt="leaf me that has berries on a branch of a tree">
+        <h2 class="section-title">unique plants for unique experiences</h2>
+         </div>
+    </section>
 
-        <h3>Rendered element</h3>
-        <nav class="united-nav">
-          <div class = "main-nav"> 
-                <a href="" class="button-nav">Menu Option 1</a>
-                <a href="" class="button-nav">Menu Option 2</a>
-                <a href="" class="button-nav">Menu Option 3</a>
-                <a href="" class="button-nav">Menu Option 4</a>
-                <a href="" class="button-nav">Menu Option 5</a>
-             </div>
-             <div class="secondary-nav">
-                <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png" alt="icon description"></a>
-                <a href=""><img class="icon-button icon-resize" src="img/placeholder-icon.png" alt="icon description"></a>
-             </div>
-            </nav>
-      </section>
+      <!--section separator-->
+      <section>
+      <h2>Sections separator</h2>
+        <h3>CSS selector:</h3>
+        <p></p>
+
+        <h3>Sample code:</h3>
+        <code></code>
+
+        <h3>Rendered element:</h3>
+     <!--seciton separator secondary-->
+        <div class="intro">
+        <img class="logo" src="img/icons/logo-big.png" alt="leaf me icon">
+        <h2 class="section-title">News and Events</h2>
+      </div>
+    </section>
+
+          <!--reversed ection separator-->
+      <section>
+      <h2>Sections separator (reverse colors)</h2>
+        <h3>CSS selector:</h3>
+        <p></p>
+
+        <h3>Sample code:</h3>
+        <code></code>
+
+        <h3>Rendered element:</h3>
+          <div class="intro full-bleed-bar">
+            <img class="logo" src="img/icons/logo-big-reverse.png" alt="leaf me icon reversed -white on purple">
+            <h2 class="section-title category-white-text">contact us</h2>
+          </div>
+    </section>
 
 
       <!--news article-->
@@ -633,34 +621,57 @@
         <code></code>
 
         <h3>Rendered element:</h3>
-        <div class="news-article">
-          <div class="relative-positioning">
-                  <a href="#">
-                    <img class="category-image grid-col-1of6" src="img/400x300.png" alt="Image description">
-                      <div class="category-title-box news-date-container">
-                         <h3 class="category-title news-date">24</h3>
-                         <h4 class="category-subtitle news-month">august</h4>
+        <div class="grid-col-1of3">
+              <a href="#">
+                <img class="news-image" src="img/400x267.png" alt="Hands holding a Beautiful bright orange pumpkin">
+                  <div class="news-date-container">
+                         <h3 class="news-date">XX</h3>
+                         <h4 class="news-month">month</h4>
                   </div>
-                  </a>
-                  <h3 class="news-title">New Event</h3> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
-                  <p class= "news-subtitle">Date, place, time</p>
+              </a>
+                  <h3 class="news-title">Halloween Craze</h3> 
+                  <p>Get ahead of Halloween with our special promo that starts on August 24th. Everything orange will go on sale! Give your pumpkins the biggest smiles. Read Promo conditions <a class="in-text-link" href="#">here.</a></p>
+                  <p class= "news-subtitle"><a href="#">complimentary info</a></p>
           </div>
-        </div>
+                  <div class="grid-col-1of3">
+              <a href="#">
+                <img class="news-image" src="img/400x267.png" alt="Hands holding a Beautiful bright orange pumpkin">
+                  <div class="news-date-container">
+                         <h3 class="news-date">XX</h3>
+                         <h4 class="news-month">month</h4>
+                  </div>
+              </a>
+                  <h3 class="news-title">Halloween Craze</h3> 
+                  <p>Get ahead of Halloween with our special promo that starts on August 24th. Everything orange will go on sale! Give your pumpkins the biggest smiles. Read Promo conditions <a class="in-text-link" href="#">here.</a></p>
+                  <p class= "news-subtitle"><a href="#">complimentary info</a></p>
+          </div>
+                  <div class="grid-col-1of3">
+              <a href="#">
+                <img class="news-image" src="img/400x267.png" alt="Hands holding a Beautiful bright orange pumpkin">
+                  <div class="news-date-container">
+                         <h3 class="news-date">XX</h3>
+                         <h4 class="news-month">month</h4>
+                  </div>
+              </a>
+                  <h3 class="news-title">Halloween Craze</h3> 
+                  <p>Get ahead of Halloween with our special promo that starts on August 24th. Everything orange will go on sale! Give your pumpkins the biggest smiles. Read Promo conditions <a class="in-text-link" href="#">here.</a></p>
+                  <p class= "news-subtitle"><a href="#">complimentary info</a></p>
+          </div>
       </section>
+
 
       <!--form-->
       <section>
         <h2>Form</h2>
 
         <h3>CSS selector:</h3>
-        <p>.form-contact-button, .form-contact, .form-label-field-basic, .form-input-field-basic, .form-input-field-extended, .textarea, .button-submit-alt</p>
+        <p></p>
 
         <h3>Sample code</h3>
-        <code>&lt;form class="form-contact"&gt;
-        &lt;label for="input_type_1" class="form-label-field-basic"&gt;Label&lt;/label&gt;
-        &lt;input type="text" id="input_type_1" class="form-input-field-basic" placeholder="Paceholder text"&gt;
-        &lt;label for="input_type_2" class="form-label-field-basic"&gt;Label&lt;/label&gt;
+        <code>&lt;form class="form-feedback"&gt;
+        &lt;label for="input_type_1" class="form-label-field-full"&gt;Label&lt;/label&gt;
+        &lt;input type="text" id="input_type_1" class="form-input-field-full" placeholder="Paceholder text"&gt;
+        &lt;label for="input_type_2" class="form-label-field-full"&gt;Label&lt;/label&gt;
         &lt;input type="text" id="input_type_2" class="form-input-field-extended" placeholder="Placeholder text"&gt;
         &lt;input type="submit" class="button-submit-alt form-contact-button" value="Submit"&gt;
         &lt;/form&gt;
@@ -668,14 +679,57 @@
 
         <h3>Rendered element</h3>
         <form class="form-contact">  
-          <label for="name" class="form-label-field-basic">Name</label>
-          <input type="text" id="name" class="form-input-field-basic" placeholder="Name"> 
-          <label for="email" class="form-label-field-basic">E-mail</label>
-          <input type="email" id="email" class="form-input-field-basic" placeholder="E-mail"> 
-          <label for="message" class="form-label-field-basic">Message</label>
-          <textarea id="message" class="form-input-field-extended" placeholder="Message"></textarea>
-          <input type="submit" class="button-submit-alt form-contact-button" value="Submit">                       
-        </form>
+
+              <label for="first-name" class="form-label-field-full">First Name*</label>
+              <input type="text" id="first-name" class="form-input-field-full" placeholder=""> 
+
+              <label for="last-name" class="form-label-field-full">Last Name*</label>
+              <input type="text" id="last-name" class="form-input-field-full" placeholder=""> 
+
+              <label for="card-number" class="form-label-field-full">Card Number*</label>
+              <input type="text" id="card-number" class="form-input-field-full" placeholder=""> 
+
+              <label for="expiry-date" class="form-label-field-full">Expiry date*</label>
+              <input type="month" id="expiry-date" class="form-input-field-shortened"> 
+
+              <label for="CVV-code" class="form-label-field-full">CVV code*</label>
+              <input type="number" id="CVV-code" class="form-input-field-shortened-2" placeholder=""> 
+
+               <input type="checkbox" name="address-checked" class="checkbox-label" checked>Save this card to my profile
+
+            </form>
+         </section>
+
+
+      <!--form-->
+      <section>
+        <h2>Form (reversed colors)</h2>
+
+        <h3>CSS selector:</h3>
+        <p></p>
+
+        <h3>Sample code</h3>
+        <code>&lt;form class="form-feedback"&gt;
+        &lt;label for="input_type_1" class="form-label-field-full"&gt;Label&lt;/label&gt;
+        &lt;input type="text" id="input_type_1" class="form-input-field-full" placeholder="Paceholder text"&gt;
+        &lt;label for="input_type_2" class="form-label-field-full"&gt;Label&lt;/label&gt;
+        &lt;input type="text" id="input_type_2" class="form-input-field-extended" placeholder="Placeholder text"&gt;
+        &lt;input type="submit" class="button-submit-alt form-contact-button" value="Submit"&gt;
+        &lt;/form&gt;
+        </code>
+
+        <h3>Rendered element</h3>
+          <form class="form-feedback full-bleed-bar">  
+              <label for="name" class="form-label-field-full">Name*</label>
+              <input type="text" id="name" class="form-input-field-full" placeholder="Name"> 
+              <label for="email" class="form-label-field-full">E-mail*</label>
+              <input type="email" id="email" class="form-input-field-full" placeholder="E-mail"> 
+              <label for="message" class="form-label-field-full">Message*</label>
+              <textarea id="message" class="form-input-field-extended" placeholder="Message"></textarea>
+              <p class="form-subtitle">*Required fields</p>                      
+
+              <input type="submit" class="button-submit-alt form-contact-button" value="Submit">
+            </form>
       </section>
 
 
@@ -684,23 +738,23 @@
         <h2>2-column grid </h2>
 
         <h3>CSS selector</h3>
-        <p>.grid-col-2of10, .grid-row, .h2, .p</p>
+        <p>.cropped-container, .grid-col-1of2, .grid-row</p>
 
         <h3>Sample code</h3>
         <code>&lt;div class=""grid-row&gt;&lt;div class="grid-col-2of10"&gt;&lt;h2&gt;Name here&lt;/h2&gt;&lt;p&gt;Description here&lt;/p&gt;&lt;/div&gt;&lt;div class="grid-col-2of10"&gt;&lt;h2&gt;Name here&lt;/h2&gt;&lt;p&gt;Description here&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</code>        
         
         <h3>Rendered element</h3>
-        <div class="grid-row">
+        <div class="grid-row cropped-container">
           <div class="grid-col-1of2">
-            <h2>Name here</h2> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. In scelerisque, dolor quis laoreet ornare, turpis quam pretium nibh, sed vestibulum nisl nisl vitae dolor. </p> 
+            <h3 class="news-title">Our mission</h3> 
+            <p class="about-company-bit">LeafMe company provides new and aspiring gardeners with plants and flowers tailored to suit garden's geographical location, seasonal preferences, terrain and soil type, and even its purpose. Our customers are new homeowners who want to create a specific garden experience that best suits the purpose of their garden and its peculiarities.</p> 
           </div>
 
           <div class="grid-col-1of2">
-            <h2>Name here</h2> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. </p> 
+            <h3 class="news-title">Our mission</h3> 
+            <p class="about-company-bit">LeafMe company provides new and aspiring gardeners with plants and flowers tailored to suit garden's geographical location, seasonal preferences, terrain and soil type, and even its purpose. Our customers are new homeowners who want to create a specific garden experience that best suits the purpose of their garden and its peculiarities.</p> 
           </div>
-        </div> 
+        </div>  
 
       </section>
 
@@ -716,28 +770,25 @@
         <code></code>        
         
         <h3>Rendered element</h3>
-        <div class="grid-row">
-            <div class="grid-col-1of2 relative-positioning">
-             <a href="#">
-              <img class="category-image" src="img/600x300.png" alt="Image description">
-                          <div class="category-title-box">
-                             <h3 class="category-title">Category 1</h3>
-                             <h4 class="category-subtitle">Subtitle</h4>
-                          </div>
-             </a>
-             </div>
+         <div class="grid-row cropped-container-main">
+      <div class="grid-col-1of2">
+          <img class="category-image" src="img/600x600.png" alt="a plant with its root system taken out of the pot and lying on the grey wooden floor">
+          <div class="category-title-box">
+              <h3 class="category-title category-white-text">ALL PLANTS</h3>
+              <h4 class="category-subtitle category-white-text">2048 plants to choose from</h4>
+              <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
+          </div>
+      </div>
 
-
-            <div class="grid-col-1of2 relative-positioning">
-             <a href="#">
-              <img class="category-image" src="img/600x300.png" alt="Image description">
-                          <div class="category-title-box">
-                             <h3 class="category-title">Category 2</h3>
-                             <h4 class="category-subtitle">Subtitle</h4>
-                          </div>
-             </a>
-             </div>
-             </div>
+      <div class="grid-col-1of2">
+      <img class="category-image" src="img/600x600.png" alt="ceramic animal planters on the wooden wall, fox planter, bear planter, zebra planter, koala planter, donkey planter">
+          <div class="category-title-box">
+              <h3 class="category-title category-white-text">PLANTERS AND POTS</h3>
+              <h4 class="category-subtitle category-white-text">155 cozy plant homes</h4>
+              <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
+          </div>
+      </div>
+    </div>
        </section>
 
 
@@ -752,235 +803,113 @@
         <h3>Sample code</h3>
         <code></code>
 
-      <h3>Rendered element</h3>
-      <div class = "grid-row">
+         <h3>Rendered element</h3>
+          <div class="grid-row cropped-container">
 
-        <div class="grid-col-1of3 relative-positioning">
-         <a href="#">
-          <img class="category-image" src="img/400x300.png" alt="Image description">
-            <div class="category-title-box">
-              <h3 class="category-title">Category 3</h3>
-              <h4 class="category-subtitle">Subtitle</h4>
-            </div>
-        </a>
-      </div>
 
-      <div class="grid-col-1of3 relative-positioning">
-         <a href="#">
-          <img class="category-image" src="img/400x300.png" alt="Image description">
-            <div class="category-title-box">
-              <h3 class="category-title">Category 3</h3>
-              <h4 class="category-subtitle">Subtitle</h4>
-            </div>
-        </a>
-      </div>
-    
-    <div class="grid-col-1of3 relative-positioning">
-         <a href="#">
-          <img class="category-image" src="img/400x300.png" alt="Image description">
-            <div class="category-title-box">
-              <h3 class="category-title">Category 3</h3>
-              <h4 class="category-subtitle">Subtitle</h4>
-            </div>
-        </a>
-      </div>
+        <div class="grid-col-1of3">
+            <img class="category-image" src="img/tools.png" alt="Marimekko gardening tools on the wooden floor">
+              <div class="category-title-box-mini">
+                  <h3 class="category-title category-white-text">Dig in</h3>
+                  <h4 class="category-subtitle category-white-text">Tools and equipment</h4>
+                  <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
+              </div>
+         </div>
+         
 
-      </div>
+
+          <div class="grid-col-1of3">
+            <img class="category-image" src="img/lavender-craze.png" alt="3 lavender flowers with a tiny beautiful bow tie">
+              <div class="category-title-box-mini">
+                  <h3 class="category-title">Lavender Craze</h3>
+                  <h4 class="category-subtitle">All things purple</h4>
+                  <a href="itemlisting.html" class="shop-button">Shop</a>
+              </div>
+         </div>
+
+              <div class="grid-col-1of3">
+           <img class="category-image" src="img/succulents-main.png" alt="Succulents in pot - top down view">
+              <div class="category-title-box-mini">
+                  <h3 class="category-title">Succulents</h3>
+                  <h4 class="category-subtitle">Tiny lovelies</h4>
+                  <a href="itemlisting.html" class="shop-button">Shop</a>
+              </div>
+         </div>
+
+        </div>
       </section>
 
-      <!--2 column grid in a cropped container-->
-      <section>
-        <h2>2-column grid in a cropped container</h2>
-
-        <h3>CSS selector</h3>
-        <p></p>
-
-        <h3>Sample code</h3>
-        <code></code>        
-        
-        <h3>Rendered element</h3>
-        <div class="grid-row cropped-container">
-          <div class="grid-col-1of2">
-            <h2>Name here</h2> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. In scelerisque, dolor quis laoreet ornare, turpis quam pretium nibh, sed vestibulum nisl nisl vitae dolor. </p> 
-          </div>
-
-          <div class="grid-col-1of2">
-            <h2>Name here</h2> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. </p> 
-          </div>
-        </div> 
-
-      </section>
-
-      <!--3 column grid cropped container-->
-      <section>
-        <h2>3 column grid in a cropped container</h2>
-        <h3>CSS Selector</h3>
-        <p></p>
-
-        <h3>Sample code</h3>
-        <code></code>
-
-        <h3>Rendered element</h3>
-
-      <div class = "grid-row cropped-container">
-
-        <div class="grid-col-1of3 news-article">
-          <div class="relative-positioning">
-              <a href="#">
-                <img class="grid-col-1of6 category-image" src="img/400x300.png" alt="Image description">
-                  <div class="category-title-box">
-                         <h3 class="category-title">NEW COLLECTION</h3>
-                         <h4 class="category-subtitle">Extra details</h4>
-                  </div>
-              </a>
-                  <h3 class="news-title">New Event</h3> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
-                  <p class= "news-subtitle">Date, place, time</p>
-        </div>
-        </div>
-
-         <div class="grid-col-1of3 news-article">
-          <div class="relative-positioning">
-              <a href="#">
-                <img class="grid-col-1of6 category-image" src="img/400x300.png" alt="Image description">
-                  <div class="category-title-box">
-                         <h3 class="category-title">NEW COLLECTION</h3>
-                         <h4 class="category-subtitle">Extra details</h4>
-                  </div>
-              </a>
-                  <h3 class="news-title">New Event</h3> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
-                  <p class= "news-subtitle">Date, place, time</p>
-        </div>
-        </div>
-
-         <div class="grid-col-1of3 news-article">
-          <div class="relative-positioning">
-              <a href="#">
-                <img class="grid-col-1of6 category-image" src="img/400x300.png" alt="Image description">
-                  <div class="category-title-box">
-                         <h3 class="category-title">NEW COLLECTION</h3>
-                         <h4 class="category-subtitle">Extra details</h4>
-                  </div>
-              </a>
-                  <h3 class="news-title">New Event</h3> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. <a class="in-text-link" href="#">More </a></p>
-                  <p class= "news-subtitle">Date, place, time</p>
-        </div>
-        </div>
-
-      </div>
-    </section>
-
-     <!--main category navigation-->
-      <section>
-        <h2>Main category navigation</h2>
-        <h3>CSS Selector</h3>
-        <p></p>
-
-        <h3>Sample code</h3>
-        <code></code>
-
-        <h3>Rendered element</h3>
-
-      <div class="grid-row">
-      <div class="grid-col-1of2 relative-positioning">
-       <a href="#">
-        <img class="category-image" src="img/600x300.png" alt="Image description">
-                    <div class="category-title-box">
-                       <h3 class="category-title">Category 1</h3>
-                       <h4 class="category-subtitle">Subtitle</h4>
-                    </div>
-       </a>
-       </div>
-
-
-      <div class="grid-col-1of2 relative-positioning">
-       <a href="#">
-        <img class="category-image" src="img/600x300.png" alt="Image description">
-                    <div class="category-title-box">
-                       <h3 class="category-title">Category 2</h3>
-                       <h4 class="category-subtitle">Subtitle</h4>
-                    </div>
-       </a>
-       </div>
-       </div>
-
-        <div class="relative-positioning">
-                <a href="#">
-                  <img class="category-image grid-col-1of1-image" src="img/1200x300.png" alt="Image description">
-                    <div class="category-title-box">
-                       <h3 class="category-title">New Collection</h3>
-                       <h4 class="category-subtitle">Subtitle</h4>
-                    </div>
-                </a>
-          </div>
-
-      <div class = "grid-row">
-
-        <div class="grid-col-1of3 relative-positioning">
-         <a href="#">
-          <img class="category-image" src="img/400x300.png" alt="Image description">
-            <div class="category-title-box">
-              <h3 class="category-title">Category 3</h3>
-              <h4 class="category-subtitle">Subtitle</h4>
-            </div>
-        </a>
-      </div>
-
-      <div class="grid-col-1of3 relative-positioning">
-         <a href="#">
-          <img class="category-image" src="img/400x300.png" alt="Image description">
-            <div class="category-title-box">
-              <h3 class="category-title">Category 3</h3>
-              <h4 class="category-subtitle">Subtitle</h4>
-            </div>
-        </a>
-      </div>
-    
-    <div class="grid-col-1of3 relative-positioning">
-         <a href="#">
-          <img class="category-image" src="img/400x300.png" alt="Image description">
-            <div class="category-title-box">
-              <h3 class="category-title">Category 3</h3>
-              <h4 class="category-subtitle">Subtitle</h4>
-            </div>
-        </a>
-      </div>
-
-      </div>
-      </section>
-
+     
+     <!--checkout process grid-->
      <section>
-        <h2>2-column flex box grid with background image</h2>
-
-        <h3>CSS selector</h3>
-        <p>.two-column-box, .two-column-text</p>
+        <h2>3 column grid with images</h2>
+        <h3>CSS Selector</h3>
+        <p>.</p>
 
         <h3>Sample code</h3>
-        <code>&lt;div class="two-column-box"&gt;&lt;div class="two-column-box-text"&gt;&lt;p&gt;Text&lt;p&gt;&lt;/div&gt;&lt;div class="two-column-box-text"&gt;&lt;p&gt;Text&lt;p&gt;&lt;/div&gt;&lt;/div&gt;</code>        
-        
-        <h3>Rendered element</h3>
-        
-        <div class="two-column-box full-bleed-image-container">
-          <div class="two-column-box-text">
-            <h3 class="news-title">About company</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. In scelerisque, dolor quis laoreet ornare, turpis quam pretium nibh, sed vestibulum nisl nisl vitae dolor. </p> 
-          </div>
+        <code></code>
 
-          <div class="two-column-box-text">
-            <h3 class="news-title">Our mission</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit ante ut facilisis tristique. Duis eu erat pretium, cursus lacus sed, condimentum mauris. Vestibulum ullamcorper id neque id fermentum. Proin vulputate tortor nisi, non vehicula velit semper a. Donec eleifend velit ut lacinia condimentum. Nulla auctor risus varius diam facilisis consequat. </p> 
-          </div>
-        </div> 
+      <h3>Rendered element</h3>
+      <div class="grid-row cropped-container">
 
-      </section>
+        <!--left side-->
+        <div class="grid-col-cart">
+        <nav class = "checkout-nav"> 
+                              <a href="cart.html" class="checkout-nav-button active">Shopping Bag /</a>
+                              <a href="shipping.html#shipping" class="checkout-nav-button">Shipping /</a>
+                              <a href="payment.html#payment" class="checkout-nav-button">Payment /</a>
+                              <a href="order-review.html#review" class="checkout-nav-button">Order review /</a>
+                              <a href="receipt.html#receipt" class="checkout-nav-button">Receipt</a>
+            </nav>
 
-       
+            <!--cart contents-->
+            <table class="cart-header">
+              <tr>
+                <th>Image</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Item Price</th>
+                <th>Total Price</th>
+              </tr>
+
+              <tr>
+                <td><img class="cart-image" src="img/succulent9-100.png" alt="Image description">
+                </td>
+                <td>"Red-Spear" Succulent</td>
+                <td>1</td>
+                <td>C$8.95</td>
+                <td class="cart-price">C$8.95</td>
+              </tr>
+        </div>
+        <div class="grid-col-checkout">
+        <h3 class="checkout-title">Order Summary</h3>
+
+            <table class="checkout-header">
+                <tr>
+                    <td class="checkout-line">Subtotal</td>
+                    <td class="checkout-line right-alignment">C$16.90</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Shipping</td>
+                    <td class="checkout-line right-alignment">C$9.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Estimated Tax</td>
+                    <td class="checkout-line right-alignment">C$3.10</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line checkout-price">Total</td>
+                    <td class="checkout-line checkout-price right-alignment">C$30.00</td> 
+                </tr>
+            </table>
+                
+            <a class="button-checkout" href="shipping.html#shipping">checkout</a>
+        </div>
+      </div>
+
+
     </section>
-
+    <!--end of combined lements section-->
 
 
     <!-- COLOR PALETTE SECTION // -->
