@@ -50,7 +50,7 @@
           <h3>Sample code:</h3>
           <code>&lt;a href="#" class="menu-button"&gt;Menu Button&lt;/a&gt;</code>
 
-          <h3>Rendered element:</h3>
+          <h3>Rendered element: purple bar is not a part of the element</h3>
           <div class="full-bleed-bar-partial">
           <a class="menu-button" href="#">Default Button</a>
           </div>
@@ -82,7 +82,7 @@
           <h3>Sample code:</h3>
           <code>&lt;a href="#" class="shop-button shop-button-alt"&gt;Shop Button&lt;/a&gt;</code>
 
-          <h3>Rendered element:</h3>
+          <h3>Rendered element: purple bar is not a part of the element</h3>
           <div class="full-bleed-bar-partial">
           <a class="shop-button shop-button-alt" href="#">Shop</a>
           </div>
@@ -97,7 +97,7 @@
           <p>.edit-button</p>
 
           <h3>Sample code:</h3>
-          <code></code>
+          <code>&lt;a class="edit-button" href="#"&gt;Edit&lt;/a&gt;</code>
 
           <h3>Rendered element:</h3>
           <a class="edit-button" href="#">Edit</a>
@@ -143,6 +143,7 @@
 
           <h3>Sample code:</h3>
           <code>&lt;a class="checkout-nav-button" href="#"&gt;Shipping&lt;/a&gt;</code>
+          <code>&lt;a class="checkout-nav-button active" href="#"&gt;Payment&lt;/a&gt;</code>
 
           <h3>Rendered element:</h3>
           <a href="#" class="checkout-nav-button">Shipping /</a>
@@ -209,6 +210,7 @@
             <input type="text" id="address" class="form-input-field-full" placeholder="Address">
         </section>
 
+
         <!--extended field -->
         <section>
           <h2>Text Input Field Extended</h2>
@@ -254,10 +256,10 @@
         <h2>Checkbox label</h2>
 
           <h3>CSS Selector</h3>
-          <p>.</p>
+          <p>none</p>
 
           <h3>Sample code</h3>
-          <code></code>
+          <code>&lt;input type="checkbox" name="address-checked" checked&gt;Text&gt;</code>
 
           <h3>Rendered element</h3>
           <input type="checkbox" name="address-checked" checked>Choose this option<br>
@@ -266,7 +268,6 @@
 
       </section>
       <!-- // INTERACTIVE ELEMENTS SECTION -->
-
 
 
       <!-- TEXT ELEMENTS SECTION // -->
@@ -285,6 +286,19 @@
             <h1 class="h1-example">Heading 1</h1>
             <h2>Heading 2</h2>
             <h3> Heading 3</h3>
+        </section>
+
+        <!--checkout header styling-->
+        <section>
+          <h2>Checkout header</h2>
+          <h3>CSS selectors:</h3>
+          <p>.checkout-title</p>
+
+          <h3>Sample code:</h3>
+            <code>&lt;h3 class="checkout-title"&gt;Order summary&lt;/h3&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <h3 class="checkout-title">Order Summary</h3>
         </section>
 
         <!--paragraph styling-->
@@ -366,17 +380,18 @@
         <section>
           <h2>Table heading (3 categories) </h2>
           <h3>CSS selector:</h3>
-            <p>.cart-header, .cart-image, .cart-price</p>
+            <p>table, tr, th</p>
 
           <h3>Sample code:</h3>
-            <code></code>
+          <code>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Category 1&lt;/th&gt;&lt;th&gt;Category 2&lt;/th&gt;&lt;th&gt;Category 3&lt;/th&gt;&lt;/tr&gt;&lt;/table&gt;
+          </code>
 
           <h3>Rendered element:</h3>
           <table>
           <tr>
-              <th>Credit Card</th>
-              <th><a class="edit-button" href="#">Edit</a></th>
-              <th><a class="edit-button" href="#">Remove</a></th>
+              <th>Category 1</th>
+              <th>Category 2</th>
+              <th>Category 3</th>
         </tr>
         </table>
 
@@ -388,10 +403,10 @@
             <p>.cart-header, .cart-image, .cart-price</p>
 
           <h3>Sample code:</h3>
-            <code></code>
+            <code>&lt;table&gt;&lt;tr&gt;&lt;th&gt;Category 1&lt;/th&gt;&lt;th&gt;Category 2&lt;/th&gt;&lt;th&gt;Category 3&lt;/th&gt;&lt;th&gt;Category 4&lt;/th&gt;&lt;th&gt;Category 5&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;img class="cart-image" scr="" alt=""&gt;&lt;/td&gt;&lt;td&gt;Category 2&lt;/td&gt;&lt;td&gt;Category 3&lt;/td&gt;&lt;td&gt;Category 4&lt;/td&gt;&lt;td class="cart-price"&gt;Category 5&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code>
 
           <h3>Rendered element:</h3>
-                <table class="cart-header">
+              <table class="cart-header">
                 <tr>
                   <th>Image</th>
                   <th>Item</th>
@@ -419,7 +434,7 @@
             <p>.contact-table, .title, .data</p>
 
           <h3>Sample code:</h3>
-            <code></code>
+            <code>&lt;table class="contact-table"&gt;&lt;tr&gt;&lt;td class="title"&gt;Title&lt;/td&gt;&lt;td class="data"&gt;Title&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code>
 
           <h3>Rendered element:</h3>
           <div class = "full-bleed-bar">
@@ -449,10 +464,10 @@
         <section>
         <h2>Checkout table</h2>
         <h3>CSS selector:</h3>
-        <p></p>
+        <p>.checkout-title, .checkout-header, .checkout-line, .checkout-price, .right-alignment, .button-checkout</p>
 
         <h3>Sample code:</h3>
-        <code></code>
+        <code>&lt;h3 class="checkout-title"&gt;Order summary&lt;/h3&gt;&lt;table class="checkout-header"&gt;&lt;tr&gt;&lt;td class="checkout-line"&gt;Title&lt;/td&gt;&lt;td class="checkout-line right-alignment"&gt;Price&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="checkout-line checkout-price"&gt;Title&lt;/td&gt;&lt;td class="checkout-line checkout-price right-alignment"&gt;Price&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;a href="#" class="button-checkout"&gt;Submit Button&lt;/a&gt;</code>
 
         <h3>Rendered element:</h3>
         <div class="">
@@ -486,17 +501,17 @@
 
           <!--news articles-->
         <section>
-          <h2>News Article</h2>
+          <h2>News Article Titles</h2>
           <h3>CSS selector:</h3>
           <p>.news-title, news-subtitle</p>
 
           <h3>Sample code:</h3>
-          <code></code>
+          <code>&lt;h3 class="news-title"&gt;Title&lt;/h3&gt;&lt;p&gt;Text&lt;/p&gt;&lt;p class="news-subtitle"&gt;Subtitle&lt;/p&gt;</code>
 
           <h3>Rendered element:</h3>
-           <h3 class="news-title">Halloween Craze</h3> 
-          <p>Get ahead of Halloween with our special promo that starts on August 24th. Everything orange will go on sale! Give your pumpkins the biggest smiles. Read Promo conditions <a class="in-text-link" href="#">here.</a></p>
-          <p class= "news-subtitle"><a href="#">leaf.com/orangecraze</a></p>
+           <h3 class="news-title">Title</h3> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel luctus lacus. Pellentesque id molestie nibh.</p>
+          <p class= "news-subtitle">comlimentary information</p>
           </section>
 
       </section>
@@ -510,15 +525,15 @@
         <section>
           <h2>United Navigation</h2>
           <h3>CSS selector:</h3>
-           <p>.united-nav, .main-nav, .secondary-nav</p>
+           <p>.united-nav, .main-nav, .secondary-nav, .menu-button, .full-bleed-bar-top</p>
 
           <h3>Sample code:</h3>
-          <code></code>
+          <code>&lt;nav class="united-nav full-bleed-bar-top"&gt;&lt;div class="main-nav"&gt;&lt;a href="#" class="menu-button"&gt;Menu 1&lt;/a&gt;&lt;/div&gt;&lt;div class="secondary-nav"&gt;&lt;a href="#" class="menu-button"&gt;SubMenu1&lt;/a&gt;&lt;/div&gt;&lt;/nav&gt;</code>
 
           <h3>Rendered element:</h3>
             <nav class="united-nav full-bleed-bar-top">
-              <a href="index.html"><img class="icon-button" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
               <div class = "main-nav"> 
+                    <a href="index.html"><img class="icon-button" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
                     <a href="itemlisting.html" class="menu-button">Menu 1</a>
                     <a href="#news_and_events" class="menu-button">Menu 2</a>
                     <a href="#about_company" class="menu-button">Menu 3</a>
@@ -534,43 +549,19 @@
         </section>
 
 
-        <!--main category-->
-        <section>
-        <h2>Main category</h2>
-          <h3>CSS selector:</h3>
-          <p></p>
-
-          <h3>Sample code:</h3>
-          <code></code>
-
-          <h3>Rendered element:</h3>
-          <div class="grid-col-1of2">
-            <img class="category-image" src="img/600x600.png" alt="a plant with its root system taken out of the pot and lying on the grey wooden floor">
-            <div class="category-title-box">
-                <h3 class="category-title category-white-text">ALL PLANTS</h3>
-                <h4 class="category-subtitle category-white-text">2048 plants to choose from</h4>
-                <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
-            </div>
-        </div>
-
-        <div class="grid-col-1of2">
-            <img class="category-image" src="img/600x600.png" alt="a plant with its root system taken out of the pot and lying on the grey wooden floor">
-            <div class="category-title-box">
-                <h3 class="category-title category-white-text">ALL PLANTS</h3>
-                <h4 class="category-subtitle category-white-text">2048 plants to choose from</h4>
-                <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
-            </div>
-        </div>
-        </section>
-
-        <!--main section separator-->
+           <!--main section separator-->
         <section>
         <h2>Central page decoration</h2>
           <h3>CSS selector:</h3>
-          <p></p>
+          <p>.intro, .logo-central, </p>
 
           <h3>Sample code:</h3>
-          <code></code>
+          <code>&lt;div class="intro"&gt;
+          &lt;img class="logo-central" src="img/icons/logo-central.png" alt="leaf me that has berries on a branch of a tree"&gt;
+          &lt;h2 class="section-title"&gt;unique plants for unique experiences
+          &lt;/h2&gt;
+          &lt;/div&gt;
+          </code>
 
           <h3>Rendered element:</h3>
           <div class="intro">
@@ -583,27 +574,34 @@
         <section>
         <h2>Sections separator</h2>
           <h3>CSS selector:</h3>
-          <p></p>
+          <p>.intro, .logo</p>
 
           <h3>Sample code:</h3>
-          <code></code>
+          <code>&lt;div class="intro"&gt;
+          &lt;img class="logo" src="img/icons/logo-big.png" alt="leaf me that has berries on a branch of a tree"&gt;
+          &lt;h2 class="section-title"&gt;section name
+          &lt;/h2&gt;
+          &lt;/div&gt;</code>
 
           <h3>Rendered element:</h3>
-       <!--seciton separator secondary-->
           <div class="intro">
           <img class="logo" src="img/icons/logo-big.png" alt="leaf me icon">
           <h2 class="section-title">News and Events</h2>
         </div>
       </section>
 
-            <!--reversed ection separator-->
+        <!--reversed section separator-->
         <section>
         <h2>Sections separator (reverse colors)</h2>
           <h3>CSS selector:</h3>
-          <p></p>
+          <p>.intro, .full-bleed-bar, .logo, .section-title, .category-white-text</p>
 
           <h3>Sample code:</h3>
-          <code></code>
+          <code>&lt;div class="intro full-bleed-bar"&gt;
+          &lt;img class="logo" src="img/icons/logo-big-reverse.png" alt="leaf me that has berries on a branch of a tree"&gt;
+          &lt;h2 class="section-title category-white-text"&gt;section name
+          &lt;/h2&gt;
+          &lt;/div&gt;</code>
 
           <h3>Rendered element:</h3>
             <div class="intro full-bleed-bar">
@@ -613,16 +611,101 @@
       </section>
 
 
+        <!--main category-->
+        <section>
+        <h2>Main category</h2>
+          <h3>CSS selector:</h3>
+          <p>.grid-row, .cropped-container, .grid-col-1of2, category-image</p>
+
+          <h3>Sample code:</h3>
+          <code>&lt;div class="grid-row cropped-container"&gt;
+          &lt;div class="grid-col-1of2"&gt;
+          &lt;img class="category-image" src="img/600x600.png" alt="Image description"&gt;
+          &lt;div class="category-title-box"&gt;
+          &lt;h3 class="category-title category-white-text"&gt;&lt;/h3&gt;
+          &lt;h4 class="category-subtitle category-white-text"&gt;&lt;/h4&gt;
+          &lt;a href="itemlisting.html" class="shop-button shop-button-alt"&gt;&lt;/a&gt;
+          &lt;/div&gt;&lt;/div&gt;
+          &lt;div class="grid-col-1of2"&gt;
+          &lt;img class="category-image" src="img/600x600.png" alt="Image description"&gt;
+          &lt;div class="category-title-box"&gt;
+          &lt;h3 class="category-title category-white-text"&gt;&lt;/h3&gt;
+          &lt;h4 class="category-subtitle category-white-text"&gt;&lt;/h4&gt;
+          &lt;a href="itemlisting.html" class="shop-button shop-button-alt"&gt;&lt;/a&gt;
+          &lt;/div&gt;&lt;/div&gt;
+          &lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <div class="grid-row">
+          <div class="grid-col-1of2">
+            <img class="category-image" src="img/600x600.png" alt="Image description">
+            <div class="category-title-box">
+                <h3 class="category-title category-white-text">category</h3>
+                <h4 class="category-subtitle category-white-text">subtitle</h4>
+                <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
+            </div>
+        </div>
+
+        <div class="grid-col-1of2">
+            <img class="category-image" src="img/600x600.png" alt="aImage decription">
+            <div class="category-title-box">
+                <h3 class="category-title category-white-text">category</h3>
+                <h4 class="category-subtitle category-white-text">subtitle</h4>
+                <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
+            </div>
+        </div>
+        </div>
+        </section>
+
+     
         <!--news article-->
         <section>
         <h2>News article</h2>
           <h3>CSS selector:</h3>
-          <p></p>
+          <p>.grid-row, .cropped-container, .grid-col-1of3, .news-image, .news-date-container, .news-date, .news-month, .news-title, news-subtitle</p>
 
           <h3>Sample code:</h3>
-          <code></code>
+          <code>&lt;div class="grid-row cropped-container"&gt;
+          &lt;div class="grid-col-1of3"&gt;
+          &lt;a href="#"&gt;
+          &lt;img class="news-image" src="img/400x267.png" alt="Image description"&gt;
+          &lt;div class="news-date-container"&gt;
+          &lt;h3 class="news-date"&gt;XX&lt;/h3&gt;
+          &lt;h4 class="news-month"&gt;month&lt;/h4&gt;
+          &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;h3 class="news-title"&gt;Title&lt;/h3&gt;
+          &lt;p&gt;Text&lt;/p&gt;
+          &lt;p class="news-subtitle"&gt;Subtitle&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="grid-col-1of3"&gt;
+          &lt;a href="#"&gt;
+          &lt;img class="news-image" src="img/400x267.png" alt="Image description"&gt;
+          &lt;div class="news-date-container"&gt;
+          &lt;h3 class="news-date"&gt;XX&lt;/h3&gt;
+          &lt;h4 class="news-month"&gt;month&lt;/h4&gt;
+          &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;h3 class="news-title"&gt;Title&lt;/h3&gt;
+          &lt;p&gt;Text&lt;/p&gt;
+          &lt;p class="news-subtitle"&gt;Subtitle&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div class="grid-col-1of3"&gt;
+          &lt;a href="#"&gt;
+          &lt;img class="news-image" src="img/400x267.png" alt="Image description"&gt;
+          &lt;div class="news-date-container"&gt;
+          &lt;h3 class="news-date"&gt;XX&lt;/h3&gt;
+          &lt;h4 class="news-month"&gt;month&lt;/h4&gt;
+          &lt;/div&gt;
+          &lt;/a&gt;
+          &lt;h3 class="news-title"&gt;Title&lt;/h3&gt;
+          &lt;p&gt;Text&lt;/p&gt;
+          &lt;p class="news-subtitle"&gt;Subtitle&lt;/p&gt;
+          &lt;/div&gt;&lt;/div&gt;
+          </code>
 
           <h3>Rendered element:</h3>
+          <div class="grid-row">
           <div class="grid-col-1of3">
                 <a href="#">
                   <img class="news-image" src="img/400x267.png" alt="Hands holding a Beautiful bright orange pumpkin">
@@ -631,8 +714,8 @@
                            <h4 class="news-month">month</h4>
                     </div>
                 </a>
-                    <h3 class="news-title">Halloween Craze</h3> 
-                    <p>Get ahead of Halloween with our special promo that starts on August 24th. Everything orange will go on sale! Give your pumpkins the biggest smiles. Read Promo conditions <a class="in-text-link" href="#">here.</a></p>
+                    <h3 class="news-title">Title</h3> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at purus vitae felis malesuada semper. </p>
                     <p class= "news-subtitle"><a href="#">complimentary info</a></p>
             </div>
                     <div class="grid-col-1of3">
@@ -643,8 +726,8 @@
                            <h4 class="news-month">month</h4>
                     </div>
                 </a>
-                    <h3 class="news-title">Halloween Craze</h3> 
-                    <p>Get ahead of Halloween with our special promo that starts on August 24th. Everything orange will go on sale! Give your pumpkins the biggest smiles. Read Promo conditions <a class="in-text-link" href="#">here.</a></p>
+                    <h3 class="news-title">Title</h3> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at purus vitae felis malesuada semper.</p>
                     <p class= "news-subtitle"><a href="#">complimentary info</a></p>
             </div>
                     <div class="grid-col-1of3">
@@ -655,9 +738,10 @@
                            <h4 class="news-month">month</h4>
                     </div>
                 </a>
-                    <h3 class="news-title">Halloween Craze</h3> 
-                    <p>Get ahead of Halloween with our special promo that starts on August 24th. Everything orange will go on sale! Give your pumpkins the biggest smiles. Read Promo conditions <a class="in-text-link" href="#">here.</a></p>
+                    <h3 class="news-title">Title</h3> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at purus vitae felis malesuada semper. </p>
                     <p class= "news-subtitle"><a href="#">complimentary info</a></p>
+            </div>
             </div>
         </section>
 
@@ -667,15 +751,15 @@
           <h2>Form</h2>
 
           <h3>CSS selector:</h3>
-          <p></p>
+          <p>.form-contact, .form-label-field-full, .form-input-field-full</p>
 
           <h3>Sample code</h3>
-          <code>&lt;form class="form-feedback"&gt;
+          <code>&lt;form class="form-contact"&gt;
           &lt;label for="input_type_1" class="form-label-field-full"&gt;Label&lt;/label&gt;
           &lt;input type="text" id="input_type_1" class="form-input-field-full" placeholder="Paceholder text"&gt;
           &lt;label for="input_type_2" class="form-label-field-full"&gt;Label&lt;/label&gt;
           &lt;input type="text" id="input_type_2" class="form-input-field-extended" placeholder="Placeholder text"&gt;
-          &lt;input type="submit" class="button-submit-alt form-contact-button" value="Submit"&gt;
+          &lt;input type="checkbox" name="address-checked" checked&gt;Text&gt;
           &lt;/form&gt;
           </code>
 
@@ -697,7 +781,7 @@
                 <label for="CVV-code" class="form-label-field-full">CVV code*</label>
                 <input type="number" id="CVV-code" class="form-input-field-shortened-2" placeholder=""> 
 
-                 <input type="checkbox" name="address-checked" class="checkbox-label" checked>Save this card to my profile
+                 <input type="checkbox" name="address-checked" checked>Save this card to my profile
 
               </form>
            </section>
@@ -708,14 +792,15 @@
           <h2>Form (reversed colors)</h2>
 
           <h3>CSS selector:</h3>
-          <p></p>
+          <p>.form-feedback, .full-bleed-bar, .form-label-field-full, .form-input-field-full</p>
 
           <h3>Sample code</h3>
-          <code>&lt;form class="form-feedback"&gt;
-          &lt;label for="input_type_1" class="form-label-field-full"&gt;Label&lt;/label&gt;
+          <code>&lt;form class="form-feedback full-bleed-bar"&gt;
+          &lt;label for="input_type_1" class="form-label-field-full"&gt;Label*&lt;/label&gt;
           &lt;input type="text" id="input_type_1" class="form-input-field-full" placeholder="Paceholder text"&gt;
-          &lt;label for="input_type_2" class="form-label-field-full"&gt;Label&lt;/label&gt;
+          &lt;label for="input_type_2" class="form-label-field-full"&gt;Label*&lt;/label&gt;
           &lt;input type="text" id="input_type_2" class="form-input-field-extended" placeholder="Placeholder text"&gt;
+          &lt;p class="form-subtitle"&gt;*Required fileds&lt;/p&gt;
           &lt;input type="submit" class="button-submit-alt form-contact-button" value="Submit"&gt;
           &lt;/form&gt;
           </code>
@@ -743,7 +828,7 @@
           <p>.cropped-container, .grid-col-1of2, .grid-row</p>
 
           <h3>Sample code</h3>
-          <code>&lt;div class=""grid-row&gt;&lt;div class="grid-col-2of10"&gt;&lt;h2&gt;Name here&lt;/h2&gt;&lt;p&gt;Description here&lt;/p&gt;&lt;/div&gt;&lt;div class="grid-col-2of10"&gt;&lt;h2&gt;Name here&lt;/h2&gt;&lt;p&gt;Description here&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</code>        
+          <code>&lt;div class=""grid-row cropped-container&gt;&lt;div class="grid-col-1of2"&gt;&lt;h2&gt;Name here&lt;/h2&gt;&lt;p&gt;Description here&lt;/p&gt;&lt;/div&gt;&lt;div class="grid-col-1of2"&gt;&lt;h2&gt;Name here&lt;/h2&gt;&lt;p&gt;Description here&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</code>        
           
           <h3>Rendered element</h3>
           <div class="grid-row cropped-container">
@@ -766,27 +851,42 @@
           <h2>2 column grid with 2 images</h2>
 
           <h3>CSS selector</h3>
-          <p></p>
+          <p>.grid-row, .cropped-container-main, .grid-col-1of2</p>
 
           <h3>Sample code</h3>
-          <code></code>        
+          <code>&lt;div class=""grid-row cropped-container-main&gt;&lt;div class="grid-col-1of2"&gt;
+          &lt;img class="category-image" src="img/600x600.png" alt="Image description"&gt;
+          &lt;div class="category-title-box"&gt;
+          &lt;h3 class="category-title category-white-text"&gt;&lt;/h3&gt;
+          &lt;h4 class="category-subtitle category-white-text"&gt;&lt;/h4&gt;
+          &lt;a href="itemlisting.html" class="shop-button shop-button-alt"&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;&lt;div class="grid-col-1of2"&gt;
+          &lt;img class="category-image" src="img/600x600.png" alt="Image description"&gt;
+          &lt;div class="category-title-box"&gt;
+          &lt;h3 class="category-title category-white-text"&gt;&lt;/h3&gt;
+          &lt;h4 class="category-subtitle category-white-text"&gt;&lt;/h4&gt;
+          &lt;a href="itemlisting.html" class="shop-button shop-button-alt"&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;</code>        
           
           <h3>Rendered element</h3>
            <div class="grid-row cropped-container-main">
         <div class="grid-col-1of2">
-            <img class="category-image" src="img/600x600.png" alt="a plant with its root system taken out of the pot and lying on the grey wooden floor">
+            <img class="category-image" src="img/600x600.png" alt="Image decription">
             <div class="category-title-box">
-                <h3 class="category-title category-white-text">ALL PLANTS</h3>
-                <h4 class="category-subtitle category-white-text">2048 plants to choose from</h4>
+                <h3 class="category-title category-white-text">title</h3>
+                <h4 class="category-subtitle category-white-text">subtitle</h4>
                 <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
             </div>
         </div>
 
         <div class="grid-col-1of2">
-        <img class="category-image" src="img/600x600.png" alt="ceramic animal planters on the wooden wall, fox planter, bear planter, zebra planter, koala planter, donkey planter">
+        <img class="category-image" src="img/600x600.png" alt="Image description">
             <div class="category-title-box">
-                <h3 class="category-title category-white-text">PLANTERS AND POTS</h3>
-                <h4 class="category-subtitle category-white-text">155 cozy plant homes</h4>
+                <h3 class="category-title category-white-text">title</h3>
+                <h4 class="category-subtitle category-white-text">subtitle</h4>
                 <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
             </div>
         </div>
@@ -795,45 +895,66 @@
 
 
 
-
       <!--3 column grid with images-->
        <section>
           <h2>3 column grid with images</h2>
           <h3>CSS Selector</h3>
-          <p>.</p>
+          <p>.grid-row, .cropped-container, .grid-col-1of3</p>
 
           <h3>Sample code</h3>
-          <code></code>
+          <code>
+            &lt;div class=""grid-row cropped-container&gt;&lt;div class="grid-col-1of3"&gt;
+          &lt;img class="category-image" src="img/400x276.png" alt="Image description"&gt;
+          &lt;div class="category-title-box"&gt;
+          &lt;h3 class="category-title category-white-text"&gt;&lt;/h3&gt;
+          &lt;h4 class="category-subtitle category-white-text"&gt;&lt;/h4&gt;
+          &lt;a href="itemlisting.html" class="shop-button shop-button-alt"&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;&lt;div class="grid-col-1of3"&gt;
+          &lt;img class="category-image" src="img/400x267.png" alt="Image description"&gt;
+          &lt;div class="category-title-box"&gt;
+          &lt;h3 class="category-title category-white-text"&gt;&lt;/h3&gt;
+          &lt;h4 class="category-subtitle category-white-text"&gt;&lt;/h4&gt;
+          &lt;a href="itemlisting.html" class="shop-button shop-button-alt"&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;&lt;div class="grid-col-1of3"&gt;
+          &lt;img class="category-image" src="img/400x267.png" alt="Image description"&gt;
+          &lt;div class="category-title-box"&gt;
+          &lt;h3 class="category-title category-white-text"&gt;&lt;/h3&gt;
+          &lt;h4 class="category-subtitle category-white-text"&gt;&lt;/h4&gt;
+          &lt;a href="itemlisting.html" class="shop-button shop-button-alt"&gt;&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
 
            <h3>Rendered element:</h3>
             <div class="grid-row cropped-container">
 
 
           <div class="grid-col-1of3">
-              <img class="category-image" src="img/tools.png" alt="Marimekko gardening tools on the wooden floor">
+              <img class="category-image" src="img/400x267.png" alt="Image description">
                 <div class="category-title-box-mini">
-                    <h3 class="category-title category-white-text">Dig in</h3>
-                    <h4 class="category-subtitle category-white-text">Tools and equipment</h4>
+                    <h3 class="category-title category-white-text">Category</h3>
+                    <h4 class="category-subtitle category-white-text">subtitle</h4>
                     <a href="itemlisting.html" class="shop-button shop-button-alt">Shop</a>
                 </div>
            </div>
-           
-
-
+          
             <div class="grid-col-1of3">
-              <img class="category-image" src="img/lavender-craze.png" alt="3 lavender flowers with a tiny beautiful bow tie">
+              <img class="category-image" src="img/400x267.png" alt="Image description">
                 <div class="category-title-box-mini">
-                    <h3 class="category-title">Lavender Craze</h3>
-                    <h4 class="category-subtitle">All things purple</h4>
+                    <h3 class="category-title">Category</h3>
+                    <h4 class="category-subtitle">subtitle</h4>
                     <a href="itemlisting.html" class="shop-button">Shop</a>
                 </div>
            </div>
 
                 <div class="grid-col-1of3">
-             <img class="category-image" src="img/succulents-main.png" alt="Succulents in pot - top down view">
+             <img class="category-image" src="img/400x267.png" alt="Image description">
                 <div class="category-title-box-mini">
-                    <h3 class="category-title">Succulents</h3>
-                    <h4 class="category-subtitle">Tiny lovelies</h4>
+                    <h3 class="category-title">category</h3>
+                    <h4 class="category-subtitle">subtitle</h4>
                     <a href="itemlisting.html" class="shop-button">Shop</a>
                 </div>
            </div>
@@ -844,12 +965,26 @@
        
        <!--checkout process grid-->
        <section>
-          <h2>3 column grid with images</h2>
+          <h2>Checkout process grid</h2>
           <h3>CSS Selector</h3>
-          <p>.</p>
+          <p>.grid-row, .cropped-container, .checkout-nav, .checkout-nav-button, .active</p>
 
           <h3>Sample code</h3>
-          <code></code>
+          <code>
+            &lt;div class="grid-row cropped-container"&gt;
+            &lt;div class="grid-col-cart"&gt;
+            &lt;nav class = "checkout-nav"&gt;
+            &lt;/nav&gt;
+            &lt;table class="cart-header"&gt;
+            &lt;/table&gt;
+            &lt;div class="grid-col-checkout"&gt;
+            &lt;h3 class="checkout-title"&gt;Order summary&lt;/h3&gt;
+            &lt;table class="checkout-header"&gt;
+            &lt;/table&gt;
+            &lt;a class="button-checkout" href="#"&gt;Checkout&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+          </code>
 
         <h3>Rendered element:</h3>
         <div class="grid-row cropped-container">
@@ -875,13 +1010,14 @@
                 </tr>
 
                 <tr>
-                  <td><img class="cart-image" src="img/succulent9-100.png" alt="Image description">
+                  <td><img class="cart-image" src="img/150x200.png" alt="Image description">
                   </td>
-                  <td>"Red-Spear" Succulent</td>
+                  <td>Product name</td>
                   <td>1</td>
-                  <td>C$8.95</td>
-                  <td class="cart-price">C$8.95</td>
+                  <td>C$0.00</td>
+                  <td class="cart-price">C$0.00</td>
                 </tr>
+                </table>
           </div>
           <div class="grid-col-checkout">
           <h3 class="checkout-title">Order Summary</h3>
@@ -889,28 +1025,28 @@
               <table class="checkout-header">
                   <tr>
                       <td class="checkout-line">Subtotal</td>
-                      <td class="checkout-line right-alignment">C$16.90</td> 
+                      <td class="checkout-line right-alignment">C$0.00</td> 
                   </tr>
                   <tr>
                       <td class="checkout-line">Shipping</td>
-                      <td class="checkout-line right-alignment">C$9.00</td> 
+                      <td class="checkout-line right-alignment">C$0.00</td> 
                   </tr>
                   <tr>
                       <td class="checkout-line">Estimated Tax</td>
-                      <td class="checkout-line right-alignment">C$3.10</td> 
+                      <td class="checkout-line right-alignment">C$0.00</td> 
                   </tr>
                   <tr>
                       <td class="checkout-line checkout-price">Total</td>
-                      <td class="checkout-line checkout-price right-alignment">C$30.00</td> 
+                      <td class="checkout-line checkout-price right-alignment">C$0.00</td> 
                   </tr>
               </table>
                   
               <a class="button-checkout" href="shipping.html#shipping">checkout</a>
           </div>
         </div>
-
-
       </section>
+
+
 
       <section>
           <h2>Item Listings</h2>
