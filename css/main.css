@@ -6,6 +6,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
+
 footer {
   padding: 1em;
 }
@@ -1227,6 +1229,13 @@ ol {
   padding-top: 1em;
   padding-bottom: 2em;
 
+}
+
+/*daria*/
+.full-bleed-bar-partial {
+  background-color: rgb(127,42,121);
+  background-position: center;
+  width: 9em;
 }
 
 /*.title-image {
