@@ -73,19 +73,21 @@
 
 /*Isabel*/
 .grid-col-1of4 {
-	width: 16%;
+	width: 20%;
 	background: white;
 	margin-bottom: 0;
 	margin-right: 1em;
 	text-align: left;
+	float: left;
 }
 /*Isabel*/
 .grid-col-3of4 {
-	width:60%;
+	width:78%;
 	background: white;
 	margin-bottom: 1em;
 	margin-left: 0.2em;
 	text-align: left;
+	float: right;
 }
 
 /*daria*/
@@ -167,8 +169,6 @@
 
 }
 
-
-
 @media only screen and (max-width: 66em) {
 	/*main grid*/
 	.grid-row {
@@ -237,6 +237,26 @@
 		text-align: left;
 		padding-bottom: 1em;
 	}
+
+	/*Product Listing Breakpoints*/
+	.grid-col-1of4 {
+	width: 100%;
+	background: white;
+	margin-bottom: 0;
+	margin-left: 0.6em;
+	margin-right: 1em;
+	text-align: left;
+}
+/*Isabel*/
+.grid-col-3of4 {
+	width:100%;
+	background: white;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: left;
+}
+
 }
 
 
@@ -246,6 +266,15 @@
 		margin-left: 0;
 		margin-right: 0;
 		width: 100%;
+	}
+
+	.grid-col-3of4 {
+	width:100%;
+	background: white;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: left;
 	}
 	/*main grid*/
 	/*daria*/
@@ -263,6 +292,16 @@
 		margin-left: 0;
 		margin-right: 0;
 		width: 100%;
+	}
+
+	.grid-col-3of4 {
+	width:100%;
+	background: white;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-right: 0;
+	text-align: left;
 	}
 
 	/*united nav bar*/
@@ -308,9 +347,15 @@
 		margin-right: 3%;
 	}
 
-	.cropped-container-modified{
-		margin-left: 3%;
-		margin-right: 3%;
+	.item-listing-box{
+	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+  	margin-right: 0;
+  	padding-right: 0;
 	}
 }
 
@@ -321,6 +366,9 @@
 		margin-left: 0;
 		margin-right: 0;
 		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 1em;
+		margin-top: 0;
 		width: 100%;
 	}
 
@@ -348,6 +396,17 @@
 	.grid-col-checkout {
 		width: 80%;
 	}
+
+	.item-listing-box{
+	margin-top: 2em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+  	justify-content: center;
+  	margin-right: 0;
+  	padding-right: 0;
+  }
 
 }
 
@@ -411,9 +470,18 @@
 		width: 100%;
 	}
 
-	
-
 }
+
+@media only screen and (max-width: 30em) {
+	.cropped-container-main {
+	  padding-left: 0.5em;
+	  padding-right: 0.5em;
+	  padding-top: 0.5em;
+	}
+}
+
+
+
 
 
 
