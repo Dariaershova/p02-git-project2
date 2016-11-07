@@ -915,10 +915,10 @@
       <section>
           <h2>Item Listings</h2>
           <h3>CSS Selector</h3>
-          <p>.</p>
+          <p>.item-listing-unit, .item-name, .price-number</p>
 
           <h3>Sample code</h3>
-          <code></code>
+          <code>&lt;div class="item-listing-unit centered-element"&gt;&lt;a href="full_product_view.html"&gt;&lt;img src="img/succulent9.png" alt="placeholder for product image"&gt;&lt;p class="item-name centered-element"&gt;&quot;Red-Spear&quot; Succulent&lt;/p&gt;&lt;p class="price-number centered-element"&gt;C$8.95&lt;/p&gt;</code>
 
         <h3>Rendered element</h3>
           <div class="item-listing-unit centered-element">
@@ -931,11 +931,12 @@
       <section>
           <h2>Full View Listing with Filter</h2>
           <h3>CSS Selector</h3>
-          <p>.</p>
+          <p>.filter-nav, .checkout-nav-button, .filter-button, .sub-category, .product-image, .latin-name, .price-number, .review-rating, .review-stars, .in-text-link, .form-input-quantity, .button-submit</p>
 
           <h3>Sample code</h3>
-          <code></code>
-
+          <code>&lt;div class="grid-row"&gt;&lt;div class="grid-col-1of4"&gt;&lt;nav class="filter-nav"&gt;&lt;a href="itemlisting.html" class="checkout-nav-button active filter-button"&gt;All Plants&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="itemlisting.html" class="in-text-link sub-category selected-nav"&gt;Succulents&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#" class="sub-category"&gt;Cacti&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#" class="sub-category"&gt;Air Plants&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;a href="#" class="checkout-nav-button filter-button"&gt;Pots + Containers&lt;/a&gt;&lt;/li&gt;&lt;a href="#" class="checkout-nav-button filter-button"&gt;Equipment + Tools&lt;/a&gt;&lt;/li&gt;&lt;a href="#" class="checkout-nav-button filter-button"&gt;Sale&lt;/a&gt;&lt;/li&gt;&lt;/nav&gt;&lt;/div&gt;&lt;div class="grid-col-3of4"&gt;&lt;section id="product-listing"&gt;&lt;figure class="product-image"&gt;&lt;img src="img/succulent9.png" alt="small, green succulent plant with red tips in a light blue flower pot"&gt;&lt;/figure&gt;
+          &lt;h3&gt;&quot;Red-Spear&quot; Succulent&lt;/h3&gt;&lt;p class="latin-name"&gt;&lt;em class="latin-name"&gt;Latin Name&lt;/em&gt;&lt;/p&gt;&lt;p class="price-number medium-text"&gt;&lt;$0.00&gt;&lt;/p&gt;&lt;div class="review-rating"&gt;&lt;div class="review-stars"&gt;&lt;&#9733; &#9733; &#9733; &#9733; &#9733;&gt;&lt;/div&gt;&lt;a class="in-text-link margin-left small-text" href="#reviews"&gt;&lt;2 reviews&gt;&lt;/a&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;&lt;Descriptions&gt;&lt;form class="form-input-quantity"&gt;&lt;label for="quantity"&gt;Quantity:&lt;/label&gt;&lt;input type="number" id="quantity" min="1" max="5" placeholder="1"&gt;&lt;/form&gt;&lt;a class="button-submit button-nav-add-to-cart" href="cart.html"&gt;Add to Cart&lt;/a&gt;&lt;/section&gt;&lt;/div&gt;&lt;/div&gt;</code>
+   
         <h3>Rendered element:</h3>
           <div class="grid-row">
                 <div class="grid-col-1of4">
@@ -948,7 +949,7 @@
                         </ul>
                     <a href="#" class="checkout-nav-button filter-button">Pots + Containers</a>
                     <a href="#" class="checkout-nav-button filter-button">Equipment + Tools</a>
-                    <a href="#" class="checkout-nav-button filter-button filter-nav-sale">Sale</a>
+                    <a href="#" class="checkout-nav-button filter-button">Sale</a>
                 </nav>
           </div>
           <div class="grid-col-3of4">
@@ -980,16 +981,16 @@
           <h2>Suggested Products</h2>
 
           <h3>CSS Selector</h3>
-          <p>.button-submit-alt</p>
+          <p>.suggested-products, .suggested-product-name</p>
 
           <h3>Sample code</h3>
-          <code></code>
-
+          <code>&lt;p&gt;People who looked at this also looked at:&lt;/p&gt;&lt;div class="suggested-products"&gt;&lt;div&gt;&lt;img src="img/thumbnail10.png" alt="thumbnail for related product: green succulent with medium-length stalks in a white and aqua-coloured flower pot"&gt;&lt;p class="suggested-product-name"&gt;&lt;Item Name&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</code>
+          
           <h3>Rendered element</h3>
           <p>People who looked at this also looked at:</p>
                         <div class="suggested-products">
                             <div>
-                                <img src="img/thumbnail10.png" alt="thumbnail for related product: green succulent with medium-length stalks in a white and aqua-coloured flower pot"></a>
+                                <img src="img/thumbnail10.png" alt="thumbnail for related product: green succulent with medium-length stalks in a white and aqua-coloured flower pot">
                                 <p class="suggested-product-name">&quot;Lotus&quot; Succulent</p>
                             </div>
                             <div>
@@ -1015,12 +1016,12 @@
         <h2>Reviews</h2>
 
           <h3>CSS Selector</h3>
-          <p>.</p>
+          <p>#review, .latin-name, .button-submit</p>
 
-          <h3>Sample code:</h3>
-          <code></code>
+          <h3>Sample code</h3>
+          <code>&lt;h2&gt;Reviews&lt;/h2&gt;&lt;div class="review"&gt;&lt;h3&gt;&lt;Review title&gt;&lt;/h3&gt;&lt;p class="latin-name"&gt;&lt;em&gt;First Name, Last Name, State/Province, Country&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Review&lt;/p&gt;&lt;/div&gt;&lt;a class="button-submit" href="#"&gt;&lt;Leave a Review&gt;&lt;/a&gt;</code>
 
-          <h3>Rendered element:</h3>
+          <h3>Rendered element</h3>
           <h2>Reviews</h2>
                         <div class="review">
                             <h3>Super easy to take care of!</h3>
