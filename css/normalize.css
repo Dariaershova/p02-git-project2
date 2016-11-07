@@ -362,6 +362,7 @@ textarea {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
   margin-right: 0.5em;
+  font-size: 0.8em;
 }
 
 /**
