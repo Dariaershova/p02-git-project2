@@ -6,48 +6,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
-
 footer {
   padding: 1em;
 }
 
+/*Style Guide Styling>>>>>>>>>>>>>*/
 section:not([id]) {
   margin: 1em 0;
   padding: 0.5em 0;
   border-top: 1px solid #333;
-}
-
-/*daria*/
-/*
-section.main-page {
-  padding-top: 1em;
-} */
-
-/*daria*/
-section.main-page-full-bleed {
-  padding-top: 1em;
-  } 
-
-section.section-image {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  max-width: 100%;
-  } 
-
-section.section-image img {
-  max-width: 100%;
-} 
-
-/*modifying the color of default links*/
-a {
-  color: black;
-}
-
-
-.style-guide{
-  text-align: center;
-  padding: 0.25rem 0.5em;
 }
 
 section code {
@@ -55,6 +22,12 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+/*<<<<<<<<<<<<Style Guide Styling*/
+
+/*modifying the color of default links*/
+a {
+  color: black;
+}
 
 p {
   font-size: 0.9em;
@@ -191,16 +164,6 @@ td.data {
   text-align: left;
 }
 
-/*Isabel*/
-.filter-header{
-  font-size: 1.2em;
-  margin-top: 1em;
-  margin-right: 3em;
-  padding-bottom: 0em;
-  padding-top: 0.5em;
-  text-transform: uppercase;
-}
-
 /*daria*/
 .table-button-right {
   padding-top:0;
@@ -315,7 +278,7 @@ td.data {
   margin-left: 0.5em;
 }
 
-/*Suggeted Products//////////////////*/
+/*Suggeted Products>>>>>>>>>>>>>>>>>>*/
 
 /*Isabel*/
 .suggested-products {
@@ -355,7 +318,7 @@ td.data {
   text-align: center;
 }
 
-/*//////////////////////////////////*/
+/*<<<<<<<<<<<<<<<<<<<<Suggeted Products*/
 
 
 /* 
@@ -421,6 +384,7 @@ td.data {
   font-weight: bolder;
 }
 
+/*Filter>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Isabel*/
 .filter-nav {
   padding-left: 0;
@@ -458,6 +422,7 @@ td.data {
   border-bottom: 1px solid rgb(127,42,121);
 }
 
+/*<<<<<<<<<<<<<<<<<<<<<<Filter*/
 
 /*daria*/
 .edit-button {
@@ -641,9 +606,6 @@ td.data {
   padding-bottom: .2em;
 }
 
-
-
-
 /*daria*/
 .tagline {
   color: rgb(127,42,121);
@@ -803,15 +765,6 @@ textarea {
 }
 /*///////////////////////
 
-/*figure out autofill backround colour
-
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
-    background-color: white;
-    background-image: none;
-    color: black;
-    letter-spacing: 1px;
-}
-*/
 
 
 /*image category links*/
@@ -917,55 +870,6 @@ a.category {
   border-radius: 15px;
 }
 
-
-/*not using anymore
-
-.image-two-fifth-long {
-  background-image: url(../img/placeholder.jpg);
-  width: 480px;
-  height: 400px;
-  
-}
-
-.image-two-fifth-short {
-  background-image: url(../img/placeholder.jpg);
-  width: 480px;
-  height: 200px;
-}
-
-.image-three-fifth-short {
-  background-image: url(../img/placeholder.jpg);
-  width: 715px;
-  height: 200px;
-}
-
-.image-three-fifth-long {
-  background-image: url(../img/placeholder.jpg);
-  width: 715px;
-  height: 400px;
-}
-
-.image-one-fifth-long {
-  background-image: url(../img/placeholder.jpg);
-  width: 235px;
-  height: 400px;
-}
-
-.image-one-fifth-short {
-  background-image: url(../img/placeholder.jpg);
-  width: 235px;
-  height: 200px;
-}
-
-.absolute-position {
-  position: absolute;
-
-}
-
-.relative-position {
-  position: relative;
-}
-*/
 
 /* 
   TEXT ELEMENTS -------------------
@@ -1092,16 +996,6 @@ ol {
   padding-right: 1.5em;
 }
 
-
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-/* 
-  COMBINED ELEMENTS -------------------
-*/
-
 /*daria*/
 .main-nav {
   padding-bottom: .1em;
@@ -1167,8 +1061,6 @@ ol {
 
 
 
-
-
 /*classes for feedback form*/
 /*daria*/
 
@@ -1205,14 +1097,6 @@ ol {
   margin-right: 3em;
 }
 
-
-/*full bleed background image */
-/*.full-bleed-image-container {
-  position: relative;
-  background-image: url(../img/succulent-lineup-darkened.png);
-  background-position: center;
-}*/
-
 /*daria*/
 .full-bleed-bar-top {
   position: relative;
@@ -1237,62 +1121,11 @@ ol {
   width: 9em;
 }
 
-/*.title-image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.title-image-text {
-  position: absolute;
-  text-align: center;
-  font-size: 5em;
-  color: white;
-  text-align: center;
-  position: relative;
-}*/
-
-
-
-/*COLORS-----------------------
-purple rgb(127,42,121)
-
-oramge rgb(255, 192, 51) 
-*/
-
 /*Isabel*/
 .medium-text{
   font-size: 1em;
 }
 /*Isabel*/
-
-@media only screen and (max-width: 50em) {
-
-
-  .filter-nav {
-  float: left;
-  margin-bottom: 0;
-  }
-
-
-  .filter-nav-first{
-  float: left;
-  margin-bottom: 0;
-  margin-left: 0;
-  }
-
-  ul {
-    float: left;
-    list-style: none; 
-    padding: 0;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-  }
-
-  ul li { 
-    padding-left: 0.5em; 
-  }
-}
 
 @media only screen and (max-width: 50em) {
 
@@ -1316,6 +1149,19 @@ oramge rgb(255, 192, 51)
 
   .product-image{
     align-content: center;
+  }
+
+
+  ul {
+    float: left;
+    list-style: none; 
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+
+  ul li { 
+    padding-left: 0.5em; 
   }
 
 }
