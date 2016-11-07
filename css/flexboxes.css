@@ -8,9 +8,18 @@
 /*Isabel*/
 .item-listing-box{
 	margin-top: 2em;
+	display: -webkit-flex;
+	display: -ms-flex;
 	display: flex;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
 	flex-direction: row;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	
 	align-items: center;
   	justify-content: flex-start;
 }
