@@ -120,24 +120,6 @@ td {
 }
 
 
-
-/*
-th.action-button-left {
-  padding-right: 0.2em;
-  padding-left: 0.2em;
-  font-size: 1em;
-  text-align: left;
-  width: 4em;
-}
-
-th.action-button-right {
-  padding-right: 0.2em;
-  padding-left: 0.2em;
-  font-size: 0.9em;
-  text-align: right;
-  width: 5em;
-}*/
-
 /*daria*/
 .full-table{
   width: 80%;
@@ -244,7 +226,7 @@ td.data {
   font-weight: normal;
   letter-spacing: 1px;
   text-align: right;
-  padding-bottom: 4em;
+  padding-bottom: 6em;
 
 }
 
@@ -440,6 +422,7 @@ td.data {
   color: grey;
   font-size: 0.7em;
   letter-spacing: 1px;
+  display: inline;
 }
 
 /*daria*/
@@ -665,6 +648,28 @@ td.data {
 }
 
 /*daria*/
+.form-input-field-shortened {
+  border: 1px solid rgb(76, 73, 87);
+  font-size: 0.9em;
+  padding: 0.3em 0 0.3em 0.7em;
+  width: 100%;
+  margin-bottom: 1em;
+  width: 15em;
+  display: block;
+}
+
+/*daria*/
+.form-input-field-shortened-2 {
+  border: 1px solid rgb(76, 73, 87);
+  font-size: 0.9em;
+  padding: 0.3em 0 0.3em 0.7em;
+  width: 100%;
+  margin-bottom: 1em;
+  width: 5em;
+  display: block;
+}
+
+/*daria*/
 .form-input-field-full {
   border: 1px solid rgb(76, 73, 87);
   font-size: 0.9em;
@@ -690,6 +695,9 @@ td.data {
 textarea {
     border: 1px solid rgb(76, 73, 87);
 }
+
+
+
 
 /*Isabel*/
 .form-input-quantity{
@@ -1103,6 +1111,7 @@ ol {
   padding-top: 1em;
 }
 
+
 /*daria*/
 .form-subtitle {
     font-family: "Open Sans", sans-serif;
@@ -1116,6 +1125,13 @@ ol {
 .form-contact-button {
   max-width: 10em;
   margin-top: 2em;
+}
+
+
+/*daria*/
+.reduced-width-table {
+  width: 100%;
+  margin-right: 3em;
 }
 
 
