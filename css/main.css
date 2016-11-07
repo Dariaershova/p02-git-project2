@@ -92,23 +92,26 @@ h3{
 }
 
 
-
-table, td, th {
-  border-bottom: 0.5px solid grey;
-
+/*table properties*/
+table, td{
+  border-bottom: 0.5px dotted #666666;
 }
 
+
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
+    /*border-right: 0.5px solid #666666; */
 }
 
 th {
-  font-size: 0.7em;
-  color: grey;
+  font-size: 0.8em;
+  color: #666666;
   text-align: left;
   letter-spacing: 1px;
+  font-weight: normal;
+  border-bottom: 0.5px solid #666666;
   padding: 1em 1em 1em 0;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 td {
@@ -118,7 +121,6 @@ td {
   text-align: left;
   overflow: hidden; 
 }
-
 
 /*daria*/
 .full-table{
@@ -191,10 +193,12 @@ td.data {
 
 /*Isabel*/
 .filter-header{
-  font-size: 1.6em;
+  font-size: 1.2em;
   margin-top: 1em;
   margin-right: 3em;
   padding-bottom: 0em;
+  padding-top: 0.5em;
+  text-transform: uppercase;
 }
 
 /*daria*/
@@ -232,8 +236,8 @@ td.data {
 
 /*daria*/
 .checkout-line {
-  font-size: 0.7em;
-  color: grey;
+  font-size: 0.8em;
+  color: #666666;
   text-align: left;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -248,6 +252,7 @@ td.data {
 
 /*daria*/
 .checkout-price {
+  font-size: 0.8em;
   color: black;
   font-weight: bold;
   border-bottom: 1px solid transparent;
@@ -312,7 +317,7 @@ td.data {
   margin-top: 2em;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
-  margin-right: 2em;
+  margin-right: 1em;
   margin-bottom: 1em;
   text-align: left;
   padding-bottom: 1em;
@@ -320,7 +325,9 @@ td.data {
 
 /*Isabel*/
 .suggested-products img{
-  margin-right: 0.8em;
+  margin-right: 0.5em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 
 }
 
@@ -342,7 +349,7 @@ td.data {
   font-family: 'Open Sans', sans-serif;  
   display: inline-block;
   color: white;
-  font-size: 0.6em;
+  font-size: 0.7em;
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 1em;
@@ -362,7 +369,7 @@ td.data {
   letter-spacing: 1px;
   color: rgb(76, 73, 87);
   padding: 0 0.5em 0 0.5em;
-  margin-right: 1em;
+  margin-right: 0.5em;
   border-bottom: 3px solid white;
   border-radius: 3px;
   text-decoration: none;
@@ -389,18 +396,21 @@ td.data {
   border-radius: 3px;
 }
 
+.selected-nav{
+  color: black;
+  font-weight: bolder;
+}
+
 /*Isabel*/
 .filter-nav {
   padding-left: 0;
-  margin-top: 1em;
   margin-bottom: 0.8em;
+  color: black;
 }
 
 /*Isabel*/
 .filter-nav-first{
-  padding-left: 0;
-  margin-top: 0.3em;
-  padding-top: 0em;
+  padding-left: 0em;
 }
 
 .filter-nav .button-nav{
@@ -417,10 +427,31 @@ td.data {
   margin-bottom:0.3em;
 }
 
+.filter-nav-unselected{
+  padding-right:1.5em;
+  margin-right: 2em;
+}
+
+.sub-category{
+  font-size: 0.8em;
+  margin-left: 2em;
+  margin-right:2em;
+  line-height: 2em;
+  color: #666666;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.sub-category:hover, .sub-category:focus{
+  color: #000;
+  border-bottom: 1px solid rgb(255, 192, 51);
+}
+
+
 /*daria*/
 .edit-button {
-  color: grey;
-  font-size: 0.7em;
+  color: #666666;
+  font-size: 0.8em;
   letter-spacing: 1px;
   display: inline;
 }
@@ -476,9 +507,9 @@ td.data {
 /*Isabel*/
 .button-submit {
   display: inline-block;
-  border: 2px solid rgb(76, 73, 87);
+  border: 2px solid black;
   background-color: white;
-  color: rgb(76, 73, 87);
+  color: black;
   padding: 0.25rem 1em;
   font-size: 0.8em;
   text-decoration: none;
@@ -494,6 +525,9 @@ td.data {
 /*Isabel*/
 .button-submit:hover, .button-submit:focus {
   border-radius: 15px;
+  background-color: rgb(127,42,121);
+  border: 2px solid rgb(127,42,121);
+  color: white;
 }
 
 /*daria*/
@@ -611,8 +645,8 @@ td.data {
   vertical-align: top;
   font-weight: bold;
 
-
 }
+
 /*daria*/
 .intro:after {
   content: "";
@@ -641,7 +675,7 @@ td.data {
 
 /*daria*/
 .form-label-field-full {
-  font-size: 0.7em;
+  font-size: 0.9em;
   padding-right: .2em;
   padding-bottom: .2em;
   text-align: left;
@@ -703,13 +737,13 @@ textarea {
 .form-input-quantity{
   margin: 0;
   float: left;
-  margin-right: 2em;
+  margin-right: 0.85em;
   padding: 0;
 }
 
 .form-input-quantity input{
-  padding-top: 0.25em;
-  padding-bottom: 0.25em;
+  padding-top: 0.29em;
+  padding-bottom: 0.29em;
   font-size: 0.9em;
   margin-top: 1em;
 
@@ -911,23 +945,18 @@ a.category {
 */
 
 li{
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 
 ul {
   list-style: none; 
   padding: 0;
   font-size: 0.9em;
+  margin-bottom: 0.5em;
 }
 
 ul li { 
 }
-
-.selected{
-  font-weight: bold;
-  color: black;
-}
-
 
 ol {
   padding: 0;
