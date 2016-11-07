@@ -169,7 +169,7 @@
 .item-listing-unit{
 	position: relative;
 	margin-bottom: 2em;
-	margin-right: 1.8em;
+	margin-right: 1.3em;
 }
 /*Isabel*/
 
@@ -183,12 +183,24 @@
 	opacity: 0.75;
 }
 
-/*<---------------Item Listings/*
-
-@media (min-width: 35em)  {
 
 
+@media only screen and (max-width: 46em) {
 
+	.item-listing-box{
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 40em) {
+
+	.item-listing-box{
+		justify-content: center;
+	}
+
+	.item-listing-unit{
+		margin-right: 0;
+	}
 }
 
 
