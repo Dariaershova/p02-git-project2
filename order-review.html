@@ -17,7 +17,7 @@
 
     <body>
 
-           <!--main navigation-->
+    <!--main navigation-->
     <nav class="united-nav full-bleed-bar-top">
         <a href="index.html"><img class="icon-button logo-flex" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
         <div class = "main-nav"> 
@@ -34,117 +34,142 @@
          </div>
     </nav>
 
+    <!--section separator central element-->
     <div class="intro">
-        <img class="logo-central" src="img/icons/logo-central.png">
+        <img class="logo-central" src="img/icons/logo-central.png" alt="leaf me logo with a tagline">
         <h2 class="section-title">unique plants for unique experiences</h2>
     </div>
 
-    <section id="#order-review" class="main-page">
-    <div class="grid-row">
+    <!--main seciton-->
+    <section id="#order-review" class="checkout-process">
+    <div class="grid-row cropped-container">
+
+
+    <!--left side-->
     <div class="grid-col-cart">
 
-        <nav class = "checkout-nav"> 
-                          <a href="cart.html#checkout" class="button-nav checkout-nav-button">Shopping Bag /</a>
-                          <a href="shipping.html#shipping" class="button-nav checkout-nav-button">Shipping /</a>
-                          <a href="payment.html#payment" class="button-nav checkout-nav-button">Payment /</a>
-                          <a href="order-review.html#order-review" class="button-nav checkout-nav-button active">Order review /</a>
-                          <a href="receipt.html#receipt" class="button-nav checkout-nav-button">Receipt</a>
-        </nav>
-
-    <table class="cart-header">
-          <tr>
-            <th>Image</th>
-            <th>Item</th>
-            <th>Quantity</th>
-            <th>Item Price</th>
-            <th>Total Price</th>
-          </tr>
-
-          <tr>
-            <td><img class="cart-image" src="img/succulent1-150.png" alt="Image description">
-            </td>
-            <td>Name of the plant</td>
-            <td>Number of items</td>
-            <td>$xx.xx</td>
-            <td class="cart-price">$xx.xx</td>
-          </tr>
-
-          <tr>
-            <td><img class="cart-image" src="img/succulent2-150.png" alt="Image description"></td>
-            <td>Name of the plant</td>
-            <td>Number of items</td>
-            <td>$xx.xx</td>
-            <td class="cart-price">$xx.xx</td>
-          </tr>
-        </table>
-
-
+        <!--checkout nav-->
+      <nav class = "checkout-nav"> 
+                          <a href="cart.html#checkout" class="checkout-nav-button">Shopping Bag /</a>
+                          <a href="shipping.html#shipping" class="checkout-nav-button">Shipping /</a>
+                          <a href="payment.html#payment" class="checkout-nav-button">Payment /</a>
+                          <a href="order-review.html#order-review" class="checkout-nav-button active">Order review /</a>
+                          <a href="receipt.html#receipt" class="checkout-nav-button">Receipt</a>
+      </nav> 
+      <!--end of checkout nav-->
+      <!-- checkout cart table-->
+      <!--items-->
         <table class="cart-header">
+              <tr>
+                <th>Image</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Item Price</th>
+                <th>Total Price</th>
+              </tr>
+
+              <tr>
+                <td><img class="cart-image" src="img/succulent1-100.png" alt="Image description">
+                </td>
+                <td>"Red-Beaked" Succulent</td>
+                <td>1</td>
+                <td>C$5.00</td>
+                <td class="cart-price">C$5.00</td>
+              </tr>
+
+              <tr>
+                <td><img class="cart-image" src="img/succulent2-100.png" alt="Image description">
+                <td>"Bluebean" Succulent</td>
+                <td>2</td>
+                <td>C$5.00</td>
+                <td class="cart-price">C$10.00</td>
+            </tr>
+
+        <!--address-->
           <tr>
             <th>Shipping Address</th>
+            <th></th>
+            <th></th>
             <th class="action-button-right"><a class="edit-button in-text-link" href="#">Edit</a></th>
             <th class="action-button-left"><a class="edit-button in-text-link" href="#">Remove</a></th>
           </tr>
 
           <tr>
-            <td>First Name Last Name </br>
-            Address</br>
-            City, Postal Code</br>
-            Country</br>
+            <td>
+                <ul>
+                    <li>Elaine Nickson</li>
+                    <li>329 King Street</li>
+                    <li>Waterloo, N3L 3B2</li>
+                    <li>Ontario, Canada</li>
+                </ul>
+                    <a class="edit-button" href="#">Edit</a>
+                    <a class="edit-button" href="#">Remove</a>
+
             </td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
 
-        </table>
-
-
-        <table class="cart-header">
+          <!--payment-->
           <tr>
             <th>Payment method</th>
+            <th></th>
+            <th></th>
             <th class="action-button-right"><a class="edit-button in-text-link" href="#">Edit</a></th>
             <th class="action-button-left"><a class="edit-button in-text-link" href="#">Remove</a></th>
           </tr>
 
           <tr>
-            <td>First Name Last Name </br>
-            Card Number</br>
-            Expiry date</br>
-            </td>
+          <td>
+             <ul>
+                <li>Elaine Nickson</li>
+                <li>VISA ****-****-****-5607</li>
+                <li>08/18</li>
+            </ul>
+                <a class="edit-button" href="#">Edit</a>
+                <a class="edit-button" href="#">Remove</a>
+                </td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
-
         </table>
-
-
+        <!--end of the left table-->
         </div>
 
-        <div class="grid-col-checkout">        
-        <h3 class="checkout-title">Order Summary</h3>
 
+        <!--checkout summary table-->
+        <div class="grid-col-checkout">
+         <h3 class="checkout-title">Order Summary</h3>
+
+         <!--table-->
         <table class="checkout-header">
-            <tr>
-                <td class="checkout-line">Subtotal</td>
-                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-line">Shipping</td>
-                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-line">Estimated Tax</td>
-                <td class="checkout-line right-alignment">XXXXXXXXX</td> 
-            </tr>
-            <tr>
-                <td class="checkout-price">Total</td>
-                <td class="checkout-price right-alignment">XXXXXXXXX</td> 
-            </tr>
+               <tr>
+                    <td class="checkout-line">Subtotal</td>
+                    <td class="checkout-line right-alignment">C$15.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Shipping</td>
+                    <td class="checkout-line right-alignment">C$9.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Estimated Tax</td>
+                    <td class="checkout-line right-alignment">C$3.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line checkout-price">Total</td>
+                    <td class="checkout-line checkout-price right-alignment">C$27.00</td> 
+                </tr>
                 
         </table>
-          <a class="button-checkout" href="receipt.html">Proceed</a>
+                <a class="button-checkout" href="receipt.html">Proceed to checkout</a>
 
         </div>
+        <!--enf of the right side table-->
+ 
     </div>
  
     </section>

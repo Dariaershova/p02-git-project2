@@ -35,35 +35,41 @@
     </nav>
 
 
+    <!--section separator central element-->
     <div class="intro">
-        <img class="logo-central" src="img/icons/logo-central.png">
+        <img class="logo-central" src="img/icons/logo-central.png" alt="leaf me logo really big">
         <h2 class="section-title">unique plants for unique experiences</h2>
     </div>
 
 
 
-    <section id="#shipping" class="main-page">
-    <div class="grid-row">
-    <div class="grid-col-cart">
-        <nav class = "checkout-nav"> 
-                          <a href="cart.html" class="button-nav checkout-nav-button">Shopping Bag /</a>
-                          <a href="shipping.html" class="button-nav checkout-nav-button active">Shipping /</a>
-                          <a href="payment.html" class="button-nav checkout-nav-button">Payment /</a>
-                          <a href="order-review.html" class="button-nav checkout-nav-button">Order review /</a>
-                          <a href="receipt.html" class="button-nav checkout-nav-button">Receipt</a>
-        </nav>    
+    <!--checkout section of the page-->
+    <section id="#shipping" class="checkout-process">
+        <div class="grid-row cropped-container">
 
-    <table class="cart-header">
+        <!--left side-->
+        <div class="grid-col-cart">
+
+            <!--navigation for checkout process-->
+            <nav class = "checkout-nav"> 
+                              <a href="cart.html" class="checkout-nav-button">Shopping Bag /</a>
+                              <a href="shipping.html#shipping" class="checkout-nav-button active">Shipping /</a>
+                              <a href="payment.html#payment" class="checkout-nav-button">Payment /</a>
+                              <a href="order-review.html#review" class="checkout-nav-button">Order review /</a>
+                              <a href="receipt.html#receipt" class="checkout-nav-button">Receipt</a>
+            </nav>  
+
+     <!--shipping info-->
+     <table class="cart-header">
         <tr>
             <th>Shipping Address</th>
-            <th class="action-button-right"><a class="edit-button in-text-link" href="#">Edit</a></th>
-            <th class="action-button-left"><a class="edit-button in-text-link" href="#">Remove</a></th>
+            <th><a class="edit-button" href="#">Edit</a></th>
+            <th><a class="edit-button" href="#">Remove</a></th>
         </tr>
 
         <tr>
-
         <td>
-            <form class="form-contact">  
+            <form class="reduced-width-table">  
               <label for="first-name" class="form-label-field-full">First Name*</label>
               <input type="text" id="first-name" class="form-input-field-full" placeholder=""> 
 
@@ -71,7 +77,7 @@
               <input type="text" id="last-name" class="form-input-field-full" placeholder=""> 
 
               <label for="address" class="form-label-field-full">Address*</label>
-              <textarea id="message" class="form-input-field-extended" placeholder=""></textarea>
+              <textarea id="address" class="form-input-field-extended" placeholder=""></textarea>
 
               <label for="city" class="form-label-field-full">City*</label>
               <input type="text" id="city" class="form-input-field-full" placeholder=""> 
@@ -85,23 +91,27 @@
                 <label for="phone" class="form-label-field-full">Phone*</label>
               <input type="text" id="phone" class="form-input-field-full" placeholder=""> 
 
-            <input type="checkbox" name="address-checked" class="checkbox-label" checked>Save this address to my profile</br>
-                       
+            <input type="checkbox" name="address-checked" checked>Save this address to my profile     
             </form>
         </td>
         <td>
         </td>
         <td>
         </td>
+        </tr>
+
         </table>
-
         </div>
+        <!--end of the left table-->
 
+        <!--checkout summary table-->
         <div class="grid-col-checkout">
-        <h3 class="checkout-title">Order Summary</h3>
 
+         <h3 class="checkout-title">Order Summary</h3>
+
+         <!--table-->
         <table class="checkout-header">
-            <tr>
+               <tr>
                     <td class="checkout-line">Subtotal</td>
                     <td class="checkout-line right-alignment">C$15.00</td> 
                 </tr>
@@ -114,17 +124,19 @@
                     <td class="checkout-line right-alignment">C$3.00</td> 
                 </tr>
                 <tr>
-                    <td class="checkout-price">Total</td>
-                    <td class="checkout-price right-alignment">C$27.00</td> 
+                    <td class="checkout-line checkout-price">Total</td>
+                    <td class="checkout-line checkout-price right-alignment">C$27.00</td> 
                 </tr>
                 
         </table>
                 <a class="button-checkout" href="payment.html">Ship to this address</a>
 
         </div>
+        <!--enf of the right side table-->
     </div>
  
     </section>
+    <!--end of the section-->
 
 
 </body>

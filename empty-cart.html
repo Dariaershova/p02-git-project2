@@ -16,7 +16,7 @@
 
     <body>
 
-            <!--main navigation-->
+<!--main navigation-->
     <nav class="united-nav full-bleed-bar-top">
         <a href="index.html"><img class="icon-button logo-flex" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
         <div class = "main-nav"> 
@@ -33,27 +33,33 @@
          </div>
     </nav>
 
+
+
+    <!--section separator central element-->
     <div class="intro">
-        <img class="logo-central" src="img/icons/logo-central.png">
+        <img class="logo-central" src="img/icons/logo-central.png" alt="leaf me logo with a tagline">
         <h2 class="section-title">unique plants for unique experiences</h2>
     </div>
 
     
 
-    <section id="#checkout" class="main-page">
-    <div class="grid-row">
-    <div class="grid-col-cart">
+    <!--main section-->
+    <section id="#receipt" class="checkout-process">
+    <div class="grid-row cropped-container">
 
-         <nav class = "checkout-nav"> 
-                          <a href="cart.html#checkout" class="button-nav checkout-nav-button active">Shopping Bag /</a>
-                          <a href="shipping.html#shipping" class="button-nav checkout-nav-button">Shipping /</a>
-                          <a href="payment.html#payment" class="button-nav checkout-nav-button">Payment /</a>
-                          <a href="order-review.html#order-review" class="button-nav checkout-nav-button">Order review /</a>
-                          <a href="receipt.html#receipt" class="button-nav checkout-nav-button">Receipt</a>
-        </nav>
+    <!--left side-->
+     <div class="grid-col-cart">
+     <!--checkout nav-->
+      <nav class = "checkout-nav"> 
+                          <a href="cart.html#checkout" class="checkout-nav-button active">Shopping Bag /</a>
+                          <a href="shipping.html#shipping" class="checkout-nav-button">Shipping /</a>
+                          <a href="payment.html#payment" class="checkout-nav-button">Payment /</a>
+                          <a href="order-review.html#order-review" class="checkout-nav-button">Order review /</a>
+                          <a href="receipt.html#receipt" class="checkout-nav-button">Receipt</a>
+      </nav> 
+
 
     <table class="cart-header">
-        
           <tr>
             <th>Image</th>
             <th>Item</th>
@@ -62,39 +68,41 @@
             <th>Total Price</th>
           </tr>
 
-        </table>
+    </table>
 
-        <p class="centered-element">You don't have any items. Return to <a class="in-text-link" href="itemlisting.html">shopping.</a></p>
+        <p>You don't have any items. Return to <a class="in-text-link" href="itemlisting.html">shopping.</a></p>
 
-        </div>
+    </div>
 
+     <!--tright side of the table-->
         <div class="grid-col-checkout">
 
          <h3 class="checkout-title">Order Summary</h3>
 
+         <!--table-->
         <table class="checkout-header">
-            <tr>
-                <td class="checkout-line">Subtotal</td>
-                <td class="checkout-line right-alignment">C$0</td> 
-            </tr>
-            <tr>
-                <td class="checkout-line">Shipping</td>
-                <td class="checkout-line right-alignment">C$0</td> 
-            </tr>
-            <tr>
-                <td class="checkout-line">Estimated Tax</td>
-                <td class="checkout-line right-alignment">C$0</td> 
-            </tr>
-            <tr>
-                <td class="checkout-price">Total</td>
-                <td class="checkout-price right-alignment">C$0</td> 
-            </tr>
+               <tr>
+                    <td class="checkout-line">Subtotal</td>
+                    <td class="checkout-line right-alignment">C$0.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Shipping</td>
+                    <td class="checkout-line right-alignment">C$0.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line">Estimated Tax</td>
+                    <td class="checkout-line right-alignment">C$0.00</td> 
+                </tr>
+                <tr>
+                    <td class="checkout-line checkout-price">Total</td>
+                    <td class="checkout-line checkout-price right-alignment">C$0.00</td> 
+                </tr>
                 
         </table>
-            
-            <a class="button-checkout" href="shipping.html">checkout</a>
+                <a class="button-checkout" href="empty-cart.html">Checkout</a>
 
         </div>
+        <!--enf of the right side table-->
     </div>
  
     </section>
