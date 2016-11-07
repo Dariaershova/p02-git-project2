@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>LeafMe</title>
+
+	<link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="css/flexboxes.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+
+        <!--main navigation-->
+    <nav class="united-nav full-bleed-bar-top">
+        <a href="index.html"><img class="icon-button logo-flex" src="img/icons/logo.png" alt="leaf me logo, logo of a branch with berries"></a>
+        <div class = "main-nav"> 
+            <a href="itemlisting.html" class="menu-button">Shop all</a>
+            <a href="index.html#news_and_events" class="menu-button">News and Events</a>
+            <a href="index.html#about_company" class="menu-button">About company</a>
+            <a href="index.html#contacts" class="menu-button">Contacts</a>
+         </div>
+
+         <div class="secondary-nav">
+            <a href="#" class="menu-button">Search</a>
+            <a href="#" class="menu-button">Login</a>
+            <a href="cart.html" class="menu-button">View basket</a>
+         </div>
+    </nav>
+
+        <!--section separtor central-->
+    <div class="intro">
+        <img class="logo-central" src="img/icons/logo-central.png" alt="leaf me that has berries on a branch of a tree">
+        <h2 class="section-title">unique plants for unique experiences</h2>
+    </div>
+
+    <section id="#listing-full-view">
+        <div class="cropped-container-main">
+            <div class="grid-row">
+                 <div class="grid-col-1of4">
+                    <nav class="filter-nav">
+                            <a href="#" class="checkout-nav-button active">All Plants</a>
+                            <ul>
+                                <li><a href="#" class="in-text-link sub-category selected-nav">Succulents</a></li>
+                                <li><a href="#" class="sub-category">Cacti</a></li>
+                                <li><a href="#" class="sub-category">Air Plants</a></li>
+                            </ul>
+                        <a href="#" class="checkout-nav-button">Pots + Containers</a>
+                        <a href="#" class="checkout-nav-button">Equipment + Tools</a>
+                        <a href="#" class="checkout-nav-button">Sale</a>
+                    </nav>
+                </div>
+
+                <div class="grid-col-3of4">
+                    <section id="product-listing">
+                        <figure class="product-image">
+                            <img src="img/succulent10.png" alt="small, green succulent plant with red tips in a light blue flower pot">
+                        </figure>
+
+                        <h3>&quot;Lotus&quot; Succulent</h3>
+                        <p class="latin-name"><em class="latin-name">Echeveria sirius</em></p>
+                        <p class="price-number medium-text">C$7.95</p>
+                        <div class="review-rating">
+                        <div class="review-stars">
+                        &#9733; &#9733; &#9733; &#9733; &#9733; 
+                        </div><a class="in-text-link margin-left small-text" href="#reviews">1 review</a>
+                        </div>
+                        <p>The <em>Echeveria sirius</em> or &quot;Lotus&quot; Succulent, is a red-tipped, spiky varient of the Crassulaceae family which resembles a lotus flower. These succulents are native to southern California, and require quite a bit of sunshine, but don't need a lot of water. Water these plants from the roots to avoid over-watering. If the tips begin to yellow, water the plant more frequently. The leaves may also spread wide if there is not enough sunlight.</p>
+                        <form class="form-input-quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" min="1" max="5" placeholder="1">
+                        </form>
+                        <a class="button-submit button-nav-add-to-cart" href="cart.html">Add to Cart</a>
+                    </section>
+
+                    <section id="#suggested-products">
+                    <p>People who looked at this also looked at:</p>
+                        <div class="suggested-products">
+                            <div>
+                                <img src="img/thumbnail12.png" alt="thumbnail for related product: small green succulent with red tips in a white and terracotta coloured flower pot">
+                                <p class="suggested-product-name">&quot;Rounded Flat-leaf&quot; Succulent</p>
+                            </div>
+                            <div>
+                                <img src="img/thumbnail11.png" alt="thumbnail for related product: green succulent with medium-length stalks in a white and aqua-coloured flower pot">
+                                <p class="suggested-product-name">&quot;Red-Spear&quot; Succulent</p>
+                            </div>
+                            <div>
+                                <img src="img/thumbnail14.png" alt="thumbnail for related product: green succulent with plump leaves in a round, peach and silver flower pot">
+                                <p class="suggested-product-name">&quot;Lettuce-Leaf&quot; Succulent</p> 
+                            </div>
+                            <div>
+                                <img src="img/thumbnail13.png" alt="thumbnail for related product: green succulent with medium-sized flat leaves in a pink and gold flower pot">
+                                <p class="suggested-product-name">&quot;Candycorn&quot; Succulent</p>
+                            </div>
+                            <div>
+                                <img src="img/thumbnail15.png" alt="thumbnail for related product: large-leafed green succulent in yellow-lipped, white with black polka-dotted flower pot">
+                                <p class="suggested-product-name">&quot;Brussel Sprout&quot; Succulents</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="reviews">
+                        <h2>Reviews</h2>
+                        <div class="review">
+                            <h3>Love it!</h3>
+                            <p class="latin-name"><em>Isabelle Arche, VA, USA</em></p>
+                            <p>I'm so thankful these things exist 'cause otherwise all my plants would be dead. My boyfriend bought a bunch of these succulents for me in hopes of alleviating my tendency to kill every plant I've ever owned, and it somehow managed to work so far. This one is definitely my favourite because I love lotus flowers. I'd probably kill actual lotuses so I'm glad there's an alternative!</p>
+                        </div>
+                        <a class="button-submit" href="#">Leave a Review</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
