@@ -260,7 +260,25 @@
 }
 
 
-@media only screen and (max-width: 55em) {
+@media only screen and (max-width: 77em) {
+	.grid-col-1of4{
+		margin-left: 6.5em;
+		margin-right: 0;
+		width: 90%;
+	}
+
+	.grid-col-3of4 {
+	width:90%;
+	background: white;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	text-align: left;
+	}
+
+}
+
+@media only screen and (max-width: 35em) {
 
 	.grid-col-1of4{
 		margin-left: 0;
@@ -360,8 +378,8 @@
 
 
 	.cropped-container {
-		margin-left: 3%;
-		margin-right: 3%;
+		margin-left: 4%;
+		margin-right: 4%;
 	}
 
 	.item-listing-box{
