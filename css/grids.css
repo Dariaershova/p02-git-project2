@@ -310,7 +310,11 @@
 
 
 	.grid-col-checkout {
-		width: 80%;
+		width: 100%;
+	}
+
+	.edit-button {
+		display: none;
 	}
 
 }
