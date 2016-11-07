@@ -271,6 +271,7 @@ td.data {
   line-height: 0.5em;
   font-size: 1em;
   margin-bottom: 1.1em;
+  font-weight: bold;
 }
 
 /*Isabel*/
@@ -424,6 +425,7 @@ td.data {
 .filter-nav {
   padding-left: 0;
   margin-bottom: 0.8em;
+  padding-top: 1.2em;
   color: black;
 }
 
