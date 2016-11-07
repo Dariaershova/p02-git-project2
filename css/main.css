@@ -59,6 +59,7 @@ p {
   line-height: 1.5em;
   text-align: left;
   margin-bottom: 1.6em;
+  padding-right: 0.5em;
 }
 
 em {
@@ -308,8 +309,8 @@ td.data {
 .price-number{
   line-height: 0.4em;
   font-size: 0.9em;
-  margin-bottom: 1em;
-  color: rgb(127,42,121);
+  margin-bottom: 1.3em;
+  color: black;
 }
 
 /*Isabel*/
@@ -324,9 +325,15 @@ td.data {
 #product-listing{
   float: left;
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding-bottom: 2em;
+  border-bottom: 1px solid black;
 }
+
+#product-listing p{
+  margin-bottom: 0.5em;
+}
+
 
 /*Isabel*/
 .product-image{
@@ -345,9 +352,10 @@ td.data {
 
 /*Isabel*/
 .suggested-products {
+  display: flex;
+  flex-wrap: wrap;
   clear: left;
-  margin-top: 2em;
-  border-top: solid 1px black;
+  margin-top: 1em;
   border-bottom: solid 1px black;
   margin-right: 1em;
   margin-bottom: 1em;
@@ -357,7 +365,7 @@ td.data {
 
 /*Isabel*/
 .suggested-products img{
-  margin-right: 0.5em;
+  margin-right: 0.75em;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 
@@ -366,6 +374,16 @@ td.data {
 /*Isabel*/
 .suggested-products img:hover, .suggested-products img:focus{
   opacity: 0.75;
+}
+
+.suggested-products p{
+  margin: 0;
+  margin-bottom: 1.5em;
+  font-size: 0.7em;
+  max-width: 10em;
+  color: #666;
+  line-height: 1.2em;
+  text-align: left;
 }
 
 /*//////////////////////////////////*/
@@ -399,7 +417,7 @@ td.data {
   font-size: 0.8em;
   background-color: white;
   letter-spacing: 1px;
-  color: rgb(76, 73, 87);
+  color: rgb(127,42,121);
   padding: 0 0.5em 0 0.5em;
   margin-right: 0.5em;
   border-bottom: 3px solid white;
@@ -414,7 +432,7 @@ td.data {
 /*Isabel*/
 /*daria*/
 .button-nav:hover, .button-nav:focus {
-  border-bottom: 3px solid rgb(255, 192, 51);
+  border-bottom: 3px solid rgb(127,42,121);
   border-radius: 3px;
 }
 
@@ -423,8 +441,9 @@ td.data {
   padding-top: 0em;
   color: black;
   font-weight: bold;
-
-  border-bottom: 3px solid rgb(255, 192, 51);
+  padding-right: 0;
+  margin-right: 0;
+  border-bottom: 3px solid rgb(127,42,121);
   border-radius: 3px;
 }
 
@@ -466,8 +485,8 @@ td.data {
 
 .sub-category{
   font-size: 0.8em;
-  margin-left: 2em;
-  margin-right:2em;
+  margin-left: 1.8em;
+  margin-right:2.4em;
   line-height: 2em;
   color: #666666;
   text-decoration: none;
@@ -476,7 +495,7 @@ td.data {
 
 .sub-category:hover, .sub-category:focus{
   color: #000;
-  border-bottom: 1px solid rgb(255, 192, 51);
+  border-bottom: 1px solid rgb(127,42,121);
 }
 
 
@@ -526,7 +545,7 @@ td.data {
 .in-text-link {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px solid rgb(255, 192, 51);
+  border-bottom: 1px solid rgb(127,42,121);
 }
 /*Isabel*/
 .in-text-link:hover, .in-text-link:focus{
@@ -538,9 +557,9 @@ td.data {
 /*Isabel*/
 .button-submit {
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid rgb(127,42,121);
   background-color: white;
-  color: black;
+  color: rgb(127,42,121);
   padding: 0.25rem 1em;
   font-size: 0.8em;
   text-decoration: none;
@@ -773,13 +792,30 @@ textarea {
 }
 /*Isabel*/
 #reviews h3{
-  color: rgb(127,42,121);
+  color: black;
 }
 /*Isabel*/
 #reviews p{
   margin-bottom: 2em;
 }
 
+#reviews .button-submit{
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.review-rating{
+  display: flex;
+  margin-top: 1em;
+}
+
+.review-stars{
+  font-size: 0.8em;
+}
+
+.small-text{
+  font-size: 0.9em;
+}
 /*///////////////////////
 
 /*figure out autofill backround colour
@@ -1214,9 +1250,6 @@ oramge rgb(255, 192, 51)
   font-size: 1em;
 }
 /*Isabel*/
-.small-text{
-  font-size: 0.9em;
-}
 
 @media only screen and (max-width: 50em) {
 
